@@ -1,0 +1,14 @@
+{
+  "amber_annotations.json": {
+    "bytes": 1813301,
+    "sha256": "db22a436c4836fbb295e60b4e80d519573077579fb7032f01b193c1bd022b797"
+  },
+  "amber_queries.json": {
+    "bytes": 1844750,
+    "sha256": "127680ae61f7d4a92d2f7f07a8deaec07f0689b194d2c7c0f41ead7bd2c5bcf5"
+  },
+  "amber_images.zip": {
+    "bytes": 415095542,
+    "sha256": "b4b95686f4f562eab09d449c2e6483df4071e312e73394a2741d5f76f851489c"
+  }
+}
