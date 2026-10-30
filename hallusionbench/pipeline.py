@@ -33,7 +33,7 @@ def main():
         execute('prepare.py',*args)
     if a.stage in ['all','prepare']:prepare()
     if a.stage=='prepare':return
-    settings=dict(benchmark=BENCH,images=a.images,max_new_tokens=a.max_new_tokens,
+    settings=dict(protocol_version=json.loads((ROOT/'benchmark.json').read_text())['protocol_version'],benchmark=BENCH,images=a.images,max_new_tokens=a.max_new_tokens,
                   model=model,training='fixed package protocol; validation selection only')
     run.mkdir(parents=True,exist_ok=True)
     config=run/'run_config.json'
@@ -47,6 +47,9 @@ def main():
                 '--layers',layers,'--out',features)
     if a.stage=='extract' and BENCH!='amber':return
     trained=run/'train';evaluation=run/'evaluation';experiment=run/'experiment'
+    if a.stage=='train':
+        audit=json.loads((features/'extraction_protocol.json').read_text())
+        if 'token-fix-v3' not in audit.get('scorer',''):raise ValueError('Re-extract with corrected word-start Yes/No tokens before training')
     if a.stage in ['all','train','extract']:
         if BENCH=='pope':
             if not (trained/'results.json').exists():

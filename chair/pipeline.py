@@ -34,7 +34,7 @@ def main():
         execute('prepare.py',*args)
     if a.stage in ['all','prepare']:prepare()
     if a.stage=='prepare':return
-    settings=dict(benchmark=BENCH,images=a.images,max_new_tokens=a.max_new_tokens,
+    settings=dict(protocol_version=json.loads((ROOT/'benchmark.json').read_text())['protocol_version'],benchmark=BENCH,images=a.images,max_new_tokens=a.max_new_tokens,
                   test_images=a.test_images,answer_token_protocol='word-start-v3',model=model,training='fixed package protocol; validation selection only')
     run.mkdir(parents=True,exist_ok=True)
     config=run/'run_config.json'
@@ -75,6 +75,10 @@ def main():
                 execute('optimize.py','--cache',features/'features.pt','--data-root','data',
                         '--model',model,'--annotations','data/coco/annotations','--out',experiment,
                         '--test-images',50 if a.images is None else a.images,'--max-new-tokens',a.max_new_tokens)
+    if BENCH in ['amber','chair'] and (experiment/'selection.json').exists() and not (experiment/'metrics.json').exists():
+        selection=json.loads((experiment/'selection.json').read_text())
+        if selection.get('selected',selection.get('config')) is not None:
+            raise RuntimeError('Validation completed but final evaluation is incomplete; retain this run and use a fresh --run-dir')
     if a.stage in ['all','evaluate']:
         if BENCH=='pope' and not (evaluation/'metrics.json').exists():
             execute('infer.py','--source',features,'--trained',trained,'--out',evaluation)

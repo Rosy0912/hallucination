@@ -4,6 +4,7 @@ from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('--package',type=Path,default=Path(__file__).resolve().parent);p.add_argument('--cache',type=Path,required=True);p.add_argument('--model',type=Path,required=True);p.add_argument('--data-root',type=Path,required=True);p.add_argument('--annotations',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--test-images',type=int,default=50);p.add_argument('--max-new-tokens',type=int,default=128);a=p.parse_args()
 sys.path.insert(0,str(a.package));from tools.runtime import *
 import torch
+from tools.scalar_direction import train_scalar
 from aod.core.aod import AODDisentangler,AODCheckpoint,save_checkpoint,load_checkpoint
 from aod.vlm.intervention import AODDecodeConfig,greedy_generate_ids
 from official_algorithm import CHAIR
@@ -40,8 +41,12 @@ trainims={rows[i]['image'] for i in tr};assert not trainims&set(validation) and 
 x=torch.stack([c['hidden'][24][i].float() for i in tr]);y=torch.tensor([rows[i]['pred']==rows[i]['gt'] for i in tr]);vectors={};hist={}
 vectors['original5'],hist['original5']=train_direction(x,y,24,a.out/'original5.pt',42,5)
 for name,ep,bal in [('normalized5',5,False),('balanced30',30,True)]:vectors[name],hist[name]=train(x,y,ep,bal,name)
-del c,x,y
+va=[i for i,r in enumerate(rows) if r['image'] in set(validation)]
+xv=torch.stack([c['hidden'][24][i].float() for i in va]);yv=torch.tensor([rows[i]['pred']==rows[i]['gt'] for i in va])
+vectors['scalar'],hist['scalar']=train_scalar(x,y,xv,yv,a.out/'scalar.pt')
+del c,x,y,xv,yv
 configs=[dict(name='original5',alpha=.5,beta=.5),dict(name='original5',alpha=2.,beta=.5),dict(name='original5',alpha=-1.,beta=.5),dict(name='normalized5',alpha=1.,beta=.5),dict(name='balanced30',alpha=.5,beta=.5),dict(name='balanced30',alpha=1.,beta=.5)]
+configs.extend([dict(name='scalar',alpha=alpha,beta=.5) for alpha in [.5,1.,-1.]])
 write_json(a.out/'search_plan.json',dict(train_ids=[rows[i]['id'] for i in tr],validation_images=validation,unseen_test_images=test,previous_test_excluded=sorted(seen),configs=configs,training_losses=hist,selection='Both CHAIRs and CHAIRi must improve on validation; correct unique objects >=90% Base and mean tokens >=80% Base; rank CHAIRs then CHAIRi; test scored only after freezing'))
 e=CHAIR([int(Path(im).stem.rsplit('_',1)[-1]) for im in validation+test],str(a.annotations));e.get_annotations()
 write_json(a.out/'ground_truth.json',{str(k):sorted(v) for k,v in e.imid_to_objects.items()})

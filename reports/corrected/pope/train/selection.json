@@ -1,0 +1,26 @@
+{
+  "projective": {
+    "tag": "pope_mscoco_L13_projective_gt_s42",
+    "layer": 13,
+    "variant": "projective",
+    "epoch": 100,
+    "alpha": 0.0,
+    "threshold": 0.5,
+    "validation": {
+      "n": 600,
+      "accuracy": 94.16666666666667,
+      "precision": 95.53264604810997,
+      "recall": 92.66666666666667,
+      "f1": 94.07783417935703,
+      "yes_ratio": 48.5,
+      "tp": 278,
+      "tn": 287,
+      "fp": 13,
+      "fn": 22,
+      "false_positive_rate": 4.333333333333333,
+      "false_discovery_rate": 4.4673539518900345
+    },
+    "checkpoint": "results/default/train/pope_mscoco_L13_projective_gt_s42.pt",
+    "checkpoint_sha256": "54c445d94e703556986380ee272dc99f5a5cfe671f1468eeb9a39dbc547de19d"
+  }
+}

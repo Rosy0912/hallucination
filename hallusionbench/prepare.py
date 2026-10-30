@@ -49,6 +49,15 @@ def drive(file_id,path):
     if not gdown.download(id=file_id,output=str(path),quiet=False):
         raise RuntimeError('Google Drive download failed; download on an accessible machine and pass a local data-root option.')
 
+def model_complete(path):
+    if not (path/'config.json').is_file() or not (path/'preprocessor_config.json').is_file():return False
+    if not any((path/name).is_file() for name in ['tokenizer.model','tokenizer.json']):return False
+    index=path/'model.safetensors.index.json'
+    if not index.is_file():return False
+    try:shards=set(json.loads(index.read_text())['weight_map'].values())
+    except (ValueError,KeyError):return False
+    return bool(shards) and all((path/name).is_file() and (path/name).stat().st_size>0 for name in shards)
+
 def main(argv=None):
     p=argparse.ArgumentParser()
     p.add_argument('--model-dir',type=Path,help='Reuse an already downloaded LLaVA snapshot')
@@ -61,9 +70,9 @@ def main(argv=None):
     model=ROOT/'models/llava-1.5-7b-hf'
     if not a.data_only:
         if a.model_dir:
-            if not (a.model_dir/'config.json').is_file():raise FileNotFoundError(a.model_dir/'config.json')
+            if not model_complete(a.model_dir):raise ValueError('Local model override is incomplete; supply the full pinned safetensors snapshot')
             link(a.model_dir,model)
-        elif not (model/'config.json').exists():
+        elif not model_complete(model):
             from huggingface_hub import snapshot_download
             snapshot_download(repo_id=MODEL,revision=REVISION,local_dir=str(model),
                               allow_patterns=['*.json','*.safetensors','tokenizer.model','*.txt'])
@@ -111,13 +120,16 @@ def main(argv=None):
         if a.amber_root:link(a.amber_root,target)
         else:
             (target/'data/query').mkdir(parents=True,exist_ok=True)
-            base='https://raw.githubusercontent.com/junyangwang0410/AMBER/master/data/'
+            base='https://raw.githubusercontent.com/junyangwang0410/AMBER/534babf6bbfcce2e735c26289dedfb21cef3c939/data/'
             download(base+'annotations.json',target/'data/annotations.json')
             download(base+'query/query_all.json',target/'data/query/query_all.json')
             drive('1MaCHgtupcZUjf007anNl4_MV0o4DjXvl',target/'images.zip')
-            if not (target/'image').exists():unzip(target/'images.zip',target)
+            needed={r['image'] for r in json.loads((target/'data/query/query_all.json').read_text())}
+            if not all((target/'image'/name).is_file() for name in needed):unzip(target/'images.zip',target)
         for name in ['data/annotations.json','data/query/query_all.json','image']:
             if not (target/name).exists():raise FileNotFoundError(target/name)
+        for name,expected in [('data/annotations.json','db22a436c4836fbb295e60b4e80d519573077579fb7032f01b193c1bd022b797'),('data/query/query_all.json','127680ae61f7d4a92d2f7f07a8deaec07f0689b194d2c7c0f41ead7bd2c5bcf5')]:
+            if hashlib.sha256((target/name).read_bytes()).hexdigest()!=expected:raise ValueError('AMBER annotation snapshot mismatch: '+name)
     if BENCH=='chair':
         target=data/'coco/annotations'
         if a.annotations_root:link(a.annotations_root,target)

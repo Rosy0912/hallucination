@@ -1,5 +1,6 @@
 {
   "benchmark": "chair",
   "model": "llava-hf/llava-1.5-7b-hf",
-  "revision": "b234b804b114d9e37bb655e11cbbb5f5e971b7a9"
+  "revision": "b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+  "protocol_version": "word-start-v3-scalar-v4"
 }

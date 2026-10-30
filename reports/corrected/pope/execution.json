@@ -1,0 +1,13 @@
+{
+  "job_id": 144908,
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "gpu": "RTX3090",
+  "source_commit": "3d1a8d1",
+  "fresh_features": true,
+  "answer_ids": [
+    3869,
+    1939
+  ],
+  "scope": "fixed 600-question test; GT projective classifier"
+}

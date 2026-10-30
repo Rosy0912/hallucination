@@ -51,3 +51,7 @@ Hugging Face 可按网络情况设置 HF_ENDPOINT，例如 `HF_ENDPOINT=https://
 已有验证环境可运行：`PYTHON=/path/to/python bash run.sh all`。setup.sh 使用 [PyTorch 官方 CUDA 12.8 源](https://pytorch.org/get-started/previous-versions/#v2100)安装 2.10.0，然后安装锁定依赖；实际计算环境为 PyTorch 2.10.0+cu128、Transformers 4.57.0。模型 revision：b234b804b114d9e37bb655e11cbbb5f5e971b7a9。
 
 本包是透明、可执行的子集实验，不是官方全量榜单复现。跨 GPU 的数值和验证选择可能不同，指标以实际输出为准。根仓库 reports/ 保留运行证据，但本目录运行不依赖 reports/。
+
+## 训练改版说明
+
+候选包括原始初始化 5 epochs、先归一化初始化 5 epochs、类别平衡 30 epochs，以及标量一致性探针 AOD（训练集中心化/全局 RMS、GRL 0.1、最多 100 epochs，验证 AUROC 选 epoch）。标量探针避免在单一投影上用 LayerNorm 削弱幅度信息。最终仍通过真实描述生成和同一套 CHAIR/内容门槛选择；探针 AUROC 提高本身不作为 benchmark 涨点证据。这些训练改版明确记录，不当作论文默认设置复现。

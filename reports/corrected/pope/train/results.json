@@ -1,0 +1,74 @@
+{
+  "projective": {
+    "base": {
+      "n": 600,
+      "accuracy": 83.33333333333333,
+      "precision": 80.48780487804878,
+      "recall": 88.0,
+      "f1": 84.07643312101911,
+      "yes_ratio": 54.666666666666664,
+      "tp": 264,
+      "tn": 236,
+      "fp": 64,
+      "fn": 36,
+      "false_positive_rate": 21.333333333333332,
+      "false_discovery_rate": 19.51219512195122
+    },
+    "selected": {
+      "n": 600,
+      "accuracy": 92.83333333333333,
+      "precision": 95.72953736654804,
+      "recall": 89.66666666666667,
+      "f1": 92.59896729776248,
+      "yes_ratio": 46.833333333333336,
+      "tp": 269,
+      "tn": 288,
+      "fp": 12,
+      "fn": 31,
+      "false_positive_rate": 4.0,
+      "false_discovery_rate": 4.270462633451957
+    },
+    "accuracy_improvement_pp": 9.5,
+    "f1_improvement_pp": 8.522534176743378,
+    "selection": {
+      "tag": "pope_mscoco_L13_projective_gt_s42",
+      "layer": 13,
+      "variant": "projective",
+      "epoch": 100,
+      "alpha": 0.0,
+      "threshold": 0.5,
+      "validation": {
+        "n": 600,
+        "accuracy": 94.16666666666667,
+        "precision": 95.53264604810997,
+        "recall": 92.66666666666667,
+        "f1": 94.07783417935703,
+        "yes_ratio": 48.5,
+        "tp": 278,
+        "tn": 287,
+        "fp": 13,
+        "fn": 22,
+        "false_positive_rate": 4.333333333333333,
+        "false_discovery_rate": 4.4673539518900345
+      },
+      "checkpoint": "results/default/train/pope_mscoco_L13_projective_gt_s42.pt",
+      "checkpoint_sha256": "54c445d94e703556986380ee272dc99f5a5cfe671f1468eeb9a39dbc547de19d"
+    },
+    "pope_subsets": {
+      "pope_popular": {
+        "n": 600,
+        "accuracy": 92.83333333333333,
+        "precision": 95.72953736654804,
+        "recall": 89.66666666666667,
+        "f1": 92.59896729776248,
+        "yes_ratio": 46.833333333333336,
+        "tp": 269,
+        "tn": 288,
+        "fp": 12,
+        "fn": 31,
+        "false_positive_rate": 4.0,
+        "false_discovery_rate": 4.270462633451957
+      }
+    }
+  }
+}

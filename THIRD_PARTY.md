@@ -26,4 +26,11 @@
   [COCO](https://cocodataset.org/)：使用用户提供的固定数据快照/分组及官方 COCO 2014 标注。
 
 `legacy` 的历史配置/预测用于复跑一致性校验；`reports` 中标为 2026-10-30 的结果来自本次新作业。
-不存在保证 AOD 优于 Base 的筛选条件；新任务的原始指标如实保留。
+参数选择明确使用验证集门槛；不按测试成绩筛选、删改输出。历史错误 token 评分保存在 reports/legacy_token_scoring，不作为修正版成绩。
+
+## 本次诊断与训练改版
+
+- 固定 LLaVA tokenizer 的裸 Yes/No token 不等于生成时词首 token；四个独立入口改用已核验的 3869/1939，并重新提取正确性标签。
+- tools/scalar_direction.py 实现一个明确的 AOD 训练变体：单一方向与 GRL 残差对抗保持不变，投影分支改为标量 MLP；训练集均值/全局 RMS 标准化、类别平衡损失、GRL 权重 0.1，验证 AUROC 选 epoch。其后仍用验证集实际推理选干预参数。
+- HallusionBench 公共镜像固定 revision cd417161857aefb23d878d42cf1bb53aa9dd646f，并校验字节 SHA256 和全部问题/标签。
+- AMBER 标注固定官方仓库 commit 534babf6bbfcce2e735c26289dedfb21cef3c939，并校验两个 JSON 文件的 SHA256。

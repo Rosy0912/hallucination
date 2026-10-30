@@ -4,6 +4,7 @@ from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('--package',type=Path,default=Path(__file__).resolve().parent);p.add_argument('--cache',type=Path,required=True);p.add_argument('--model',type=Path,required=True);p.add_argument('--image-root',type=Path,required=True);p.add_argument('--data-root',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--test-images',type=int,default=200);a=p.parse_args()
 sys.path.insert(0,str(a.package));from tools.runtime import *
 import torch
+from tools.scalar_direction import train_scalar
 from aod.core.aod import AODDisentangler,AODCheckpoint,save_checkpoint
 from aod.vlm.answers import llava_answer_ids
 from aod.vlm.intervention import forward_next_logits
@@ -38,6 +39,9 @@ for name,ep,balanced in [('normalized5',5,False),('balanced30',30,True)]:
     for alpha in [.25,.5,1.,2.]:
         for sign in [1,-1]:
             for beta in [0.,.5,1.]:configs.append(dict(name=name,alpha=alpha*sign,beta=beta))
+vectors['scalar'],hist['scalar']=train_scalar(c['hidden'][tr],torch.tensor([rows[i]['base_pred']==rows[i]['gt'] for i in tr]),c['hidden'][va],torch.tensor([rows[i]['base_pred']==rows[i]['gt'] for i in va]),a.out/'scalar.pt')
+for alpha in [.25,.5,1.,2.,-.25,-.5,-1.,-2.]:
+    for beta in [0.,.5,1.]:configs.append(dict(name='scalar',alpha=alpha,beta=beta))
 write_json(a.out/'search_plan.json',dict(train_images=sorted(set(ims)-val),validation_images=sorted(val),train_n=len(tr),validation_n=len(va),candidates=configs,training_losses=hist,selection='validation accuracy; require no-positive F1 >= Base; ties prefer smaller absolute alpha, beta; test labels never used'))
 model,proc=load_llava(a.model);yes,no=llava_answer_ids(proc.tokenizer)
 preds={json.dumps(cfg,sort_keys=True):[] for cfg in configs};stats=[]

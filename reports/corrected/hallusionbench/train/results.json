@@ -1,0 +1,84 @@
+{
+  "method": "AOD",
+  "base": {
+    "n": 196,
+    "accuracy": 44.38775510204081,
+    "precision": 41.61490683229814,
+    "recall": 81.70731707317073,
+    "f1": 55.1440329218107,
+    "yes_ratio": 82.14285714285714,
+    "tp": 67,
+    "tn": 20,
+    "fp": 94,
+    "fn": 15,
+    "false_positive_rate": 82.45614035087719,
+    "false_discovery_rate": 58.38509316770186,
+    "figure_accuracy": 12.857142857142858,
+    "pair_accuracy": 5.376344086021505,
+    "n_figures": 70,
+    "n_pairs": 93
+  },
+  "selected": {
+    "n": 196,
+    "accuracy": 58.16326530612245,
+    "precision": 50.0,
+    "recall": 47.5609756097561,
+    "f1": 48.75,
+    "yes_ratio": 39.795918367346935,
+    "tp": 39,
+    "tn": 75,
+    "fp": 39,
+    "fn": 43,
+    "false_positive_rate": 34.21052631578947,
+    "false_discovery_rate": 50.0,
+    "figure_accuracy": 21.428571428571427,
+    "pair_accuracy": 22.580645161290324,
+    "n_figures": 70,
+    "n_pairs": 93
+  },
+  "selection": {
+    "layers": [
+      31
+    ],
+    "recipe": {
+      "name": "paired",
+      "offset": 0.0,
+      "pair_weight": 0.5,
+      "penalty": 0.0
+    },
+    "checkpoints": [
+      "results/default/train/L31_paired_s42.pt",
+      "results/default/train/L31_paired_s43.pt",
+      "results/default/train/L31_paired_s44.pt"
+    ],
+    "fallback": false,
+    "alpha": -1.0,
+    "blend": 1.0,
+    "threshold": 0.0,
+    "validation": {
+      "n": 173,
+      "accuracy": 57.225433526011564,
+      "f1": 53.164556962025316
+    },
+    "method": "AOD",
+    "source_sha256": "4e3bc590069701c2d67eae28b3e33d0dfdca09d9e4e45ed971234ffbb5f2aed0",
+    "alpha_grid": [
+      -1.0,
+      -0.5,
+      0.0,
+      0.5,
+      1.0
+    ],
+    "f1_guard": true,
+    "rule": "Validation accuracy then F1 with configured F1 guard; checkpoints chosen by validation BCE; Base fallback eligible",
+    "checkpoint_sha256": {
+      "results/default/train/L31_paired_s42.pt": "e8b05eb7242bcdd61ef3d2c37d5ca9fe15311ef756f612f1ee0fab27996daba8",
+      "results/default/train/L31_paired_s43.pt": "183f917014b47cfddeae84dd966a08af00fb7852035facf73fa1c3350b2ee3f3",
+      "results/default/train/L31_paired_s44.pt": "e8defeabe2c453ecaea8701d64084daa5728bf066ee2b4b18aa002e4675a1b78"
+    }
+  },
+  "accuracy_gain_pp": 13.775510204081634,
+  "corrected": 67,
+  "regressed": 40,
+  "criterion_met": true
+}
