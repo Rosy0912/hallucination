@@ -55,3 +55,5 @@ Hugging Face 可按网络情况设置 HF_ENDPOINT，例如 `HF_ENDPOINT=https://
 ## 训练改版说明
 
 候选包括原始初始化 5 epochs、先归一化初始化 5 epochs、类别平衡 30 epochs，以及标量一致性探针 AOD（训练集中心化/全局 RMS、GRL 0.1、最多 100 epochs，验证 AUROC 选 epoch）。标量探针避免在单一投影上用 LayerNorm 削弱幅度信息。最终仍通过真实描述生成和同一套 CHAIR/内容门槛选择；探针 AUROC 提高本身不作为 benchmark 涨点证据。这些训练改版明确记录，不当作论文默认设置复现。
+
+模型大文件连接超时时，可使用经过逐文件哈希核验的公开镜像：`AOD_MODEL_SOURCE=modelscope bash run.sh prepare`。镜像只提供下载通道；所有文件必须匹配本包固定 Hugging Face revision 的 Git/LFS 哈希，内容变化会报错。

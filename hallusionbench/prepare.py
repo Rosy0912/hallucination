@@ -73,9 +73,15 @@ def main(argv=None):
             if not model_complete(a.model_dir):raise ValueError('Local model override is incomplete; supply the full pinned safetensors snapshot')
             link(a.model_dir,model)
         elif not model_complete(model):
-            from huggingface_hub import snapshot_download
-            snapshot_download(repo_id=MODEL,revision=REVISION,local_dir=str(model),
-                              allow_patterns=['*.json','*.safetensors','tokenizer.model','*.txt'])
+            source=os.environ.get('AOD_MODEL_SOURCE','huggingface')
+            if source=='modelscope':
+                from tools.download_model import download_verified_mirror
+                download_verified_mirror(model,ROOT/'assets/llava_snapshot.json')
+            elif source=='huggingface':
+                from huggingface_hub import snapshot_download
+                snapshot_download(repo_id=MODEL,revision=REVISION,local_dir=str(model),
+                                  allow_patterns=['*.json','*.safetensors','tokenizer.model','*.txt'])
+            else:raise ValueError('AOD_MODEL_SOURCE must be huggingface or modelscope')
     data=ROOT/'data';data.mkdir(exist_ok=True)
     if BENCH in ['pope','hallusionbench','chair']:
         rows=json.loads((ROOT/'assets/manifest.json').read_text())

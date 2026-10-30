@@ -47,3 +47,5 @@ AMBER 以官方 No-positive F1 为主，同时列准确率及分项。CHAIR 使�
 模型固定为 `llava-hf/llava-1.5-7b-hf@b234b804b114d9e37bb655e11cbbb5f5e971b7a9`。验证环境为 Python 3.11、PyTorch 2.10.0+cu128、Transformers 4.57.0。GPU 数值差异会影响训练和验证集选出的配置；脚本保留实际结果，不以历史分数作为通过条件。
 
 legacy/ 仅保存历史来源和旧协议。新读者从四个独立目录开始。来源、许可证和改动见 [THIRD_PARTY.md](THIRD_PARTY.md)。
+
+模型大文件连接超时时，可使用经过逐文件哈希核验的公开镜像：`AOD_MODEL_SOURCE=modelscope bash run.sh prepare`。镜像只提供下载通道；所有文件必须匹配本包固定 Hugging Face revision 的 Git/LFS 哈希，内容变化会报错。

@@ -1,0 +1,96 @@
+{
+  "repo": "llava-hf/llava-1.5-7b-hf",
+  "revision": "b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+  "files": [
+    {
+      "rfilename": "added_tokens.json",
+      "blobId": "4bd5222947172917d6a7770e47e797f3253c669a",
+      "size": 41
+    },
+    {
+      "rfilename": "chat_template.json",
+      "blobId": "c998e15e4dfb9f8559cad83653555ccd696cd7ec",
+      "size": 701
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "5de92935009a2c670e07576ed411be82fd58b2ee",
+      "size": 950
+    },
+    {
+      "rfilename": "generation_config.json",
+      "blobId": "8d7eb9299fc02285ea047807e43b0688944ff6d0",
+      "size": 141
+    },
+    {
+      "rfilename": "model-00001-of-00003.safetensors",
+      "blobId": "8efd844a20e43e78ed9f244be434329ae75aac22",
+      "size": 4992930200,
+      "lfs": {
+        "sha256": "c11dbf016ee7d35ee130c19b67e20eb04873996006f424b7bcbd453b6517ee66",
+        "size": 4992930200,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00002-of-00003.safetensors",
+      "blobId": "aa88e22a3aac7e65f5758465e69c836aa7e7b0bd",
+      "size": 4957878440,
+      "lfs": {
+        "sha256": "46df6c6e5fad297fe7fbca4963dcf180cb1d0528cabc884d1f603311fed01328",
+        "size": 4957878440,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00003-of-00003.safetensors",
+      "blobId": "f45afd6e0a0bb5f7af07d7c2a6b78cd34432cbec",
+      "size": 4176137408,
+      "lfs": {
+        "sha256": "4f06177c37ca13944e73b57dd6d051767b950dffc12400c700dfa2509c24c697",
+        "size": 4176137408,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model.safetensors.index.json",
+      "blobId": "695b1d57193f2740ecab31f39297a4fd2a2ed050",
+      "size": 70128
+    },
+    {
+      "rfilename": "preprocessor_config.json",
+      "blobId": "38f4d736a2e2b34af9eaef607847407c0efc7980",
+      "size": 505
+    },
+    {
+      "rfilename": "processor_config.json",
+      "blobId": "af0ccfc7718788d1bdd1b747d6298d91ed48ffa4",
+      "size": 173
+    },
+    {
+      "rfilename": "special_tokens_map.json",
+      "blobId": "a782b2f1cdab4d0bacb2dc0f85d02c4b1e31f0bd",
+      "size": 552
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "ed9b377d211618c8274de275f3d9d64257406615",
+      "size": 3619380
+    },
+    {
+      "rfilename": "tokenizer.model",
+      "blobId": "6c00c742ce03c627d6cd5b795984876fa49fa899",
+      "size": 499723,
+      "lfs": {
+        "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+        "size": 499723,
+        "pointerSize": 131
+      }
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "04d334b028b1c479e0a1152eb71348ae509bb2d5",
+      "size": 1451
+    }
+  ]
+}
