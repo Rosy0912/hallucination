@@ -53,3 +53,7 @@ Hugging Face 可按网络情况设置 HF_ENDPOINT，例如 `HF_ENDPOINT=https://
 本包是透明、可执行的子集实验，不是官方全量榜单复现。跨 GPU 的数值和验证选择可能不同，指标以实际输出为准。根仓库 reports/ 保留运行证据，但本目录运行不依赖 reports/。
 
 模型大文件连接超时时，可使用经过逐文件哈希核验的公开镜像：`AOD_MODEL_SOURCE=modelscope bash run.sh prepare`。镜像只提供下载通道；所有文件必须匹配本包固定 Hugging Face revision 的 Git/LFS 哈希，内容变化会报错。
+
+## 已核验的固定划分结果
+
+单张 A100 80GB、Python 3.10.20、固定依赖环境中，从本包完整入口重新提取、训练、选参并评测成功。200 张独立测试图片、2,836 题：准确率 80.1834 → 83.9915，官方 No-positive F1 85.4705 → 87.2829。验证选中 scalar、alpha=-2、beta=0.5。总体提高，但 Existence 子项 F1 95.4715 → 94.4026，有所下降。所有候选、逐题输出、独立重算与图片分组 bootstrap 见 [公开运行记录](https://github.com/Rosy0912/hallucination/tree/main/reports/corrected/amber)。这是本次确认结果，不要求跨硬件逐位相同。

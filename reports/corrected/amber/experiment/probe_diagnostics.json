@@ -1,0 +1,29 @@
+{
+  "benchmark": "amber",
+  "split": "validation only",
+  "n": 458,
+  "consistent_fraction": 0.7925764322280884,
+  "probes": {
+    "normalized5": {
+      "auroc": 0.7184862983906046,
+      "accuracy": 0.7925764192139738,
+      "balanced_accuracy": 0.5,
+      "predicted_consistent_fraction": 1.0,
+      "logit_std": 0.0009128921665251255
+    },
+    "balanced30": {
+      "auroc": 0.3048281861678991,
+      "accuracy": 0.7925764192139738,
+      "balanced_accuracy": 0.5,
+      "predicted_consistent_fraction": 1.0,
+      "logit_std": 8.963186701294035e-05
+    },
+    "scalar": {
+      "auroc": 0.8764100333478324,
+      "accuracy": 0.6943231441048034,
+      "balanced_accuracy": 0.7683050601710889,
+      "predicted_consistent_fraction": 0.5305677056312561,
+      "logit_std": 1.4638361930847168
+    }
+  }
+}

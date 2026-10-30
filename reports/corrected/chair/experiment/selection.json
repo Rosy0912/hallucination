@@ -1,0 +1,18 @@
+{
+  "config": {
+    "name": "scalar",
+    "alpha": 1.0,
+    "beta": 0.5
+  },
+  "metrics": {
+    "n": 16,
+    "CHAIRs": 50.0,
+    "CHAIRi": 13.91304347826087,
+    "object_mentions": 115,
+    "hallucinated_mentions": 16,
+    "hallucinated_captions": 8,
+    "mean_tokens": 110.0,
+    "correct_unique_objects_per_image": 3.3125,
+    "object_recall": 0.7106150793650793
+  }
+}

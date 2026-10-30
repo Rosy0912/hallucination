@@ -1,0 +1,196 @@
+{
+  "config": {
+    "name": "scalar",
+    "alpha": -2.0,
+    "beta": 0.5
+  },
+  "metrics": {
+    "base": {
+      "n": 458,
+      "tp": 262,
+      "fp": 55,
+      "tn": 101,
+      "fn": 40,
+      "accuracy": 79.25764192139738,
+      "precision": 82.64984227129338,
+      "recall": 86.75496688741723,
+      "f1": 84.65266558966074,
+      "false_positive_rate": 35.256410256410255,
+      "positive_label": "no",
+      "official_rounded": {
+        "accuracy": 79.3,
+        "precision": 82.6,
+        "recall": 86.8,
+        "f1": 84.6
+      }
+    },
+    "aod": {
+      "n": 458,
+      "tp": 251,
+      "fp": 25,
+      "tn": 131,
+      "fn": 51,
+      "accuracy": 83.4061135371179,
+      "precision": 90.94202898550725,
+      "recall": 83.11258278145695,
+      "f1": 86.85121107266436,
+      "false_positive_rate": 16.025641025641026,
+      "positive_label": "no",
+      "official_rounded": {
+        "accuracy": 83.4,
+        "precision": 90.9,
+        "recall": 83.1,
+        "f1": 86.8
+      }
+    },
+    "by_type": {
+      "attribute": {
+        "base": {
+          "n": 248,
+          "tp": 103,
+          "fp": 36,
+          "tn": 88,
+          "fn": 21,
+          "accuracy": 77.01612903225806,
+          "precision": 74.10071942446044,
+          "recall": 83.06451612903226,
+          "f1": 78.32699619771863,
+          "false_positive_rate": 29.032258064516128,
+          "positive_label": "no",
+          "official_rounded": {
+            "accuracy": 77.0,
+            "precision": 74.1,
+            "recall": 83.1,
+            "f1": 78.3
+          }
+        },
+        "aod": {
+          "n": 248,
+          "tp": 98,
+          "fp": 18,
+          "tn": 106,
+          "fn": 26,
+          "accuracy": 82.25806451612904,
+          "precision": 84.48275862068965,
+          "recall": 79.03225806451613,
+          "f1": 81.66666666666667,
+          "false_positive_rate": 14.516129032258064,
+          "positive_label": "no",
+          "official_rounded": {
+            "accuracy": 82.3,
+            "precision": 84.5,
+            "recall": 79.0,
+            "f1": 81.7
+          }
+        }
+      },
+      "existence": {
+        "base": {
+          "n": 158,
+          "tp": 141,
+          "fp": 0,
+          "tn": 0,
+          "fn": 17,
+          "accuracy": 89.24050632911393,
+          "precision": 100.0,
+          "recall": 89.24050632911393,
+          "f1": 94.31438127090301,
+          "false_positive_rate": 0.0,
+          "positive_label": "no",
+          "official_rounded": {
+            "accuracy": 89.2,
+            "precision": 100.0,
+            "recall": 89.2,
+            "f1": 94.2
+          }
+        },
+        "aod": {
+          "n": 158,
+          "tp": 137,
+          "fp": 0,
+          "tn": 0,
+          "fn": 21,
+          "accuracy": 86.70886075949367,
+          "precision": 100.0,
+          "recall": 86.70886075949367,
+          "f1": 92.88135593220339,
+          "false_positive_rate": 0.0,
+          "positive_label": "no",
+          "official_rounded": {
+            "accuracy": 86.7,
+            "precision": 100.0,
+            "recall": 86.7,
+            "f1": 92.8
+          }
+        }
+      },
+      "relation": {
+        "base": {
+          "n": 52,
+          "tp": 18,
+          "fp": 19,
+          "tn": 13,
+          "fn": 2,
+          "accuracy": 59.61538461538461,
+          "precision": 48.648648648648646,
+          "recall": 90.0,
+          "f1": 63.1578947368421,
+          "false_positive_rate": 59.375,
+          "positive_label": "no",
+          "official_rounded": {
+            "accuracy": 59.6,
+            "precision": 48.6,
+            "recall": 90.0,
+            "f1": 63.1
+          }
+        },
+        "aod": {
+          "n": 52,
+          "tp": 16,
+          "fp": 7,
+          "tn": 25,
+          "fn": 4,
+          "accuracy": 78.84615384615384,
+          "precision": 69.56521739130434,
+          "recall": 80.0,
+          "f1": 74.4186046511628,
+          "false_positive_rate": 21.875,
+          "positive_label": "no",
+          "official_rounded": {
+            "accuracy": 78.8,
+            "precision": 69.6,
+            "recall": 80.0,
+            "f1": 74.4
+          }
+        }
+      }
+    },
+    "yes_positive_auxiliary": {
+      "base": {
+        "n": 458,
+        "tp": 101,
+        "fp": 40,
+        "tn": 262,
+        "fn": 55,
+        "accuracy": 79.25764192139738,
+        "precision": 71.63120567375887,
+        "recall": 64.74358974358974,
+        "f1": 68.01346801346801,
+        "false_positive_rate": 13.245033112582782
+      },
+      "aod": {
+        "n": 458,
+        "tp": 131,
+        "fp": 51,
+        "tn": 251,
+        "fn": 25,
+        "accuracy": 83.4061135371179,
+        "precision": 71.97802197802197,
+        "recall": 83.97435897435898,
+        "f1": 77.51479289940828,
+        "false_positive_rate": 16.887417218543046
+      }
+    },
+    "metric_definition": "No-positive confusion matrix and exact F1; official_rounded also reproduces upstream rounding and epsilon."
+  }
+}

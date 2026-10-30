@@ -57,3 +57,7 @@ Hugging Face 可按网络情况设置 HF_ENDPOINT，例如 `HF_ENDPOINT=https://
 候选包括原始初始化 5 epochs、先归一化初始化 5 epochs、类别平衡 30 epochs，以及标量一致性探针 AOD（训练集中心化/全局 RMS、GRL 0.1、最多 100 epochs，验证 AUROC 选 epoch）。标量探针避免在单一投影上用 LayerNorm 削弱幅度信息。最终仍通过真实描述生成和同一套 CHAIR/内容门槛选择；探针 AUROC 提高本身不作为 benchmark 涨点证据。这些训练改版明确记录，不当作论文默认设置复现。
 
 模型大文件连接超时时，可使用经过逐文件哈希核验的公开镜像：`AOD_MODEL_SOURCE=modelscope bash run.sh prepare`。镜像只提供下载通道；所有文件必须匹配本包固定 Hugging Face revision 的 Git/LFS 哈希，内容变化会报错。
+
+## 已核验的固定划分结果
+
+单张 A100 80GB 完整运行成功。50 张独立测试图片：CHAIRi **14.3959 → 13.7203**，CHAIRs **56.00 → 56.00（持平）**；正确唯一对象数每图 2.82 → 2.84，平均生成长度保留 98.07%。验证选中 scalar、alpha=1、beta=0.5。CHAIRi 的配对 bootstrap 95% 差值区间包含 0；本次是点估计改善，不是稳定或全面优势的结论。逐句评分、全部候选、冻结配置与执行记录见 [公开运行记录](https://github.com/Rosy0912/hallucination/tree/main/reports/corrected/chair)。

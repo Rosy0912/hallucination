@@ -1,0 +1,674 @@
+{
+  "train_images": [
+    "AMBER_10.jpg",
+    "AMBER_1001.jpg",
+    "AMBER_110.jpg",
+    "AMBER_124.jpg",
+    "AMBER_125.jpg",
+    "AMBER_139.jpg",
+    "AMBER_142.jpg",
+    "AMBER_145.jpg",
+    "AMBER_152.jpg",
+    "AMBER_154.jpg",
+    "AMBER_163.jpg",
+    "AMBER_171.jpg",
+    "AMBER_229.jpg",
+    "AMBER_254.jpg",
+    "AMBER_260.jpg",
+    "AMBER_261.jpg",
+    "AMBER_264.jpg",
+    "AMBER_268.jpg",
+    "AMBER_270.jpg",
+    "AMBER_273.jpg",
+    "AMBER_275.jpg",
+    "AMBER_277.jpg",
+    "AMBER_284.jpg",
+    "AMBER_285.jpg",
+    "AMBER_311.jpg",
+    "AMBER_325.jpg",
+    "AMBER_330.jpg",
+    "AMBER_332.jpg",
+    "AMBER_349.jpg",
+    "AMBER_356.jpg",
+    "AMBER_38.jpg",
+    "AMBER_381.jpg",
+    "AMBER_391.jpg",
+    "AMBER_392.jpg",
+    "AMBER_398.jpg",
+    "AMBER_402.jpg",
+    "AMBER_412.jpg",
+    "AMBER_414.jpg",
+    "AMBER_423.jpg",
+    "AMBER_427.jpg",
+    "AMBER_43.jpg",
+    "AMBER_442.jpg",
+    "AMBER_455.jpg",
+    "AMBER_456.jpg",
+    "AMBER_458.jpg",
+    "AMBER_459.jpg",
+    "AMBER_461.jpg",
+    "AMBER_470.jpg",
+    "AMBER_471.jpg",
+    "AMBER_478.jpg",
+    "AMBER_490.jpg",
+    "AMBER_503.jpg",
+    "AMBER_505.jpg",
+    "AMBER_506.jpg",
+    "AMBER_507.jpg",
+    "AMBER_521.jpg",
+    "AMBER_522.jpg",
+    "AMBER_53.jpg",
+    "AMBER_533.jpg",
+    "AMBER_535.jpg",
+    "AMBER_553.jpg",
+    "AMBER_56.jpg",
+    "AMBER_565.jpg",
+    "AMBER_573.jpg",
+    "AMBER_578.jpg",
+    "AMBER_580.jpg",
+    "AMBER_583.jpg",
+    "AMBER_606.jpg",
+    "AMBER_612.jpg",
+    "AMBER_614.jpg",
+    "AMBER_619.jpg",
+    "AMBER_621.jpg",
+    "AMBER_622.jpg",
+    "AMBER_623.jpg",
+    "AMBER_625.jpg",
+    "AMBER_630.jpg",
+    "AMBER_635.jpg",
+    "AMBER_640.jpg",
+    "AMBER_645.jpg",
+    "AMBER_655.jpg",
+    "AMBER_66.jpg",
+    "AMBER_661.jpg",
+    "AMBER_667.jpg",
+    "AMBER_668.jpg",
+    "AMBER_669.jpg",
+    "AMBER_672.jpg",
+    "AMBER_679.jpg",
+    "AMBER_693.jpg",
+    "AMBER_70.jpg",
+    "AMBER_710.jpg",
+    "AMBER_748.jpg",
+    "AMBER_750.jpg",
+    "AMBER_753.jpg",
+    "AMBER_766.jpg",
+    "AMBER_769.jpg",
+    "AMBER_770.jpg",
+    "AMBER_78.jpg",
+    "AMBER_786.jpg",
+    "AMBER_792.jpg",
+    "AMBER_800.jpg",
+    "AMBER_806.jpg",
+    "AMBER_809.jpg",
+    "AMBER_811.jpg",
+    "AMBER_818.jpg",
+    "AMBER_819.jpg",
+    "AMBER_820.jpg",
+    "AMBER_830.jpg",
+    "AMBER_836.jpg",
+    "AMBER_841.jpg",
+    "AMBER_851.jpg",
+    "AMBER_857.jpg",
+    "AMBER_858.jpg",
+    "AMBER_865.jpg",
+    "AMBER_877.jpg",
+    "AMBER_88.jpg",
+    "AMBER_890.jpg",
+    "AMBER_893.jpg",
+    "AMBER_909.jpg",
+    "AMBER_919.jpg",
+    "AMBER_927.jpg",
+    "AMBER_928.jpg",
+    "AMBER_933.jpg",
+    "AMBER_942.jpg",
+    "AMBER_953.jpg",
+    "AMBER_966.jpg",
+    "AMBER_985.jpg",
+    "AMBER_989.jpg",
+    "AMBER_995.jpg"
+  ],
+  "validation_images": [
+    "AMBER_109.jpg",
+    "AMBER_112.jpg",
+    "AMBER_12.jpg",
+    "AMBER_129.jpg",
+    "AMBER_197.jpg",
+    "AMBER_2.jpg",
+    "AMBER_23.jpg",
+    "AMBER_251.jpg",
+    "AMBER_265.jpg",
+    "AMBER_355.jpg",
+    "AMBER_39.jpg",
+    "AMBER_42.jpg",
+    "AMBER_460.jpg",
+    "AMBER_495.jpg",
+    "AMBER_497.jpg",
+    "AMBER_549.jpg",
+    "AMBER_574.jpg",
+    "AMBER_641.jpg",
+    "AMBER_659.jpg",
+    "AMBER_664.jpg",
+    "AMBER_666.jpg",
+    "AMBER_699.jpg",
+    "AMBER_700.jpg",
+    "AMBER_775.jpg",
+    "AMBER_808.jpg",
+    "AMBER_816.jpg",
+    "AMBER_895.jpg",
+    "AMBER_904.jpg",
+    "AMBER_94.jpg",
+    "AMBER_944.jpg",
+    "AMBER_960.jpg",
+    "AMBER_991.jpg"
+  ],
+  "train_n": 1834,
+  "validation_n": 458,
+  "candidates": [
+    {
+      "name": "normalized5",
+      "alpha": 0.25,
+      "beta": 0.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": 0.25,
+      "beta": 0.5
+    },
+    {
+      "name": "normalized5",
+      "alpha": 0.25,
+      "beta": 1.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": -0.25,
+      "beta": 0.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": -0.25,
+      "beta": 0.5
+    },
+    {
+      "name": "normalized5",
+      "alpha": -0.25,
+      "beta": 1.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": 0.5,
+      "beta": 0.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": 0.5,
+      "beta": 0.5
+    },
+    {
+      "name": "normalized5",
+      "alpha": 0.5,
+      "beta": 1.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": -0.5,
+      "beta": 0.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": -0.5,
+      "beta": 0.5
+    },
+    {
+      "name": "normalized5",
+      "alpha": -0.5,
+      "beta": 1.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": 1.0,
+      "beta": 0.5
+    },
+    {
+      "name": "normalized5",
+      "alpha": 1.0,
+      "beta": 1.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": -1.0,
+      "beta": 0.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": -1.0,
+      "beta": 0.5
+    },
+    {
+      "name": "normalized5",
+      "alpha": -1.0,
+      "beta": 1.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": 2.0,
+      "beta": 0.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": 2.0,
+      "beta": 0.5
+    },
+    {
+      "name": "normalized5",
+      "alpha": 2.0,
+      "beta": 1.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": -2.0,
+      "beta": 0.0
+    },
+    {
+      "name": "normalized5",
+      "alpha": -2.0,
+      "beta": 0.5
+    },
+    {
+      "name": "normalized5",
+      "alpha": -2.0,
+      "beta": 1.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": 0.25,
+      "beta": 0.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": 0.25,
+      "beta": 0.5
+    },
+    {
+      "name": "balanced30",
+      "alpha": 0.25,
+      "beta": 1.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": -0.25,
+      "beta": 0.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": -0.25,
+      "beta": 0.5
+    },
+    {
+      "name": "balanced30",
+      "alpha": -0.25,
+      "beta": 1.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": 0.5,
+      "beta": 0.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": 0.5,
+      "beta": 0.5
+    },
+    {
+      "name": "balanced30",
+      "alpha": 0.5,
+      "beta": 1.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": -0.5,
+      "beta": 0.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": -0.5,
+      "beta": 0.5
+    },
+    {
+      "name": "balanced30",
+      "alpha": -0.5,
+      "beta": 1.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": 1.0,
+      "beta": 0.5
+    },
+    {
+      "name": "balanced30",
+      "alpha": 1.0,
+      "beta": 1.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": -1.0,
+      "beta": 0.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": -1.0,
+      "beta": 0.5
+    },
+    {
+      "name": "balanced30",
+      "alpha": -1.0,
+      "beta": 1.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": 2.0,
+      "beta": 0.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": 2.0,
+      "beta": 0.5
+    },
+    {
+      "name": "balanced30",
+      "alpha": 2.0,
+      "beta": 1.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": -2.0,
+      "beta": 0.0
+    },
+    {
+      "name": "balanced30",
+      "alpha": -2.0,
+      "beta": 0.5
+    },
+    {
+      "name": "balanced30",
+      "alpha": -2.0,
+      "beta": 1.0
+    },
+    {
+      "name": "scalar",
+      "alpha": 0.25,
+      "beta": 0.0
+    },
+    {
+      "name": "scalar",
+      "alpha": 0.25,
+      "beta": 0.5
+    },
+    {
+      "name": "scalar",
+      "alpha": 0.25,
+      "beta": 1.0
+    },
+    {
+      "name": "scalar",
+      "alpha": 0.5,
+      "beta": 0.0
+    },
+    {
+      "name": "scalar",
+      "alpha": 0.5,
+      "beta": 0.5
+    },
+    {
+      "name": "scalar",
+      "alpha": 0.5,
+      "beta": 1.0
+    },
+    {
+      "name": "scalar",
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    {
+      "name": "scalar",
+      "alpha": 1.0,
+      "beta": 0.5
+    },
+    {
+      "name": "scalar",
+      "alpha": 1.0,
+      "beta": 1.0
+    },
+    {
+      "name": "scalar",
+      "alpha": 2.0,
+      "beta": 0.0
+    },
+    {
+      "name": "scalar",
+      "alpha": 2.0,
+      "beta": 0.5
+    },
+    {
+      "name": "scalar",
+      "alpha": 2.0,
+      "beta": 1.0
+    },
+    {
+      "name": "scalar",
+      "alpha": -0.25,
+      "beta": 0.0
+    },
+    {
+      "name": "scalar",
+      "alpha": -0.25,
+      "beta": 0.5
+    },
+    {
+      "name": "scalar",
+      "alpha": -0.25,
+      "beta": 1.0
+    },
+    {
+      "name": "scalar",
+      "alpha": -0.5,
+      "beta": 0.0
+    },
+    {
+      "name": "scalar",
+      "alpha": -0.5,
+      "beta": 0.5
+    },
+    {
+      "name": "scalar",
+      "alpha": -0.5,
+      "beta": 1.0
+    },
+    {
+      "name": "scalar",
+      "alpha": -1.0,
+      "beta": 0.0
+    },
+    {
+      "name": "scalar",
+      "alpha": -1.0,
+      "beta": 0.5
+    },
+    {
+      "name": "scalar",
+      "alpha": -1.0,
+      "beta": 1.0
+    },
+    {
+      "name": "scalar",
+      "alpha": -2.0,
+      "beta": 0.0
+    },
+    {
+      "name": "scalar",
+      "alpha": -2.0,
+      "beta": 0.5
+    },
+    {
+      "name": "scalar",
+      "alpha": -2.0,
+      "beta": 1.0
+    }
+  ],
+  "training_losses": {
+    "normalized5": [
+      1.2305030874753595,
+      1.0150644822105066,
+      0.9932945913420899,
+      0.9693982898863998,
+      0.9527966918966112
+    ],
+    "balanced30": [
+      1.7227683826517253,
+      1.3773632566957463,
+      1.3559112938825801,
+      1.3317604664237834,
+      1.310271759719599,
+      1.270640572128795,
+      1.2490114459814656,
+      1.2302641226395137,
+      1.211868956538817,
+      1.199821060200424,
+      1.2016690121872216,
+      1.1749440727993081,
+      1.1608195635068637,
+      1.156357955126622,
+      1.1268336837918314,
+      1.2356925637277418,
+      1.1894401382723967,
+      1.1041434978580786,
+      1.0869184685637412,
+      1.0621709000713302,
+      1.0504438552107649,
+      1.0373558255812334,
+      1.017175510574453,
+      1.0056009747599828,
+      0.9964088283422339,
+      1.1000885297843908,
+      1.013804415840099,
+      1.0101328027417382,
+      1.0258219588543882,
+      0.9892762362502003
+    ],
+    "scalar": [
+      {
+        "epoch": 5,
+        "validation_auroc": 0.7598956067855589,
+        "residual_auroc": 0.8726692764970276
+      },
+      {
+        "epoch": 10,
+        "validation_auroc": 0.8430042047266927,
+        "residual_auroc": 0.9281426707264027
+      },
+      {
+        "epoch": 15,
+        "validation_auroc": 0.8764100333478324,
+        "residual_auroc": 0.9313904596201248
+      },
+      {
+        "epoch": 20,
+        "validation_auroc": 0.8557343772654779,
+        "residual_auroc": 0.9305205161664493
+      },
+      {
+        "epoch": 25,
+        "validation_auroc": 0.8411773234739741,
+        "residual_auroc": 0.9308974916630418
+      },
+      {
+        "epoch": 30,
+        "validation_auroc": 0.8378135421197622,
+        "residual_auroc": 0.9311294765840221
+      },
+      {
+        "epoch": 35,
+        "validation_auroc": 0.8345367551109177,
+        "residual_auroc": 0.9324923879947803
+      },
+      {
+        "epoch": 40,
+        "validation_auroc": 0.8294330868493549,
+        "residual_auroc": 0.9338263012904162
+      },
+      {
+        "epoch": 45,
+        "validation_auroc": 0.836624619399739,
+        "residual_auroc": 0.9289256198347108
+      },
+      {
+        "epoch": 50,
+        "validation_auroc": 0.8269682470639409,
+        "residual_auroc": 0.9254748441351311
+      },
+      {
+        "epoch": 55,
+        "validation_auroc": 0.8373495722778019,
+        "residual_auroc": 0.9218210816296941
+      },
+      {
+        "epoch": 60,
+        "validation_auroc": 0.8446860954037989,
+        "residual_auroc": 0.9243439176453531
+      },
+      {
+        "epoch": 65,
+        "validation_auroc": 0.8648107872988255,
+        "residual_auroc": 0.9235609685370451
+      },
+      {
+        "epoch": 70,
+        "validation_auroc": 0.8473249238799477,
+        "residual_auroc": 0.9226910250833695
+      },
+      {
+        "epoch": 75,
+        "validation_auroc": 0.8462229955052921,
+        "residual_auroc": 0.9186022908510947
+      },
+      {
+        "epoch": 80,
+        "validation_auroc": 0.8407423517471364,
+        "residual_auroc": 0.9202261852979556
+      },
+      {
+        "epoch": 85,
+        "validation_auroc": 0.8506017108887924,
+        "residual_auroc": 0.9190372625779325
+      },
+      {
+        "epoch": 90,
+        "validation_auroc": 0.8570392924459911,
+        "residual_auroc": 0.9208931419457734
+      },
+      {
+        "epoch": 95,
+        "validation_auroc": 0.8355806872553284,
+        "residual_auroc": 0.9236189647672901
+      },
+      {
+        "epoch": 100,
+        "validation_auroc": 0.835667681600696,
+        "residual_auroc": 0.9197042192257502
+      }
+    ]
+  },
+  "selection": "validation accuracy; require no-positive F1 >= Base; ties prefer smaller absolute alpha, beta; test labels never used"
+}

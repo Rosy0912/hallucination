@@ -1,0 +1,177 @@
+{
+  "base": {
+    "n": 16,
+    "CHAIRs": 56.25,
+    "CHAIRi": 14.049586776859504,
+    "object_mentions": 121,
+    "hallucinated_mentions": 17,
+    "hallucinated_captions": 9,
+    "mean_tokens": 112.4375,
+    "correct_unique_objects_per_image": 3.3125,
+    "object_recall": 0.7106150793650793
+  },
+  "candidates": [
+    {
+      "config": {
+        "name": "original5",
+        "alpha": 0.5,
+        "beta": 0.5
+      },
+      "metrics": {
+        "n": 16,
+        "CHAIRs": 56.25,
+        "CHAIRi": 13.934426229508198,
+        "object_mentions": 122,
+        "hallucinated_mentions": 17,
+        "hallucinated_captions": 9,
+        "mean_tokens": 111.625,
+        "correct_unique_objects_per_image": 3.3125,
+        "object_recall": 0.7106150793650793
+      }
+    },
+    {
+      "config": {
+        "name": "original5",
+        "alpha": 2.0,
+        "beta": 0.5
+      },
+      "metrics": {
+        "n": 16,
+        "CHAIRs": 62.5,
+        "CHAIRi": 15.873015873015873,
+        "object_mentions": 126,
+        "hallucinated_mentions": 20,
+        "hallucinated_captions": 10,
+        "mean_tokens": 113.25,
+        "correct_unique_objects_per_image": 3.3125,
+        "object_recall": 0.7106150793650793
+      }
+    },
+    {
+      "config": {
+        "name": "original5",
+        "alpha": -1.0,
+        "beta": 0.5
+      },
+      "metrics": {
+        "n": 16,
+        "CHAIRs": 50.0,
+        "CHAIRi": 16.10169491525424,
+        "object_mentions": 118,
+        "hallucinated_mentions": 19,
+        "hallucinated_captions": 8,
+        "mean_tokens": 109.25,
+        "correct_unique_objects_per_image": 3.1875,
+        "object_recall": 0.677281746031746
+      }
+    },
+    {
+      "config": {
+        "name": "normalized5",
+        "alpha": 1.0,
+        "beta": 0.5
+      },
+      "metrics": {
+        "n": 16,
+        "CHAIRs": 56.25,
+        "CHAIRi": 15.0,
+        "object_mentions": 120,
+        "hallucinated_mentions": 18,
+        "hallucinated_captions": 9,
+        "mean_tokens": 112.125,
+        "correct_unique_objects_per_image": 3.3125,
+        "object_recall": 0.7106150793650793
+      }
+    },
+    {
+      "config": {
+        "name": "balanced30",
+        "alpha": 0.5,
+        "beta": 0.5
+      },
+      "metrics": {
+        "n": 16,
+        "CHAIRs": 56.25,
+        "CHAIRi": 14.40677966101695,
+        "object_mentions": 118,
+        "hallucinated_mentions": 17,
+        "hallucinated_captions": 9,
+        "mean_tokens": 108.125,
+        "correct_unique_objects_per_image": 3.3125,
+        "object_recall": 0.7189484126984126
+      }
+    },
+    {
+      "config": {
+        "name": "balanced30",
+        "alpha": 1.0,
+        "beta": 0.5
+      },
+      "metrics": {
+        "n": 16,
+        "CHAIRs": 62.5,
+        "CHAIRi": 13.821138211382113,
+        "object_mentions": 123,
+        "hallucinated_mentions": 17,
+        "hallucinated_captions": 10,
+        "mean_tokens": 109.8125,
+        "correct_unique_objects_per_image": 3.4375,
+        "object_recall": 0.7439484126984126
+      }
+    },
+    {
+      "config": {
+        "name": "scalar",
+        "alpha": 0.5,
+        "beta": 0.5
+      },
+      "metrics": {
+        "n": 16,
+        "CHAIRs": 56.25,
+        "CHAIRi": 14.87603305785124,
+        "object_mentions": 121,
+        "hallucinated_mentions": 18,
+        "hallucinated_captions": 9,
+        "mean_tokens": 111.3125,
+        "correct_unique_objects_per_image": 3.25,
+        "object_recall": 0.6981150793650792
+      }
+    },
+    {
+      "config": {
+        "name": "scalar",
+        "alpha": 1.0,
+        "beta": 0.5
+      },
+      "metrics": {
+        "n": 16,
+        "CHAIRs": 50.0,
+        "CHAIRi": 13.91304347826087,
+        "object_mentions": 115,
+        "hallucinated_mentions": 16,
+        "hallucinated_captions": 8,
+        "mean_tokens": 110.0,
+        "correct_unique_objects_per_image": 3.3125,
+        "object_recall": 0.7106150793650793
+      }
+    },
+    {
+      "config": {
+        "name": "scalar",
+        "alpha": -1.0,
+        "beta": 0.5
+      },
+      "metrics": {
+        "n": 16,
+        "CHAIRs": 56.25,
+        "CHAIRi": 13.934426229508198,
+        "object_mentions": 122,
+        "hallucinated_mentions": 17,
+        "hallucinated_captions": 9,
+        "mean_tokens": 110.0,
+        "correct_unique_objects_per_image": 3.3125,
+        "object_recall": 0.7189484126984126
+      }
+    }
+  ]
+}

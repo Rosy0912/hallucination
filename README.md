@@ -11,7 +11,7 @@
 
 ## 运行方式
 
-Linux、Python 3.11、已分配的 NVIDIA CUDA GPU（24GB 显存）、约 25GB 磁盘。以 POPE 为例：
+Linux、Python 3.11、已分配的 NVIDIA CUDA GPU（24GB 显存）、建议每个独立包预留 35GB 磁盘。以 POPE 为例：
 
 ```bash
 curl -fL https://raw.githubusercontent.com/Rosy0912/hallucination/main/packages/pope.zip -o pope.zip
@@ -24,6 +24,17 @@ bash run.sh all
 把 pope 换成另一个 benchmark 即可。也可以 clone 本仓库，进入相应子目录后执行最后两条命令。数据和底座权重首次自动下载。联网机器可先执行 `bash run.sh prepare`，再将整个目录连同 data/、models/ 搬到计算节点。
 
 Hugging Face 网络不可用时，可自行选择可访问的端点，例如 `HF_ENDPOINT=https://hf-mirror.com bash run.sh prepare`；模型固定 revision，HallusionBench 镜像还校验 SHA256 和全部问题/标签。AMBER 图片由官方 Google Drive 发布，受其访问与下载配额限制。
+
+## 本次实测
+
+| Benchmark / 指标 | Base | AOD 变体 |
+|---|---:|---:|
+| POPE F1 ↑（600 题） | 84.0764 | 92.5990 |
+| HallusionBench Accuracy ↑（196 题） | 44.3878 | 58.1633 |
+| AMBER No-positive F1 ↑（200 图 / 2,836 题） | 85.4705 | 87.2829 |
+| CHAIRi ↓（50 图） | 14.3959 | 13.7203 |
+
+CHAIRs 为 56.00 → 56.00，且 CHAIR 小样本置信区间包含 0；HallusionBench F1 与 AMBER Existence 子项下降。指标定义、全部分项、区间和运行证据见 [reports/](reports/)，原因分析见 [修正记录](reports/DIAGNOSIS.md)。这是固定划分的实测结果，不是四项所有指标均提升的结论。
 
 ## 协议与范围
 
@@ -38,7 +49,7 @@ Hugging Face 网络不可用时，可自行选择可访问的端点，例如 `HF
 
 AMBER 以官方 No-positive F1 为主，同时列准确率及分项。CHAIR 使用原始算法的 Python 3 适配，合并实例标注与参考描述，按提及次数计算 CHAIRi。CHAIR 越低越好，附描述长度和正确物体覆盖率。
 
-修正版结果、逐题输出、划分、选参记录和 Slurm 完成状态保存在 [reports/](reports/)。
+修正版结果、逐题输出、划分、选参记录和 任务完成状态保存在 [reports/](reports/)。
 
 ## 重要修正与可复现性
 

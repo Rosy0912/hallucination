@@ -1,0 +1,36 @@
+{
+  "benchmark": "chair",
+  "split": "validation only",
+  "n": 96,
+  "consistent_fraction": 0.8541666865348816,
+  "probes": {
+    "original5": {
+      "auroc": 0.539198606271777,
+      "accuracy": 0.8541666666666666,
+      "balanced_accuracy": 0.5,
+      "predicted_consistent_fraction": 1.0,
+      "logit_std": 8.977874676929787e-05
+    },
+    "normalized5": {
+      "auroc": 0.5235191637630662,
+      "accuracy": 0.8541666666666666,
+      "balanced_accuracy": 0.5,
+      "predicted_consistent_fraction": 1.0,
+      "logit_std": 2.8267359084566124e-05
+    },
+    "balanced30": {
+      "auroc": 0.4651567944250871,
+      "accuracy": 0.14583333333333334,
+      "balanced_accuracy": 0.5,
+      "predicted_consistent_fraction": 0.0,
+      "logit_std": 6.235639011720195e-05
+    },
+    "scalar": {
+      "auroc": 0.8954703832752615,
+      "accuracy": 0.8125,
+      "balanced_accuracy": 0.8606271777003485,
+      "predicted_consistent_fraction": 0.6875,
+      "logit_std": 1.6823744773864746
+    }
+  }
+}

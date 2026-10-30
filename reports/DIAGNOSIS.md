@@ -28,6 +28,6 @@ AMBER 在验证集选择准确率提高且官方 No-positive F1 不下降的配�
 
 ## 复现与执行记录
 
-POPE、HallusionBench 的修正结果已经核验。AMBER、CHAIR 正通过独立压缩包在另一服务器从头提取、训练、评测，以同时检查可移植性。最终成绩以 [运行汇总](README.md) 和 `corrected/` 中的逐题预测及执行记录为准。
+四项修正结果均已核验；AMBER、CHAIR 在 PJLab 从独立包重新提取、训练和评测成功。AMBER 总体准确率和 F1 均提高；CHAIRi 点估计改善，CHAIRs 持平，CHAIR 区间仍包含 0。本次训练变体同时改变了归一化、探针和损失权重，不能把全部增益归因于某一个改动。最终成绩以 [运行汇总](README.md) 和 `corrected/` 中的逐题预测及执行记录为准。
 
 模型 revision 固定为 `b234b804b114d9e37bb655e11cbbb5f5e971b7a9`。备用下载通道仅在模型文件逐一匹配该 revision 的 Git/LFS 哈希时接受；不会为了运行通畅更换底座权重。

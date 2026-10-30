@@ -1,0 +1,2594 @@
+{
+  "base": {
+    "n": 50,
+    "CHAIRs": 56.0,
+    "CHAIRi": 14.395886889460154,
+    "object_mentions": 389,
+    "hallucinated_mentions": 56,
+    "hallucinated_captions": 28,
+    "sentences": [
+      {
+        "image_id": 7320,
+        "caption": "The image features a person holding a Nintendo Wii remote in front of a TV. The TV is displaying a video game, possibly featuring a character like Bugs Bunny. The person is standing in front of the TV, fully engaged in the game.\n\nThere are several other people in the scene, some of them standing near the TV, while others are located further away. A couple of handbags can be seen placed on the floor, and a book is visible on a surface nearby. The overall atmosphere of the scene suggests a social gathering or a casual gaming session.",
+        "generated_objects": [
+          "person",
+          "remote",
+          "tv",
+          "tv",
+          "person",
+          "tv",
+          "person",
+          "tv",
+          "handbag",
+          "book"
+        ],
+        "ground_truth": [
+          "dining table",
+          "person",
+          "remote",
+          "tv"
+        ],
+        "hallucinated_objects": [
+          [
+            "handbag",
+            "handbag"
+          ],
+          [
+            "book",
+            "book"
+          ]
+        ]
+      },
+      {
+        "image_id": 17379,
+        "caption": "The image features a bathroom with a large mirror on the wall. The mirror reflects a television screen, which is displaying a football game. The television is mounted on the wall, and the game is being played by two teams.\n\nIn the bathroom, there is a toilet situated towards the right side of the room. A trash can is also present, located near the center of the bathroom. The overall scene gives the impression of a sports-themed bathroom.",
+        "generated_objects": [
+          "tv",
+          "tv",
+          "toilet"
+        ],
+        "ground_truth": [
+          "person",
+          "sink",
+          "tv"
+        ],
+        "hallucinated_objects": [
+          [
+            "toilet",
+            "toilet"
+          ]
+        ]
+      },
+      {
+        "image_id": 18150,
+        "caption": "The image features a man and a young boy sitting on a bed, enjoying a meal together. The man is holding a slice of pizza, and the boy is eagerly waiting for his share. There are two pizzas in the scene, one closer to the man and the other near the boy.\n\nThe room has a cozy atmosphere, with a couch in the background and a chair nearby. A bottle can be seen on the bed, possibly containing a beverage to accompany the meal. The scene captures a heartwarming moment between the man and the child.",
+        "generated_objects": [
+          "person",
+          "person",
+          "bed",
+          "person",
+          "pizza",
+          "person",
+          "pizza",
+          "person",
+          "person",
+          "couch",
+          "chair",
+          "bottle",
+          "bed",
+          "person",
+          "person"
+        ],
+        "ground_truth": [
+          "backpack",
+          "bottle",
+          "couch",
+          "person",
+          "pizza"
+        ],
+        "hallucinated_objects": [
+          [
+            "bed",
+            "bed"
+          ],
+          [
+            "chair",
+            "chair"
+          ],
+          [
+            "bed",
+            "bed"
+          ]
+        ]
+      },
+      {
+        "image_id": 18918,
+        "caption": "The image depicts a small, old-fashioned kitchen with a variety of appliances and utensils. The kitchen features a sink, an oven, and a refrigerator. There are multiple knives and spoons placed around the kitchen, with some on the countertops and others on the dining table.\n\nIn addition to the kitchen appliances, there are several bowls and cups scattered throughout the space. A couple of bottles can also be seen in the kitchen, one near the sink and the other on the countertop. The overall atmosphere of the kitchen is v",
+        "generated_objects": [
+          "sink",
+          "oven",
+          "refrigerator",
+          "knife",
+          "spoon",
+          "dining table",
+          "bowl",
+          "cup",
+          "bottle",
+          "sink"
+        ],
+        "ground_truth": [
+          "bowl",
+          "oven",
+          "sink"
+        ],
+        "hallucinated_objects": [
+          [
+            "refrigerator",
+            "refrigerator"
+          ],
+          [
+            "knife",
+            "knife"
+          ],
+          [
+            "spoon",
+            "spoon"
+          ],
+          [
+            "table",
+            "dining table"
+          ],
+          [
+            "cup",
+            "cup"
+          ],
+          [
+            "bottle",
+            "bottle"
+          ]
+        ]
+      },
+      {
+        "image_id": 31773,
+        "caption": "The image features a desk with two laptops and a desktop computer. The desktop computer is placed on the left side of the desk, while the two laptops are positioned on the right side. A keyboard is also visible on the desk, likely connected to one of the laptops.\n\nIn addition to the computer equipment, there are two mice on the desk, one near the center and the other closer to the right side. A person can be seen sitting at the desk, likely working on one of the computers.\n\nThe desk is situated in a room with a window",
+        "generated_objects": [
+          "dining table",
+          "laptop",
+          "laptop",
+          "laptop",
+          "dining table",
+          "laptop",
+          "keyboard",
+          "dining table",
+          "laptop",
+          "laptop",
+          "mouse",
+          "dining table",
+          "person",
+          "dining table",
+          "laptop",
+          "dining table"
+        ],
+        "ground_truth": [
+          "dining table",
+          "keyboard",
+          "laptop",
+          "mouse",
+          "person",
+          "potted plant",
+          "tv"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 31971,
+        "caption": "The image features a bed with a colorful quilt on it, showcasing a variety of patterns and colors. The bed is positioned in a corner of the room, and it appears to be a cozy and inviting space.\n\nIn addition to the bed, there are several books scattered around the room, with some placed on the floor and others on surfaces. A chair can be seen in the background, and a clock is mounted on the wall. The room also contains a couch, which is located towards the right side of the image.",
+        "generated_objects": [
+          "bed",
+          "bed",
+          "bed",
+          "book",
+          "chair",
+          "clock",
+          "couch"
+        ],
+        "ground_truth": [
+          "bed",
+          "book",
+          "orange"
+        ],
+        "hallucinated_objects": [
+          [
+            "chair",
+            "chair"
+          ],
+          [
+            "clock",
+            "clock"
+          ],
+          [
+            "couch",
+            "couch"
+          ]
+        ]
+      },
+      {
+        "image_id": 68418,
+        "caption": "The image features a white Apple mouse sitting on top of a keyboard. The mouse is positioned towards the left side of the keyboard, while the keyboard occupies the majority of the space in the scene. The mouse and keyboard are the main focus of the image, with no other objects visible.",
+        "generated_objects": [
+          "apple",
+          "mouse",
+          "keyboard",
+          "mouse",
+          "keyboard",
+          "keyboard",
+          "mouse",
+          "keyboard"
+        ],
+        "ground_truth": [
+          "apple",
+          "keyboard",
+          "laptop",
+          "mouse",
+          "tv"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 70813,
+        "caption": "The image features a cozy bedroom with a large bed placed in the center of the room. The bed is adorned with a red and blue plaid blanket, adding a touch of color to the space. The room also contains a chair and a dining table, both located near the bed.\n\nThere are two windows in the room, one on the left side and the other on the right side. A handbag can be seen placed on the floor near the right side of the bed. Additionally, there are two bottles in the room, one near the left side of the bed and the other closer to",
+        "generated_objects": [
+          "bed",
+          "bed",
+          "chair",
+          "dining table",
+          "bed",
+          "handbag",
+          "bed",
+          "bottle",
+          "bed"
+        ],
+        "ground_truth": [
+          "bed",
+          "bottle",
+          "dining table",
+          "handbag"
+        ],
+        "hallucinated_objects": [
+          [
+            "chair",
+            "chair"
+          ]
+        ]
+      },
+      {
+        "image_id": 71738,
+        "caption": "The image features a man wearing a suit and tie, standing in a park with a stroller. He is holding a helmet, possibly preparing for a ride or a sports activity. There are several other people in the park, some of them sitting on chairs.\n\nIn the background, there are two chairs, one near the center of the scene and another towards the right side. A handbag can be seen placed on the ground, close to the center of the scene. The park seems to be a popular spot for people to gather and enjoy their time outdoors.",
+        "generated_objects": [
+          "person",
+          "tie",
+          "person",
+          "chair",
+          "chair",
+          "handbag",
+          "person"
+        ],
+        "ground_truth": [
+          "chair",
+          "motorcycle",
+          "person",
+          "tie"
+        ],
+        "hallucinated_objects": [
+          [
+            "handbag",
+            "handbag"
+          ]
+        ]
+      },
+      {
+        "image_id": 87435,
+        "caption": "The image features a red and blue bus driving down a street. The bus is adorned with a colorful manga-style advertisement, making it stand out from the surroundings. The bus is positioned in the middle of the scene, occupying a significant portion of the image.\n\nThere are several people visible in the scene, with one person standing near the left edge of the image and two others closer to the right side. Additionally, there is a motorcycle parked on the right side of the street, adding to the urban atmosphere.",
+        "generated_objects": [
+          "person",
+          "person",
+          "motorcycle"
+        ],
+        "ground_truth": [
+          "bench",
+          "bus",
+          "car",
+          "motorcycle",
+          "person"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 97994,
+        "caption": "The image features a wooden desk with a variety of electronic devices and items on it. There are three laptops placed on the desk, with one on the left side, another in the middle, and the third on the right side. A computer monitor is also present on the desk, positioned between the left and middle laptop.\n\nIn addition to the laptops and monitor, there are two keyboards on the desk, one in the middle and the other on the right side. A mouse can be seen on the right side of the desk as well. A cell phone is placed on the left",
+        "generated_objects": [
+          "dining table",
+          "laptop",
+          "dining table",
+          "laptop",
+          "tv",
+          "dining table",
+          "laptop",
+          "laptop",
+          "tv",
+          "keyboard",
+          "dining table",
+          "mouse",
+          "dining table",
+          "cell phone"
+        ],
+        "ground_truth": [
+          "book",
+          "bottle",
+          "clock",
+          "cup",
+          "dining table",
+          "keyboard",
+          "laptop",
+          "mouse",
+          "tv"
+        ],
+        "hallucinated_objects": [
+          [
+            "cell phone",
+            "cell phone"
+          ]
+        ]
+      },
+      {
+        "image_id": 113701,
+        "caption": "The image features a bed with a blue comforter and a white pillow. The bed is situated in a bedroom, and there are two lamps on either side of the bed, providing ample lighting. The room also contains a chair and a dresser, which is located near the bed.\n\nThere are several books scattered around the room, with one book placed on the bed and another on the floor. Additionally, there are two bottles in the room, one near the left side of the bed and the other on the right side.",
+        "generated_objects": [
+          "bed",
+          "bed",
+          "bed",
+          "chair",
+          "bed",
+          "book",
+          "book",
+          "bed",
+          "bottle",
+          "bed"
+        ],
+        "ground_truth": [
+          "bed",
+          "book",
+          "chair",
+          "clock"
+        ],
+        "hallucinated_objects": [
+          [
+            "bottle",
+            "bottle"
+          ]
+        ]
+      },
+      {
+        "image_id": 114941,
+        "caption": "The image features a train station with two trains parked on the tracks. One train is positioned on the left side of the image, while the other is on the right side. The trains are connected, indicating that they are part of a larger train system.\n\nThere are several people in the scene, with some standing near the trains and others scattered throughout the station. A few individuals can be seen closer to the left train, while others are near the right train.\n\nIn addition to the trains and people, there are two cell phones visible in the scene, one near the center and the other closer to the right",
+        "generated_objects": [
+          "train",
+          "train",
+          "train",
+          "train",
+          "train",
+          "person",
+          "train",
+          "train",
+          "train",
+          "train",
+          "person",
+          "cell phone"
+        ],
+        "ground_truth": [
+          "car",
+          "person",
+          "train"
+        ],
+        "hallucinated_objects": [
+          [
+            "cell phone",
+            "cell phone"
+          ]
+        ]
+      },
+      {
+        "image_id": 140983,
+        "caption": "The image features a young child sitting on a couch, holding a toothbrush in their mouth. The child appears to be brushing their teeth, possibly learning good oral hygiene habits.\n\nThe couch is situated in a living room, with a chair placed nearby. There are several books scattered around the room, indicating a cozy and comfortable environment for the child to play and learn.",
+        "generated_objects": [
+          "person",
+          "couch",
+          "toothbrush",
+          "person",
+          "couch",
+          "chair",
+          "book",
+          "person"
+        ],
+        "ground_truth": [
+          "couch",
+          "person",
+          "toothbrush"
+        ],
+        "hallucinated_objects": [
+          [
+            "chair",
+            "chair"
+          ],
+          [
+            "book",
+            "book"
+          ]
+        ]
+      },
+      {
+        "image_id": 153865,
+        "caption": "The image features a beach scene with a group of people enjoying their time. There are several people scattered across the beach, some closer to the water and others further back.\n\nIn the sky, there are three large kites flying, each with a unique design. One kite is shaped like a shark, another like a squid, and the third one is a dragon. These kites add a fun and colorful element to the beach atmosphere.",
+        "generated_objects": [
+          "person",
+          "person",
+          "kite",
+          "kite",
+          "kite"
+        ],
+        "ground_truth": [
+          "car",
+          "kite",
+          "person"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 154846,
+        "caption": "The image features a large, freshly baked pizza with a generous amount of pepperoni and mushrooms. The pizza is placed on a pan, and it is ready to be served. The pizza is accompanied by a white plate, which is positioned on the left side of the pan.\n\nIn the background, there are two people present, one on the left side and the other on the right side of the image. They seem to be enjoying the meal together.",
+        "generated_objects": [
+          "pizza",
+          "pizza",
+          "pizza",
+          "person"
+        ],
+        "ground_truth": [
+          "dining table",
+          "person",
+          "pizza"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 156704,
+        "caption": "The image captures a lively beach scene with numerous people enjoying their time. A man is prominently walking along the beach, carrying a surfboard under his arm. He appears to be heading towards the water to surf.\n\nIn addition to the man with the surfboard, there are several other people scattered across the beach, some closer to the water and others further back. A dog can also be seen in the scene, likely accompanying its owner.\n\nThe beach is filled with various beachgoers, creating a vibrant and active atmosphere.",
+        "generated_objects": [
+          "person",
+          "person",
+          "surfboard",
+          "person",
+          "surfboard",
+          "person",
+          "dog"
+        ],
+        "ground_truth": [
+          "person",
+          "surfboard",
+          "umbrella"
+        ],
+        "hallucinated_objects": [
+          [
+            "dog",
+            "dog"
+          ]
+        ]
+      },
+      {
+        "image_id": 159969,
+        "caption": "The image captures a man skiing down a snow-covered slope, surrounded by a beautiful mountain landscape. The skier is wearing a red jacket and is positioned in the center of the scene. He is skiing down a steep hill, with the slope gradually becoming flatter as he progresses.\n\nIn addition to the main skier, there are two other people visible in the scene, one on the left side and another on the right side of the image. They appear to be skiing or standing on the slope, possibly enjoying the winter sports activities.",
+        "generated_objects": [
+          "person",
+          "person",
+          "person",
+          "person"
+        ],
+        "ground_truth": [
+          "backpack",
+          "person",
+          "skis"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 167110,
+        "caption": "The image captures a lively scene at a skate park, where a young man is performing a trick on his skateboard. He is in the air, showcasing his skills and balance. There are several other people in the park, watching the skateboarder and enjoying the atmosphere.\n\nIn addition to the main skateboarder, there are at least five other people visible in the scene, some of them closer to the skateboarder and others further away. A car can be seen in the background, parked near the skate park.",
+        "generated_objects": [
+          "person",
+          "skateboard",
+          "person",
+          "person",
+          "person",
+          "person",
+          "person",
+          "car"
+        ],
+        "ground_truth": [
+          "car",
+          "person",
+          "skateboard"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 190185,
+        "caption": "The image features a large hot dog sandwich with various toppings, including mustard and ketchup. The hot dog is placed on a bun, and it is accompanied by a side of fries. The sandwich is presented on a dining table, and a fork is also visible on the table.\n\nIn the background, there is a bowl, possibly containing additional condiments or side dishes. The overall scene appears to be a casual dining experience with a delicious hot dog and fries.",
+        "generated_objects": [
+          "hot dog",
+          "sandwich",
+          "hot dog",
+          "sandwich",
+          "dining table",
+          "fork",
+          "dining table",
+          "bowl",
+          "hot dog"
+        ],
+        "ground_truth": [
+          "bowl",
+          "dog",
+          "hot dog",
+          "sandwich"
+        ],
+        "hallucinated_objects": [
+          [
+            "table",
+            "dining table"
+          ],
+          [
+            "fork",
+            "fork"
+          ],
+          [
+            "table",
+            "dining table"
+          ]
+        ]
+      },
+      {
+        "image_id": 200583,
+        "caption": "The image features a suitcase with stickers on it, placed on a table. The suitcase is positioned in the center of the scene, and it appears to be a piece of luggage. There is a bottle of water on the table, located to the right of the suitcase.\n\nIn the background, there are two chairs, one on the left side and the other on the right side of the scene. A person can be seen in the background, standing near the right side of the image.",
+        "generated_objects": [
+          "suitcase",
+          "dining table",
+          "suitcase",
+          "suitcase",
+          "bottle",
+          "dining table",
+          "suitcase",
+          "chair",
+          "person"
+        ],
+        "ground_truth": [
+          "bench",
+          "boat",
+          "bottle",
+          "dining table",
+          "suitcase"
+        ],
+        "hallucinated_objects": [
+          [
+            "chair",
+            "chair"
+          ],
+          [
+            "person",
+            "person"
+          ]
+        ]
+      },
+      {
+        "image_id": 231589,
+        "caption": "The image features a young boy standing on a bed, wearing a white shirt and a blue pacifier. He appears to be enjoying his time on the bed, possibly playing or exploring the space. The bed is covered with a blanket, providing a comfortable surface for the boy to stand on.",
+        "generated_objects": [
+          "person",
+          "bed",
+          "bed",
+          "bed",
+          "person"
+        ],
+        "ground_truth": [
+          "bed",
+          "chair",
+          "couch",
+          "person"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 239347,
+        "caption": "The image features a newlywed couple, a bride and groom, posing for a picture in their bedroom. They are sitting on a bed, with the bride on the left side and the groom on the right side. The bride is wearing a wedding dress, and the groom is dressed in a suit.\n\nThe bedroom has a cozy atmosphere, with a couch located in the background and a chair nearby. There is also a clock on the wall, and a vase placed on a surface in the room. The couple appears to be enjoying their special day and capturing",
+        "generated_objects": [
+          "person",
+          "person",
+          "bed",
+          "person",
+          "person",
+          "person",
+          "person",
+          "couch",
+          "chair",
+          "clock",
+          "vase"
+        ],
+        "ground_truth": [
+          "bed",
+          "person",
+          "tie"
+        ],
+        "hallucinated_objects": [
+          [
+            "couch",
+            "couch"
+          ],
+          [
+            "chair",
+            "chair"
+          ],
+          [
+            "clock",
+            "clock"
+          ],
+          [
+            "vase",
+            "vase"
+          ]
+        ]
+      },
+      {
+        "image_id": 246145,
+        "caption": "The image features a large, ornate clock mounted on a marble pedestal. The clock is positioned on a wall, and its gold and black design adds a touch of elegance to the room. The clock's face is visible, displaying the time.\n\nIn the room, there is a chair located towards the right side of the image. The chair appears to be made of wood and is placed against the wall. The overall setting suggests a well-decorated and sophisticated space.",
+        "generated_objects": [
+          "clock",
+          "clock",
+          "clock",
+          "chair",
+          "chair"
+        ],
+        "ground_truth": [
+          "chair",
+          "clock",
+          "dining table"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 297078,
+        "caption": "The image captures a person skiing down a snow-covered slope. The skier is wearing a backpack and is skiing on a snowy path. The skier is positioned in the center of the scene, with their skis visible beneath them.\n\nThe snowy path is surrounded by trees, creating a picturesque winter landscape. The trees are scattered throughout the scene, with some closer to the skier and others further away. The overall atmosphere of the image is one of adventure and enjoyment of the winter sport.",
+        "generated_objects": [
+          "person",
+          "person",
+          "backpack",
+          "person",
+          "skis",
+          "person"
+        ],
+        "ground_truth": [
+          "backpack",
+          "person",
+          "skis"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 332625,
+        "caption": "The image depicts a man sitting in an airplane seat, watching a small screen in front of him. He appears to be engaged in the content displayed on the screen. The man is wearing glasses, and there are other people in the scene, some of whom are also watching the screen.\n\nThe airplane cabin is filled with various chairs, some of which are occupied by passengers. The overall atmosphere suggests a typical airplane journey, with passengers enjoying their time on the flight.",
+        "generated_objects": [
+          "person",
+          "airplane",
+          "chair",
+          "person",
+          "person",
+          "airplane",
+          "chair",
+          "person",
+          "airplane",
+          "person"
+        ],
+        "ground_truth": [
+          "airplane",
+          "chair",
+          "person",
+          "tv"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 337502,
+        "caption": "The image features a delicious pizza with a variety of toppings, including broccoli, on a wooden cutting board. The pizza is placed on a stove, likely in the process of being cooked. The pizza is spread across the entire cutting board, with the toppings evenly distributed. The scene captures the essence of a homemade pizza, ready to be enjoyed.",
+        "generated_objects": [
+          "pizza",
+          "broccoli",
+          "pizza",
+          "oven",
+          "pizza",
+          "pizza"
+        ],
+        "ground_truth": [
+          "broccoli",
+          "oven",
+          "pizza"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 355342,
+        "caption": "The image features two women performing a dance routine on a stage. They are both holding umbrellas, which are open and positioned in front of them. The women are wearing dresses, and their outfits complement the overall performance.\n\nThe stage is adorned with a pink backdrop, and there are two chairs placed in the background. The audience is watching the performance, and the atmosphere appears to be lively and engaging.",
+        "generated_objects": [
+          "person",
+          "umbrella",
+          "person",
+          "chair"
+        ],
+        "ground_truth": [
+          "orange",
+          "person",
+          "umbrella"
+        ],
+        "hallucinated_objects": [
+          [
+            "chair",
+            "chair"
+          ]
+        ]
+      },
+      {
+        "image_id": 363908,
+        "caption": "The image captures a baseball game in progress, with a batter standing at home plate, holding a baseball bat and preparing to swing. The catcher is positioned behind the batter, wearing a baseball glove, ready to catch the ball.\n\nThere are several other players on the field, including a pitcher and a few other players in various positions. Some of the players are wearing baseball gloves, indicating their roles as fielders.\n\nThe scene is set on a baseball field, with a bench visible in the background. The atmosphere is lively, as the players are actively engaged in the",
+        "generated_objects": [
+          "baseball bat",
+          "baseball glove",
+          "sports ball",
+          "person",
+          "person",
+          "person",
+          "person",
+          "baseball glove",
+          "bench",
+          "person"
+        ],
+        "ground_truth": [
+          "baseball bat",
+          "baseball glove",
+          "person",
+          "sports ball"
+        ],
+        "hallucinated_objects": [
+          [
+            "bench",
+            "bench"
+          ]
+        ]
+      },
+      {
+        "image_id": 377401,
+        "caption": "The image features a large, yellow church with a tall clock tower. The church has a prominent clock on its side, making it a focal point in the scene. The clock tower is adorned with a green roof, adding a touch of color to the building.\n\nIn the foreground, there is a car parked in front of the church, and a person can be seen standing nearby. The scene also includes a bench located in the middle of the church grounds, providing a place for visitors to sit and enjoy the surroundings.",
+        "generated_objects": [
+          "clock",
+          "clock",
+          "clock",
+          "car",
+          "person",
+          "bench"
+        ],
+        "ground_truth": [
+          "car",
+          "clock",
+          "truck"
+        ],
+        "hallucinated_objects": [
+          [
+            "person",
+            "person"
+          ],
+          [
+            "bench",
+            "bench"
+          ]
+        ]
+      },
+      {
+        "image_id": 382617,
+        "caption": "The image features a stack of books with a coffee mug placed on top of them. The stack of books is quite tall, with the mug sitting on top of the pile. The mug is positioned towards the left side of the stack, and the books are arranged in a way that they appear to be a part of the stack.",
+        "generated_objects": [
+          "book",
+          "book",
+          "book"
+        ],
+        "ground_truth": [
+          "book",
+          "cup",
+          "dining table",
+          "mouse"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 388983,
+        "caption": "The image features a delicious hot dog with a bun, topped with mustard and relish. The hot dog is placed in a bun, and it appears to be a foot long. The bun is filled with the hot dog, and it is accompanied by a pickle slice on the side. The hot dog is served in a paper container, making it a convenient and portable meal.",
+        "generated_objects": [
+          "hot dog",
+          "hot dog",
+          "hot dog",
+          "hot dog",
+          "bowl"
+        ],
+        "ground_truth": [
+          "bowl",
+          "cup",
+          "dining table",
+          "hot dog",
+          "person",
+          "sandwich"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 396068,
+        "caption": "The image features a woman standing in a room, holding a remote control in her hand. She appears to be focused on the remote, possibly adjusting the settings or changing channels. \n\nThere are several other people in the room, some of them standing closer to the woman and others further away. A TV is visible in the background, and a handbag can be seen placed on the floor. The room seems to be a gathering place for people to socialize and enjoy their time together.",
+        "generated_objects": [
+          "person",
+          "remote",
+          "remote",
+          "person",
+          "person",
+          "tv",
+          "handbag",
+          "person"
+        ],
+        "ground_truth": [
+          "person",
+          "remote",
+          "tv"
+        ],
+        "hallucinated_objects": [
+          [
+            "handbag",
+            "handbag"
+          ]
+        ]
+      },
+      {
+        "image_id": 401398,
+        "caption": "The image features a young girl holding a brown teddy bear in her arms. She is standing in front of a window, which provides a natural light source for the scene. The girl appears to be enjoying her time with the teddy bear, creating a warm and cozy atmosphere.",
+        "generated_objects": [
+          "person",
+          "teddy bear",
+          "person",
+          "teddy bear"
+        ],
+        "ground_truth": [
+          "bear",
+          "person",
+          "potted plant",
+          "teddy bear",
+          "vase"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 408757,
+        "caption": "The image captures a thrilling scene of a person parasailing over the ocean. The parasailer is being towed by a boat, and the parachute is flying high in the sky. The person is wearing a yellow and black parachute, which adds a pop of color to the scene.\n\nIn the background, there are two kites visible, one on the left side and the other on the right side of the image. The presence of these kites suggests that the location might be a popular spot for kite flying or other recreational activities.",
+        "generated_objects": [
+          "person",
+          "boat",
+          "person",
+          "kite",
+          "kite",
+          "kite"
+        ],
+        "ground_truth": [
+          "kite",
+          "person",
+          "umbrella"
+        ],
+        "hallucinated_objects": [
+          [
+            "boat",
+            "boat"
+          ]
+        ]
+      },
+      {
+        "image_id": 430052,
+        "caption": "The image features a vase filled with a beautiful red flower, possibly a bird of paradise. The vase is made of a green glass bottle, adding a unique touch to the display. The flower is positioned in the center of the vase, drawing attention to its vibrant color. The scene is set against a white wall, creating a clean and minimalist backdrop for the flower arrangement.",
+        "generated_objects": [
+          "vase",
+          "bird",
+          "vase",
+          "bottle",
+          "vase"
+        ],
+        "ground_truth": [
+          "bird",
+          "bottle",
+          "dining table",
+          "vase"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 447787,
+        "caption": "The image features a woman standing in a kitchen, holding a large tray filled with various food items. The tray contains a mix of vegetables, including several carrots, and possibly some meat. The woman appears to be smiling and enjoying the meal she has prepared.\n\nThe kitchen is well-equipped with a microwave, an oven, and a sink. There are also several bottles placed around the kitchen, possibly containing condiments or beverages. Additionally, a bowl can be seen on a surface, possibly containing more food or ingredients.",
+        "generated_objects": [
+          "person",
+          "carrot",
+          "person",
+          "microwave",
+          "oven",
+          "sink",
+          "bottle",
+          "bowl"
+        ],
+        "ground_truth": [
+          "bottle",
+          "bowl",
+          "cake",
+          "carrot",
+          "microwave",
+          "oven",
+          "person"
+        ],
+        "hallucinated_objects": [
+          [
+            "sink",
+            "sink"
+          ]
+        ]
+      },
+      {
+        "image_id": 460931,
+        "caption": "The image showcases a bakery display case filled with a wide variety of delicious donuts. There are at least 14 different types of donuts, each with unique flavors and toppings. The donuts are arranged in a visually appealing manner, with some placed closer to the front of the display case and others positioned further back. The assortment of donuts caters to various tastes and preferences, making it an enticing sight for customers.",
+        "generated_objects": [
+          "donut",
+          "donut",
+          "donut",
+          "donut"
+        ],
+        "ground_truth": [
+          "cake",
+          "donut",
+          "person"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 465346,
+        "caption": "The image features a delicious meal served on a white plate. The plate is filled with a variety of food items, including a sandwich, a piece of meat, and a side of fries. The sandwich is placed towards the center of the plate, while the meat is positioned towards the right side. The fries are spread out around the plate, with some on the left side and others on the right side.\n\nThe dining table is set with a fork on the left side and a knife on the right side. There is also a cup placed near the top left corner of the table. The",
+        "generated_objects": [
+          "sandwich",
+          "sandwich",
+          "dining table",
+          "fork",
+          "knife",
+          "cup",
+          "dining table"
+        ],
+        "ground_truth": [
+          "dining table",
+          "fork",
+          "knife",
+          "sandwich",
+          "spoon"
+        ],
+        "hallucinated_objects": [
+          [
+            "cup",
+            "cup"
+          ]
+        ]
+      },
+      {
+        "image_id": 482829,
+        "caption": "The image features a woman in a blue shirt and white shorts, holding a tennis racket and preparing to hit a tennis ball. She is focused on the game, possibly in the middle of a match.\n\nThere are two other people in the scene, one standing to the left of the woman and another person on the right side. The tennis ball is visible in the air, close to the woman's racket. The scene appears to be set on a tennis court, with the woman being the main subject of the image.",
+        "generated_objects": [
+          "person",
+          "tennis racket",
+          "sports ball",
+          "person",
+          "person",
+          "person",
+          "sports ball",
+          "person",
+          "tennis racket",
+          "person"
+        ],
+        "ground_truth": [
+          "person",
+          "sports ball",
+          "tennis racket"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 485564,
+        "caption": "The image captures a group of young women playing soccer on a field. There are at least nine players visible in the scene, with some of them actively participating in the game. The soccer ball is in the air, and the players are positioned around it, trying to gain control of the ball.\n\nThe players are spread out across the field, with some closer to the foreground and others further back. The scene is lively, showcasing the excitement and energy of the game.",
+        "generated_objects": [
+          "person",
+          "person",
+          "sports ball",
+          "person",
+          "sports ball",
+          "person"
+        ],
+        "ground_truth": [
+          "car",
+          "person",
+          "sports ball"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 506483,
+        "caption": "The image features a colorful sculpture of a tiger, which is located on a sidewalk. The tiger sculpture is positioned next to a bench, creating an interesting contrast between the artwork and the functional piece of furniture.\n\nIn the scene, there are also two people present. One person is standing near the tiger sculpture, while the other person is standing further away. Additionally, there is a car parked in the background, and a traffic light can be seen in the middle of the scene.",
+        "generated_objects": [
+          "bench",
+          "person",
+          "person",
+          "person",
+          "car",
+          "traffic light"
+        ],
+        "ground_truth": [
+          "backpack",
+          "bench",
+          "car",
+          "cat",
+          "person"
+        ],
+        "hallucinated_objects": [
+          [
+            "traffic light",
+            "traffic light"
+          ]
+        ]
+      },
+      {
+        "image_id": 520524,
+        "caption": "The image features a sidewalk with a variety of vehicles parked along it. There are two motorcycles, one on the left side and the other on the right side of the sidewalk. A bicycle is parked in the middle of the sidewalk, and a car is parked further back on the right side.\n\nIn addition to the vehicles, there are two people in the scene. One person is standing near the left motorcycle, while the other person is located closer to the center of the sidewalk. A handbag can also be seen on the ground near the center of the scene.",
+        "generated_objects": [
+          "motorcycle",
+          "bicycle",
+          "car",
+          "person",
+          "person",
+          "motorcycle",
+          "person",
+          "handbag"
+        ],
+        "ground_truth": [
+          "bicycle",
+          "car",
+          "dining table",
+          "motorcycle",
+          "orange"
+        ],
+        "hallucinated_objects": [
+          [
+            "person",
+            "person"
+          ],
+          [
+            "person",
+            "person"
+          ],
+          [
+            "person",
+            "person"
+          ],
+          [
+            "handbag",
+            "handbag"
+          ]
+        ]
+      },
+      {
+        "image_id": 524979,
+        "caption": "The image features a young boy wearing glasses and a blue jacket, standing on a porch. He is holding a baseball glove, ready to catch a ball. The boy appears to be focused on the game, possibly waiting for the ball to be thrown his way.",
+        "generated_objects": [
+          "person",
+          "baseball glove",
+          "sports ball",
+          "person",
+          "sports ball"
+        ],
+        "ground_truth": [
+          "baseball glove",
+          "dog",
+          "person",
+          "sports ball"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 533201,
+        "caption": "The image depicts an airport scene with a large passenger jet parked on the runway. The airplane is positioned near the terminal, and there are several people scattered around the area, likely waiting for their flights or attending to other airport-related tasks.\n\nIn addition to the airplane, there are a few trucks visible in the scene, likely providing support services to the aircraft. One truck is located near the left side of the airplane, while another is situated further back on the right side. A third truck can be seen in the middle of the scene, closer to",
+        "generated_objects": [
+          "airplane",
+          "airplane",
+          "person",
+          "airplane",
+          "truck",
+          "airplane",
+          "truck",
+          "airplane",
+          "truck"
+        ],
+        "ground_truth": [
+          "airplane",
+          "person",
+          "truck"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 551881,
+        "caption": "The image features a kitchen with a large stainless steel refrigerator on the left side of the room. The refrigerator is adorned with a clock on its door. The kitchen is well-equipped with a sink, a microwave, and a toaster.\n\nThere are two chairs in the kitchen, one located near the center of the room and the other towards the right side. A potted plant can be seen on the right side of the room, adding a touch of greenery to the space.\n\nVarious items are placed around the kitchen, including a handbag",
+        "generated_objects": [
+          "refrigerator",
+          "refrigerator",
+          "clock",
+          "sink",
+          "microwave",
+          "toaster",
+          "chair",
+          "potted plant",
+          "handbag"
+        ],
+        "ground_truth": [
+          "book",
+          "chair",
+          "dining table",
+          "handbag",
+          "potted plant",
+          "refrigerator"
+        ],
+        "hallucinated_objects": [
+          [
+            "clock",
+            "clock"
+          ],
+          [
+            "sink",
+            "sink"
+          ],
+          [
+            "microwave",
+            "microwave"
+          ],
+          [
+            "toaster",
+            "toaster"
+          ]
+        ]
+      },
+      {
+        "image_id": 559547,
+        "caption": "The image is a black and white photograph featuring three baseball players standing next to each other. They are all wearing baseball uniforms and are posing for the picture. Each player has a baseball glove, with one glove located on the left side, another in the middle, and the third glove on the right side of the image.\n\nThe players are standing in front of a car, which is parked in the background. The car is positioned behind the players, with the left side of the car being closer to the left player, the middle car being closer to the middle player, and the right side of",
+        "generated_objects": [
+          "person",
+          "person",
+          "baseball glove",
+          "person",
+          "car",
+          "car",
+          "person",
+          "car",
+          "person",
+          "car",
+          "person"
+        ],
+        "ground_truth": [
+          "baseball bat",
+          "baseball glove",
+          "person",
+          "sports ball"
+        ],
+        "hallucinated_objects": [
+          [
+            "car",
+            "car"
+          ],
+          [
+            "car",
+            "car"
+          ],
+          [
+            "car",
+            "car"
+          ],
+          [
+            "car",
+            "car"
+          ]
+        ]
+      },
+      {
+        "image_id": 560744,
+        "caption": "The image depicts a group of people gathered around a dining table, enjoying a meal together. There are three people in the scene, with one person on the left side, another in the middle, and the third person on the right side of the table.\n\nThe table is set with various items, including wine glasses, cups, and a bottle. There are four wine glasses placed around the table, with one near the left person, another near the middle person, and two more on the right side. A cup is also visible on the right side of the table. A bottle is",
+        "generated_objects": [
+          "person",
+          "dining table",
+          "person",
+          "person",
+          "person",
+          "dining table",
+          "dining table",
+          "wine glass",
+          "cup",
+          "bottle",
+          "wine glass",
+          "dining table",
+          "person",
+          "person",
+          "cup",
+          "dining table",
+          "bottle"
+        ],
+        "ground_truth": [
+          "book",
+          "bottle",
+          "bowl",
+          "chair",
+          "cup",
+          "dining table",
+          "knife",
+          "person",
+          "spoon",
+          "wine glass"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 569839,
+        "caption": "The image features a young girl sitting at a dining table in a restaurant. She is enjoying a meal, which includes a sandwich and a cup. The girl is smiling and appears to be having a good time.\n\nThe dining area is furnished with multiple chairs, some of which are placed around the table. There are also a few cups and a bottle on the table, suggesting that the girl is having a drink along with her meal. The scene is lively, with other people present in the background, possibly enjoying their own meals or conversations.",
+        "generated_objects": [
+          "person",
+          "dining table",
+          "sandwich",
+          "cup",
+          "person",
+          "chair",
+          "dining table",
+          "cup",
+          "bottle",
+          "dining table",
+          "person",
+          "person"
+        ],
+        "ground_truth": [
+          "chair",
+          "cup",
+          "dining table",
+          "hot dog",
+          "person",
+          "sandwich"
+        ],
+        "hallucinated_objects": [
+          [
+            "bottle",
+            "bottle"
+          ]
+        ]
+      },
+      {
+        "image_id": 579231,
+        "caption": "The image captures a baseball game in progress, with a batter swinging a baseball bat at a pitch. The batter is in the middle of the swing, and the catcher is positioned behind him, ready to catch the ball. The umpire is also present, closely observing the play.\n\nThere are several other people in the scene, likely teammates and opponents, scattered around the field. Some of them are standing closer to the batter, while others are further away. The baseball bat is clearly visible in the batter's hands, and the sports ball is in the air, indicating the ongoing",
+        "generated_objects": [
+          "baseball bat",
+          "sports ball",
+          "person",
+          "baseball bat",
+          "sports ball"
+        ],
+        "ground_truth": [
+          "baseball bat",
+          "baseball glove",
+          "person"
+        ],
+        "hallucinated_objects": [
+          [
+            "ball",
+            "sports ball"
+          ],
+          [
+            "ball",
+            "sports ball"
+          ]
+        ]
+      }
+    ]
+  },
+  "aod": {
+    "n": 50,
+    "CHAIRs": 56.0,
+    "CHAIRi": 13.720316622691293,
+    "object_mentions": 379,
+    "hallucinated_mentions": 52,
+    "hallucinated_captions": 28,
+    "sentences": [
+      {
+        "image_id": 7320,
+        "caption": "The image features a person holding a Nintendo Wii remote in front of a TV. The TV is displaying a video game, possibly featuring a character like Bugs Bunny. The person is standing in front of the TV, fully engaged in the game.\n\nThere are several other people in the scene, some of them standing near the TV, while others are located further away. A few of them are holding cell phones, possibly capturing the moment or communicating with others. The overall atmosphere appears to be lively and fun, with everyone enjoying the video game.",
+        "generated_objects": [
+          "person",
+          "remote",
+          "tv",
+          "tv",
+          "person",
+          "tv",
+          "person",
+          "tv",
+          "cell phone"
+        ],
+        "ground_truth": [
+          "dining table",
+          "person",
+          "remote",
+          "tv"
+        ],
+        "hallucinated_objects": [
+          [
+            "cell phone",
+            "cell phone"
+          ]
+        ]
+      },
+      {
+        "image_id": 17379,
+        "caption": "The image features a bathroom with a large mirror on the wall. The mirror reflects a television screen, which is displaying a football game. The television is mounted on the wall, and the reflection of the game can be seen clearly in the mirror.\n\nIn the bathroom, there is a toilet situated towards the right side of the room. A sink is also present in the scene, located on the left side of the bathroom.",
+        "generated_objects": [
+          "tv",
+          "tv",
+          "toilet",
+          "sink"
+        ],
+        "ground_truth": [
+          "person",
+          "sink",
+          "tv"
+        ],
+        "hallucinated_objects": [
+          [
+            "toilet",
+            "toilet"
+          ]
+        ]
+      },
+      {
+        "image_id": 18150,
+        "caption": "The image features a man and a young boy sitting on a bed, enjoying a meal together. The man is holding a slice of pizza, and the boy is eagerly waiting for his share. There are two pizzas in the scene, one being held by the man and the other placed on the bed.\n\nThe room has a cozy atmosphere, with a couch in the background and a chair nearby. A bottle can be seen on the bed, possibly containing a beverage to accompany the meal. The man and the boy are the main focus of the scene, creating a warm and int",
+        "generated_objects": [
+          "person",
+          "person",
+          "bed",
+          "person",
+          "pizza",
+          "person",
+          "pizza",
+          "person",
+          "bed",
+          "couch",
+          "chair",
+          "bottle",
+          "bed",
+          "person",
+          "person"
+        ],
+        "ground_truth": [
+          "backpack",
+          "bottle",
+          "couch",
+          "person",
+          "pizza"
+        ],
+        "hallucinated_objects": [
+          [
+            "bed",
+            "bed"
+          ],
+          [
+            "bed",
+            "bed"
+          ],
+          [
+            "chair",
+            "chair"
+          ],
+          [
+            "bed",
+            "bed"
+          ]
+        ]
+      },
+      {
+        "image_id": 18918,
+        "caption": "The image depicts a small, old-fashioned kitchen with a variety of appliances and utensils. The kitchen features a stove with a large mixing bowl placed on it, as well as a sink with a spoon nearby. There are multiple knives and spoons scattered throughout the kitchen, with some placed on the countertops and others on the stove.\n\nIn addition to the main appliances, there is a refrigerator located in the background, and a microwave placed above the stove. A cup can be seen on the countertop, and a book",
+        "generated_objects": [
+          "oven",
+          "bowl",
+          "sink",
+          "spoon",
+          "knife",
+          "spoon",
+          "oven",
+          "refrigerator",
+          "microwave",
+          "oven",
+          "cup",
+          "book"
+        ],
+        "ground_truth": [
+          "bowl",
+          "oven",
+          "sink"
+        ],
+        "hallucinated_objects": [
+          [
+            "spoon",
+            "spoon"
+          ],
+          [
+            "knife",
+            "knife"
+          ],
+          [
+            "spoon",
+            "spoon"
+          ],
+          [
+            "refrigerator",
+            "refrigerator"
+          ],
+          [
+            "microwave",
+            "microwave"
+          ],
+          [
+            "cup",
+            "cup"
+          ],
+          [
+            "book",
+            "book"
+          ]
+        ]
+      },
+      {
+        "image_id": 31773,
+        "caption": "The image features a desk with two laptops and a desktop computer. The desktop computer is placed on the left side of the desk, while the two laptops are positioned on the right side. A keyboard is also visible on the desk, likely connected to one of the laptops.\n\nIn addition to the computer equipment, there are two mice on the desk, one near the center and the other closer to the right side. A person can be seen sitting at the desk, likely working on one of the computers. A potted plant is also present in the scene, adding a",
+        "generated_objects": [
+          "dining table",
+          "laptop",
+          "laptop",
+          "laptop",
+          "dining table",
+          "laptop",
+          "keyboard",
+          "dining table",
+          "laptop",
+          "laptop",
+          "mouse",
+          "dining table",
+          "person",
+          "dining table",
+          "laptop",
+          "potted plant"
+        ],
+        "ground_truth": [
+          "dining table",
+          "keyboard",
+          "laptop",
+          "mouse",
+          "person",
+          "potted plant",
+          "tv"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 31971,
+        "caption": "The image features a bed with a colorful quilt on it, showcasing a variety of patterns and colors. The bed is positioned in a corner of the room, and it appears to be a cozy and inviting space.\n\nIn addition to the bed, there are several books scattered around the room, with some placed on the floor and others on a surface. A chair can be seen in the background, and a clock is mounted on the wall. The room also contains a couch, which is located near the bed.",
+        "generated_objects": [
+          "bed",
+          "bed",
+          "bed",
+          "book",
+          "chair",
+          "clock",
+          "couch",
+          "bed"
+        ],
+        "ground_truth": [
+          "bed",
+          "book",
+          "orange"
+        ],
+        "hallucinated_objects": [
+          [
+            "chair",
+            "chair"
+          ],
+          [
+            "clock",
+            "clock"
+          ],
+          [
+            "couch",
+            "couch"
+          ]
+        ]
+      },
+      {
+        "image_id": 68418,
+        "caption": "The image features a white Apple mouse sitting on top of a keyboard. The mouse is positioned towards the left side of the keyboard, while the keyboard occupies the majority of the space in the scene. The mouse and keyboard are the main focus of the image, with no other objects visible.",
+        "generated_objects": [
+          "apple",
+          "mouse",
+          "keyboard",
+          "mouse",
+          "keyboard",
+          "keyboard",
+          "mouse",
+          "keyboard"
+        ],
+        "ground_truth": [
+          "apple",
+          "keyboard",
+          "laptop",
+          "mouse",
+          "tv"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 70813,
+        "caption": "The image features a cozy bedroom with a large bed placed in the center of the room. The bed is adorned with a red and blue plaid blanket, adding a touch of color to the space. A pink and white pillow is situated on the bed, enhancing its inviting appearance.\n\nIn addition to the bed, there is a chair located near the left side of the room. A handbag can be seen placed on the floor, close to the right side of the bed. A bottle is also visible on the left side of the room, possibly a decorative item or a",
+        "generated_objects": [
+          "bed",
+          "bed",
+          "bed",
+          "bed",
+          "chair",
+          "handbag",
+          "bed",
+          "bottle"
+        ],
+        "ground_truth": [
+          "bed",
+          "bottle",
+          "dining table",
+          "handbag"
+        ],
+        "hallucinated_objects": [
+          [
+            "chair",
+            "chair"
+          ]
+        ]
+      },
+      {
+        "image_id": 71738,
+        "caption": "The image features a man wearing a suit and tie, standing in a park with a stroller. He is holding a helmet, possibly preparing for a ride or a sports activity. There are several other people in the park, some of them sitting on chairs.\n\nIn the background, there are two chairs, one near the center of the scene and another towards the right side. A handbag can be seen placed on the ground, close to the center of the scene. Additionally, there is a cell phone visible in the upper right corner of the image.",
+        "generated_objects": [
+          "person",
+          "tie",
+          "person",
+          "chair",
+          "chair",
+          "handbag",
+          "cell phone"
+        ],
+        "ground_truth": [
+          "chair",
+          "motorcycle",
+          "person",
+          "tie"
+        ],
+        "hallucinated_objects": [
+          [
+            "handbag",
+            "handbag"
+          ],
+          [
+            "cell phone",
+            "cell phone"
+          ]
+        ]
+      },
+      {
+        "image_id": 87435,
+        "caption": "The image features a red and blue bus driving down a street. The bus is adorned with a colorful manga-style advertisement, making it stand out from the surroundings. The bus is positioned in the middle of the scene, occupying a significant portion of the image.\n\nThere are several people visible in the scene, with one person standing near the left edge of the image and two others closer to the right side. Additionally, there are two motorcycles parked on the right side of the street, one closer to the right edge and the other further back.",
+        "generated_objects": [
+          "person",
+          "person",
+          "motorcycle"
+        ],
+        "ground_truth": [
+          "bench",
+          "bus",
+          "car",
+          "motorcycle",
+          "person"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 97994,
+        "caption": "The image features a wooden desk with a variety of electronic devices and items on it. There are three laptops placed on the desk, with one on the left side, another in the middle, and the third on the right side. A computer monitor is also present on the desk, positioned between the left and middle laptop.\n\nIn addition to the laptops and monitor, there are two keyboards on the desk, one in the middle and the other on the right side. A mouse can be found on the right side of the desk as well. A cell phone is placed near the right",
+        "generated_objects": [
+          "dining table",
+          "laptop",
+          "dining table",
+          "laptop",
+          "tv",
+          "dining table",
+          "laptop",
+          "laptop",
+          "tv",
+          "keyboard",
+          "dining table",
+          "mouse",
+          "dining table",
+          "cell phone"
+        ],
+        "ground_truth": [
+          "book",
+          "bottle",
+          "clock",
+          "cup",
+          "dining table",
+          "keyboard",
+          "laptop",
+          "mouse",
+          "tv"
+        ],
+        "hallucinated_objects": [
+          [
+            "cell phone",
+            "cell phone"
+          ]
+        ]
+      },
+      {
+        "image_id": 113701,
+        "caption": "The image features a bed with a blue comforter and a white pillow. The bed is situated in a bedroom, and there are two lamps on either side of the bed, providing ample lighting. The room also contains a chair and a dresser, which is located near the bed.\n\nThere are several books scattered around the bed, with some placed on the bed itself and others on the floor. Additionally, there are two bottles in the room, one near the left side of the bed and the other closer to the right side.",
+        "generated_objects": [
+          "bed",
+          "bed",
+          "bed",
+          "chair",
+          "bed",
+          "book",
+          "bed",
+          "bed",
+          "bottle",
+          "bed"
+        ],
+        "ground_truth": [
+          "bed",
+          "book",
+          "chair",
+          "clock"
+        ],
+        "hallucinated_objects": [
+          [
+            "bottle",
+            "bottle"
+          ]
+        ]
+      },
+      {
+        "image_id": 114941,
+        "caption": "The image features a train station with two trains parked on the tracks. One train is positioned on the left side of the image, while the other is on the right side. The trains are connected, indicating that they are part of a larger train system.\n\nThere are several people in the scene, with some standing near the trains and others scattered throughout the station. A few individuals can be seen closer to the left train, while others are near the right train.\n\nIn addition to the trains and people, there are two cell phones visible in the scene, one near the center and the other closer to the right",
+        "generated_objects": [
+          "train",
+          "train",
+          "train",
+          "train",
+          "train",
+          "person",
+          "train",
+          "train",
+          "train",
+          "train",
+          "person",
+          "cell phone"
+        ],
+        "ground_truth": [
+          "car",
+          "person",
+          "train"
+        ],
+        "hallucinated_objects": [
+          [
+            "cell phone",
+            "cell phone"
+          ]
+        ]
+      },
+      {
+        "image_id": 140983,
+        "caption": "The image features a young child sitting on a couch, holding a toothbrush in their mouth. The child appears to be brushing their teeth, possibly learning good oral hygiene habits.\n\nThe couch is situated in a living room, with a chair placed nearby. There are several books scattered around the room, indicating a cozy and comfortable environment for the child to play and learn.",
+        "generated_objects": [
+          "person",
+          "couch",
+          "toothbrush",
+          "person",
+          "couch",
+          "chair",
+          "book",
+          "person"
+        ],
+        "ground_truth": [
+          "couch",
+          "person",
+          "toothbrush"
+        ],
+        "hallucinated_objects": [
+          [
+            "chair",
+            "chair"
+          ],
+          [
+            "book",
+            "book"
+          ]
+        ]
+      },
+      {
+        "image_id": 153865,
+        "caption": "The image features a beach scene with a group of people enjoying their time. There are several people scattered across the beach, some closer to the water and others further back.\n\nIn the sky, there are three large kites flying, each with a unique design. One kite is shaped like a shark, another like a squid, and the third one is a dragon. These kites add a fun and colorful element to the beach atmosphere.",
+        "generated_objects": [
+          "person",
+          "person",
+          "kite",
+          "kite",
+          "kite"
+        ],
+        "ground_truth": [
+          "car",
+          "kite",
+          "person"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 154846,
+        "caption": "The image features a large, freshly baked pizza with a generous amount of pepperoni and mushrooms. The pizza is placed on a pan, and it is ready to be served. The pizza is accompanied by a white plate, which is positioned on the left side of the pan.\n\nIn the background, there are two people present, one on the left side and the other on the right side of the image. They seem to be enjoying the meal together.",
+        "generated_objects": [
+          "pizza",
+          "pizza",
+          "pizza",
+          "person"
+        ],
+        "ground_truth": [
+          "dining table",
+          "person",
+          "pizza"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 156704,
+        "caption": "The image captures a lively beach scene with numerous people enjoying their time. A man is prominently walking along the beach, carrying a surfboard under his arm. He appears to be heading towards the water to surf.\n\nIn addition to the man with the surfboard, there are several other people scattered across the beach, some closer to the water and others further back. A dog can also be seen in the scene, likely accompanying its owner.\n\nThe beach is filled with various beachgoers, creating a vibrant and active atmosphere.",
+        "generated_objects": [
+          "person",
+          "person",
+          "surfboard",
+          "person",
+          "surfboard",
+          "person",
+          "dog"
+        ],
+        "ground_truth": [
+          "person",
+          "surfboard",
+          "umbrella"
+        ],
+        "hallucinated_objects": [
+          [
+            "dog",
+            "dog"
+          ]
+        ]
+      },
+      {
+        "image_id": 159969,
+        "caption": "The image captures a man skiing down a snow-covered slope, surrounded by a beautiful mountain landscape. The skier is wearing a red jacket and is positioned in the center of the scene. He is skiing down the mountain, enjoying the thrill of the activity.\n\nIn addition to the main skier, there are two other people visible in the background, possibly skiing or enjoying the scenery. A backpack can be seen near the right side of the image, possibly belonging to one of the skiers.",
+        "generated_objects": [
+          "person",
+          "person",
+          "person",
+          "person",
+          "backpack",
+          "person"
+        ],
+        "ground_truth": [
+          "backpack",
+          "person",
+          "skis"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 167110,
+        "caption": "The image captures a lively scene at a skate park, where a young man is performing a trick on his skateboard. He is in the air, showcasing his skills and balance. There are several other people in the park, watching the skateboarder and enjoying the atmosphere.\n\nIn addition to the main skateboarder, there are at least five other people visible in the scene, some of them closer to the skateboarder and others further away. A car can be seen in the background, parked near the skate park.",
+        "generated_objects": [
+          "person",
+          "skateboard",
+          "person",
+          "person",
+          "person",
+          "person",
+          "person",
+          "car"
+        ],
+        "ground_truth": [
+          "car",
+          "person",
+          "skateboard"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 190185,
+        "caption": "The image features a large hot dog sandwich with various toppings, including mustard and ketchup. The hot dog is placed on a bun, and it is accompanied by a side of fries. The sandwich is presented on a dining table, and a fork is also visible on the table.\n\nIn the background, there is a bowl, possibly containing additional condiments or side dishes. The overall scene appears to be a casual dining experience with a delicious hot dog and fries.",
+        "generated_objects": [
+          "hot dog",
+          "sandwich",
+          "hot dog",
+          "sandwich",
+          "dining table",
+          "fork",
+          "dining table",
+          "bowl",
+          "hot dog"
+        ],
+        "ground_truth": [
+          "bowl",
+          "dog",
+          "hot dog",
+          "sandwich"
+        ],
+        "hallucinated_objects": [
+          [
+            "table",
+            "dining table"
+          ],
+          [
+            "fork",
+            "fork"
+          ],
+          [
+            "table",
+            "dining table"
+          ]
+        ]
+      },
+      {
+        "image_id": 200583,
+        "caption": "The image features a suitcase with stickers on it, placed on a table. The suitcase is positioned in the center of the scene, and it appears to be a piece of luggage. There is a bottle of water on the table, located to the right of the suitcase.\n\nIn the background, there are two chairs, one on the left side and the other on the right side of the scene. A person can be seen in the background, standing near the right side of the image.",
+        "generated_objects": [
+          "suitcase",
+          "dining table",
+          "suitcase",
+          "suitcase",
+          "bottle",
+          "dining table",
+          "suitcase",
+          "chair",
+          "person"
+        ],
+        "ground_truth": [
+          "bench",
+          "boat",
+          "bottle",
+          "dining table",
+          "suitcase"
+        ],
+        "hallucinated_objects": [
+          [
+            "chair",
+            "chair"
+          ],
+          [
+            "person",
+            "person"
+          ]
+        ]
+      },
+      {
+        "image_id": 231589,
+        "caption": "The image features a young boy standing on a bed, wearing a white shirt and a blue pacifier. He appears to be enjoying his time on the bed, possibly playing or exploring the space. The bed is covered with a blanket, providing a comfortable surface for the boy to stand on.",
+        "generated_objects": [
+          "person",
+          "bed",
+          "bed",
+          "bed",
+          "person"
+        ],
+        "ground_truth": [
+          "bed",
+          "chair",
+          "couch",
+          "person"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 239347,
+        "caption": "The image features a newlywed couple, a bride and groom, posing for a picture in their bedroom. They are sitting on a bed, with the bride on the left side and the groom on the right side. The bride is wearing a wedding dress, and the groom is dressed in a suit.\n\nThe bedroom has a cozy atmosphere, with a couch located in the background and a chair nearby. There is also a clock on the wall, and a vase placed on a surface in the room. The couple appears to be enjoying their special day and capturing",
+        "generated_objects": [
+          "person",
+          "person",
+          "bed",
+          "person",
+          "person",
+          "person",
+          "person",
+          "couch",
+          "chair",
+          "clock",
+          "vase"
+        ],
+        "ground_truth": [
+          "bed",
+          "person",
+          "tie"
+        ],
+        "hallucinated_objects": [
+          [
+            "couch",
+            "couch"
+          ],
+          [
+            "chair",
+            "chair"
+          ],
+          [
+            "clock",
+            "clock"
+          ],
+          [
+            "vase",
+            "vase"
+          ]
+        ]
+      },
+      {
+        "image_id": 246145,
+        "caption": "The image features a large, ornate clock mounted on a marble pedestal. The clock is positioned on a wall, and its gold and black design adds a touch of elegance to the room. The clock's face is visible, displaying the time.\n\nIn the room, there is a chair located towards the right side of the image. The chair appears to be made of wood and is placed against the wall. The overall setting suggests a well-decorated and sophisticated space.",
+        "generated_objects": [
+          "clock",
+          "clock",
+          "clock",
+          "chair",
+          "chair"
+        ],
+        "ground_truth": [
+          "chair",
+          "clock",
+          "dining table"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 297078,
+        "caption": "The image captures a person skiing down a snow-covered slope. The skier is wearing a backpack and is skiing on a snowy path. The skier is positioned in the center of the scene, with their skis visible beneath them.\n\nThe snowy path is surrounded by trees, creating a picturesque winter landscape. The trees are scattered throughout the scene, with some closer to the skier and others further away. The overall atmosphere of the image is one of adventure and enjoyment of the winter sport.",
+        "generated_objects": [
+          "person",
+          "person",
+          "backpack",
+          "person",
+          "skis",
+          "person"
+        ],
+        "ground_truth": [
+          "backpack",
+          "person",
+          "skis"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 332625,
+        "caption": "The image depicts a man sitting in an airplane seat, watching a video on a small screen. He is wearing glasses and appears to be focused on the content displayed on the screen. The man is seated in a chair that is part of a row of seats, which are arranged in a way that allows passengers to watch the video comfortably.",
+        "generated_objects": [
+          "person",
+          "airplane",
+          "chair",
+          "person",
+          "chair",
+          "chair",
+          "person"
+        ],
+        "ground_truth": [
+          "airplane",
+          "chair",
+          "person",
+          "tv"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 337502,
+        "caption": "The image features a delicious pizza with a variety of toppings, including broccoli, on a wooden cutting board. The pizza is placed on a stove, likely in the process of being cooked. The pizza is spread across the entire cutting board, with the toppings evenly distributed. The scene captures the essence of a homemade pizza, ready to be enjoyed.",
+        "generated_objects": [
+          "pizza",
+          "broccoli",
+          "pizza",
+          "oven",
+          "pizza",
+          "pizza"
+        ],
+        "ground_truth": [
+          "broccoli",
+          "oven",
+          "pizza"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 355342,
+        "caption": "The image features two women performing a dance routine on a stage. They are both holding umbrellas, which are open and positioned in front of them. The women are wearing dresses, and their outfits complement the overall performance.\n\nThe stage is adorned with a pink backdrop, and there are two chairs placed in the background. The audience is watching the performance, and the atmosphere appears to be lively and engaging.",
+        "generated_objects": [
+          "person",
+          "umbrella",
+          "person",
+          "chair"
+        ],
+        "ground_truth": [
+          "orange",
+          "person",
+          "umbrella"
+        ],
+        "hallucinated_objects": [
+          [
+            "chair",
+            "chair"
+          ]
+        ]
+      },
+      {
+        "image_id": 363908,
+        "caption": "The image captures a baseball game in progress, with a batter standing at home plate, holding a baseball bat and preparing to swing. The catcher is positioned behind the batter, wearing a baseball glove, ready to catch the ball.\n\nThere are several other players on the field, including a pitcher and a few other players in various positions. Some of the players are wearing baseball gloves, indicating their roles as fielders.\n\nThe scene is set on a baseball field, with a bench visible in the background. The atmosphere is lively, as the players are actively engaged in the",
+        "generated_objects": [
+          "baseball bat",
+          "baseball glove",
+          "sports ball",
+          "person",
+          "person",
+          "person",
+          "person",
+          "baseball glove",
+          "bench",
+          "person"
+        ],
+        "ground_truth": [
+          "baseball bat",
+          "baseball glove",
+          "person",
+          "sports ball"
+        ],
+        "hallucinated_objects": [
+          [
+            "bench",
+            "bench"
+          ]
+        ]
+      },
+      {
+        "image_id": 377401,
+        "caption": "The image features a large, yellow church with a tall clock tower. The church has a prominent clock on its side, making it a focal point in the scene. The clock tower is adorned with a green roof, adding a touch of color to the building.\n\nIn the foreground, there is a car parked in front of the church, and a person can be seen standing nearby. The scene also includes a bench located in the middle of the church grounds, providing a place for visitors to sit and enjoy the surroundings.",
+        "generated_objects": [
+          "clock",
+          "clock",
+          "clock",
+          "car",
+          "person",
+          "bench"
+        ],
+        "ground_truth": [
+          "car",
+          "clock",
+          "truck"
+        ],
+        "hallucinated_objects": [
+          [
+            "person",
+            "person"
+          ],
+          [
+            "bench",
+            "bench"
+          ]
+        ]
+      },
+      {
+        "image_id": 382617,
+        "caption": "The image features a stack of books with a coffee mug placed on top of them. The stack of books is quite tall, with the mug sitting on top of the pile. The mug is positioned towards the left side of the stack, and the books are arranged in a way that they appear to be a part of the stack.",
+        "generated_objects": [
+          "book",
+          "book",
+          "book"
+        ],
+        "ground_truth": [
+          "book",
+          "cup",
+          "dining table",
+          "mouse"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 388983,
+        "caption": "The image features a delicious hot dog with a bun, topped with mustard and ketchup. The hot dog is placed in a bun, and it appears to be a foot long. The hot dog is accompanied by a pickle, which is placed on top of the hot dog, adding a tangy flavor to the dish. The hot dog and pickle are served in a paper container, making it a convenient and portable meal.",
+        "generated_objects": [
+          "hot dog",
+          "hot dog",
+          "hot dog",
+          "hot dog",
+          "hot dog",
+          "bowl"
+        ],
+        "ground_truth": [
+          "bowl",
+          "cup",
+          "dining table",
+          "hot dog",
+          "person",
+          "sandwich"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 396068,
+        "caption": "The image features a woman standing in a room, holding a remote control in her hand. She appears to be focused on the remote, possibly adjusting the settings or changing channels. \n\nThere are several other people in the room, some of them standing closer to the woman and others further away. A TV is visible in the background, and a handbag can be seen placed on the floor. The room seems to be a gathering place for people to socialize and enjoy their time together.",
+        "generated_objects": [
+          "person",
+          "remote",
+          "remote",
+          "person",
+          "person",
+          "tv",
+          "handbag",
+          "person"
+        ],
+        "ground_truth": [
+          "person",
+          "remote",
+          "tv"
+        ],
+        "hallucinated_objects": [
+          [
+            "handbag",
+            "handbag"
+          ]
+        ]
+      },
+      {
+        "image_id": 401398,
+        "caption": "The image features a young girl holding a brown teddy bear in her arms. She is standing in front of a window, which provides a natural light source for the scene. The girl appears to be enjoying her time with the teddy bear, creating a warm and cozy atmosphere.",
+        "generated_objects": [
+          "person",
+          "teddy bear",
+          "person",
+          "teddy bear"
+        ],
+        "ground_truth": [
+          "bear",
+          "person",
+          "potted plant",
+          "teddy bear",
+          "vase"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 408757,
+        "caption": "The image captures a thrilling scene of a person parasailing over the ocean. The parasailer is being towed by a boat, and the parachute is flying high in the sky. The person is wearing a yellow and black parachute, which adds a vibrant touch to the scene.\n\nIn addition to the main parasailer, there are two other people visible in the image, one closer to the left side and the other near the center. They seem to be enjoying the beach and the ocean view.",
+        "generated_objects": [
+          "person",
+          "boat",
+          "person",
+          "person"
+        ],
+        "ground_truth": [
+          "kite",
+          "person",
+          "umbrella"
+        ],
+        "hallucinated_objects": [
+          [
+            "boat",
+            "boat"
+          ]
+        ]
+      },
+      {
+        "image_id": 430052,
+        "caption": "The image features a vase filled with a beautiful red flower, possibly a bird of paradise. The vase is made of a green glass bottle, adding a unique touch to the display. The flower is positioned in the center of the vase, drawing attention to its vibrant color. The scene is set against a white wall, creating a clean and minimalist backdrop for the flower arrangement.",
+        "generated_objects": [
+          "vase",
+          "bird",
+          "vase",
+          "bottle",
+          "vase"
+        ],
+        "ground_truth": [
+          "bird",
+          "bottle",
+          "dining table",
+          "vase"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 447787,
+        "caption": "The image features a woman standing in a kitchen, holding a large tray filled with various food items. The tray contains a mix of vegetables, including several carrots, and possibly some meat. The woman appears to be smiling and enjoying the meal she has prepared.\n\nThe kitchen is well-equipped with a microwave, an oven, and a refrigerator. There are also several bottles placed around the kitchen, possibly containing condiments or beverages. Additionally, a bowl can be seen on a surface, possibly containing more food or ingredients.",
+        "generated_objects": [
+          "person",
+          "carrot",
+          "person",
+          "microwave",
+          "oven",
+          "refrigerator",
+          "bottle",
+          "bowl"
+        ],
+        "ground_truth": [
+          "bottle",
+          "bowl",
+          "cake",
+          "carrot",
+          "microwave",
+          "oven",
+          "person"
+        ],
+        "hallucinated_objects": [
+          [
+            "refrigerator",
+            "refrigerator"
+          ]
+        ]
+      },
+      {
+        "image_id": 460931,
+        "caption": "The image showcases a bakery display case filled with a wide variety of doughnuts. There are at least 14 different doughnuts in the display, each with unique flavors and toppings. The doughnuts are arranged in rows, with some placed closer to the front and others further back in the case. The display case is well-stocked, offering customers a diverse selection of delicious treats.",
+        "generated_objects": [
+          "donut",
+          "donut",
+          "donut"
+        ],
+        "ground_truth": [
+          "cake",
+          "donut",
+          "person"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 465346,
+        "caption": "The image features a delicious meal served on a white plate. The plate is filled with a variety of food items, including a sandwich, a piece of meat, and a side of fries. The sandwich is placed towards the center of the plate, while the meat is positioned towards the right side. The fries are spread out around the plate, with some on the left side and others on the right side.\n\nThe dining table is set with a fork on the left side and a knife on the right side. There is also a cup placed on the table, likely containing a beverage to",
+        "generated_objects": [
+          "sandwich",
+          "sandwich",
+          "dining table",
+          "fork",
+          "knife",
+          "cup",
+          "dining table"
+        ],
+        "ground_truth": [
+          "dining table",
+          "fork",
+          "knife",
+          "sandwich",
+          "spoon"
+        ],
+        "hallucinated_objects": [
+          [
+            "cup",
+            "cup"
+          ]
+        ]
+      },
+      {
+        "image_id": 482829,
+        "caption": "The image features a woman in a blue shirt and white shorts, holding a tennis racket and preparing to hit a tennis ball. She is focused on the game, possibly in the middle of a match.\n\nThere are two other people in the scene, one standing to the left of the woman and another person on the right side. A tennis ball can be seen in the air, close to the woman's racket. The scene appears to be set on a tennis court, with the woman being the main subject of the image.",
+        "generated_objects": [
+          "person",
+          "tennis racket",
+          "sports ball",
+          "person",
+          "person",
+          "person",
+          "sports ball",
+          "person",
+          "tennis racket",
+          "person"
+        ],
+        "ground_truth": [
+          "person",
+          "sports ball",
+          "tennis racket"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 485564,
+        "caption": "The image captures a group of young women playing soccer on a field. There are at least nine players visible in the scene, with some of them actively participating in the game. The soccer ball is in the air, and the players are positioned around it, trying to gain control of the ball.\n\nThe players are spread out across the field, with some closer to the foreground and others further back. The scene is lively, showcasing the excitement and energy of the game.",
+        "generated_objects": [
+          "person",
+          "person",
+          "sports ball",
+          "person",
+          "sports ball",
+          "person"
+        ],
+        "ground_truth": [
+          "car",
+          "person",
+          "sports ball"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 506483,
+        "caption": "The image features a colorful, large tiger sculpture sitting on a sidewalk. The tiger sculpture is positioned in the middle of the scene, drawing attention to itself.\n\nIn the background, there is a person standing near the tiger sculpture, possibly admiring or observing it. A car is parked on the street, and a bench can be seen in the background, adding to the urban setting.",
+        "generated_objects": [
+          "person",
+          "car",
+          "bench"
+        ],
+        "ground_truth": [
+          "backpack",
+          "bench",
+          "car",
+          "cat",
+          "person"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 520524,
+        "caption": "The image features a sidewalk with a variety of bicycles and motorcycles parked along it. There are two bicycles prominently visible, one towards the left side of the sidewalk and the other closer to the center. A motorcycle is parked on the right side of the sidewalk, and another motorcycle is located further back on the right side.\n\nIn addition to the bicycles and motorcycles, there are two cars parked in the background, one on the left side and the other on the right side of the scene. A person can be seen standing near the center of",
+        "generated_objects": [
+          "bicycle",
+          "motorcycle",
+          "bicycle",
+          "motorcycle",
+          "motorcycle",
+          "bicycle",
+          "motorcycle",
+          "car",
+          "person"
+        ],
+        "ground_truth": [
+          "bicycle",
+          "car",
+          "dining table",
+          "motorcycle",
+          "orange"
+        ],
+        "hallucinated_objects": [
+          [
+            "person",
+            "person"
+          ]
+        ]
+      },
+      {
+        "image_id": 524979,
+        "caption": "The image features a young boy wearing glasses and a blue jacket, standing on a porch. He is holding a baseball glove, ready to catch a ball. The boy appears to be focused on the game, possibly waiting for the ball to be thrown his way.",
+        "generated_objects": [
+          "person",
+          "baseball glove",
+          "sports ball",
+          "person",
+          "sports ball"
+        ],
+        "ground_truth": [
+          "baseball glove",
+          "dog",
+          "person",
+          "sports ball"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 533201,
+        "caption": "The image depicts an airport scene with a large passenger jet parked on the runway. The airplane is positioned near the terminal, and there are several people around the area, likely waiting for their flights or attending to the aircraft.\n\nIn addition to the airplane, there are a few trucks and cars scattered around the scene, possibly providing support services or transportation for the passengers and crew. The overall atmosphere of the image suggests a busy and active airport environment.",
+        "generated_objects": [
+          "airplane",
+          "airplane",
+          "person",
+          "airplane",
+          "airplane",
+          "truck",
+          "car",
+          "person"
+        ],
+        "ground_truth": [
+          "airplane",
+          "person",
+          "truck"
+        ],
+        "hallucinated_objects": [
+          [
+            "car",
+            "car"
+          ]
+        ]
+      },
+      {
+        "image_id": 551881,
+        "caption": "The image features a kitchen with a large stainless steel refrigerator on the left side of the room. The refrigerator is adorned with a clock on its door. The kitchen is well-equipped with a sink, a microwave, and a toaster.\n\nThere are two chairs in the kitchen, one located near the center of the room and the other towards the right side. A potted plant is placed on the right side of the room, adding a touch of greenery to the space.\n\nVarious items can be seen on the countertops, including a",
+        "generated_objects": [
+          "refrigerator",
+          "refrigerator",
+          "clock",
+          "sink",
+          "microwave",
+          "toaster",
+          "chair",
+          "potted plant"
+        ],
+        "ground_truth": [
+          "book",
+          "chair",
+          "dining table",
+          "handbag",
+          "potted plant",
+          "refrigerator"
+        ],
+        "hallucinated_objects": [
+          [
+            "clock",
+            "clock"
+          ],
+          [
+            "sink",
+            "sink"
+          ],
+          [
+            "microwave",
+            "microwave"
+          ],
+          [
+            "toaster",
+            "toaster"
+          ]
+        ]
+      },
+      {
+        "image_id": 559547,
+        "caption": "The image is a black and white photograph featuring three baseball players posing for a picture. They are all wearing baseball uniforms and are standing close to each other. Each player has a baseball glove, with one glove located on the left side, another in the middle, and the third glove on the right side of the image.\n\nThe players are positioned in a way that they are all visible in the photograph, with one player on the left, another in the middle, and the third player on the right. The players are standing in front of a car, which is partially visible in the background.",
+        "generated_objects": [
+          "person",
+          "person",
+          "baseball glove",
+          "person",
+          "person",
+          "person",
+          "person",
+          "car"
+        ],
+        "ground_truth": [
+          "baseball bat",
+          "baseball glove",
+          "person",
+          "sports ball"
+        ],
+        "hallucinated_objects": [
+          [
+            "car",
+            "car"
+          ]
+        ]
+      },
+      {
+        "image_id": 560744,
+        "caption": "The image depicts a group of people gathered around a dining table, enjoying a meal together. There are three people in the scene, with one person on the left side, another in the middle, and the third person on the right side of the table.\n\nThe table is set with various items, including wine glasses, cups, and a bottle. There are four wine glasses placed around the table, with one near the left person, another near the middle person, and two more on the right side. A cup is also visible on the right side of the table. A bottle is",
+        "generated_objects": [
+          "person",
+          "dining table",
+          "person",
+          "person",
+          "person",
+          "dining table",
+          "dining table",
+          "wine glass",
+          "cup",
+          "bottle",
+          "wine glass",
+          "dining table",
+          "person",
+          "person",
+          "cup",
+          "dining table",
+          "bottle"
+        ],
+        "ground_truth": [
+          "book",
+          "bottle",
+          "bowl",
+          "chair",
+          "cup",
+          "dining table",
+          "knife",
+          "person",
+          "spoon",
+          "wine glass"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 569839,
+        "caption": "The image features a young girl sitting at a dining table in a restaurant. She is enjoying a meal, which includes a sandwich and a cup. The girl is smiling and appears to be having a good time.\n\nThe dining area is furnished with multiple chairs, some of which are placed around the table. There are also a few other people in the background, possibly other customers or staff members. A handbag can be seen on the floor near the girl, and a backpack is placed on the floor further away.",
+        "generated_objects": [
+          "person",
+          "dining table",
+          "sandwich",
+          "cup",
+          "person",
+          "chair",
+          "dining table",
+          "person",
+          "handbag",
+          "person",
+          "backpack"
+        ],
+        "ground_truth": [
+          "chair",
+          "cup",
+          "dining table",
+          "hot dog",
+          "person",
+          "sandwich"
+        ],
+        "hallucinated_objects": [
+          [
+            "handbag",
+            "handbag"
+          ],
+          [
+            "backpack",
+            "backpack"
+          ]
+        ]
+      },
+      {
+        "image_id": 579231,
+        "caption": "The image captures a baseball game in progress, with a batter swinging a baseball bat at a pitch. The batter is in the middle of the swing, and the catcher is positioned behind him, ready to catch the ball. The umpire is also present, closely observing the play.\n\nThere are several other people in the scene, likely teammates and opponents, standing around the field. Some of them are holding baseball gloves, indicating their roles as fielders. The atmosphere is lively, with everyone focused on the ongoing game.",
+        "generated_objects": [
+          "baseball bat",
+          "sports ball",
+          "person",
+          "baseball glove"
+        ],
+        "ground_truth": [
+          "baseball bat",
+          "baseball glove",
+          "person"
+        ],
+        "hallucinated_objects": [
+          [
+            "ball",
+            "sports ball"
+          ]
+        ]
+      }
+    ]
+  }
+}
