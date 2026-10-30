@@ -4,11 +4,13 @@ import json
 import sys
 import time
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from tools.runtime import ROOT, write_json, sha, binary_metrics, group_split, load_llava, inputs_for, train_direction, provenance
 import torch
 from aod.data.amber import load_amber_discriminative
 from aod.vlm.intervention import resolve_decoder_layers, AODDecodeConfig, aod_next_token_logits
+from evaluate import evaluate_records
+from aod.vlm.answers import llava_answer_ids
 
 
 def main():
@@ -20,6 +22,7 @@ def main():
     p.add_argument('--images', type=int, default=200, help='0 means all 1004 images')
     p.add_argument('--layer', type=int, default=24)
     p.add_argument('--seed', type=int, default=42)
+    p.add_argument('--extract-only',action='store_true')
     a = p.parse_args()
     if a.out.exists():
         raise FileExistsError('Use a fresh output directory')
@@ -33,7 +36,7 @@ def main():
     a.out.mkdir(parents=True)
     write_json(a.out/'manifest.json',records)
     model, proc = load_llava(a.model)
-    yes, no = [proc.tokenizer.encode(x, add_special_tokens=False)[-1] for x in ['Yes','No']]
+    yes,no=llava_answer_ids(proc.tokenizer)
     layers, _ = resolve_decoder_layers(model)
     captured = {}
     def hook(_m,_i,out):
@@ -51,6 +54,8 @@ def main():
     handle.remove()
     hidden = torch.stack(hidden)
     torch.save(dict(records=records,hidden=hidden,layer=a.layer),a.out/'features.pt')
+    write_json(a.out/'extraction_protocol.json',dict(answer_ids=[yes,no],scorer='word-start Yes/No; token-fix-v3',images=a.images,layer=a.layer))
+    if a.extract_only:return
     tr = [i for i,r in enumerate(records) if r['split']=='train']
     te = [r for r in records if r['split']=='test']
     v, losses = train_direction(hidden[tr], torch.tensor([records[i]['base_pred']==records[i]['gt'] for i in tr]),
@@ -66,10 +71,7 @@ def main():
             r['pred']=int(scores[0]>scores[1])
             f.write(json.dumps(r)+'\n'); f.flush()
             if i%50 == 0: print('EVAL',i,len(te),flush=True)
-    result = dict(base=binary_metrics(te,'base_pred'),aod=binary_metrics(te),
-                  by_type={t:dict(base=binary_metrics([r for r in te if r['typology']==t],'base_pred'),
-                                 aod=binary_metrics([r for r in te if r['typology']==t]))
-                           for t in sorted({r['typology'] for r in te})})
+    result = evaluate_records(te)
     protocol=dict(benchmark='AMBER discriminative',scope='fixed image subset' if a.images else 'all images',
                   seed=a.seed,images=len({r['image'] for r in records}),train_n=len(tr),test_n=len(te),
                   train_images=sorted({r['image'] for r in records if r['split']=='train'}),

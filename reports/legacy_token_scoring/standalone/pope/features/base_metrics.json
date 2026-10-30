@@ -1,0 +1,58 @@
+{
+  "pope_mscoco/train": {
+    "n": 1800,
+    "accuracy": 86.72222222222223,
+    "precision": 90.35409035409036,
+    "recall": 82.22222222222223,
+    "f1": 86.09656777196044,
+    "yes_ratio": 45.5,
+    "tp": 740,
+    "tn": 821,
+    "fp": 79,
+    "fn": 160,
+    "false_positive_rate": 8.777777777777779,
+    "false_discovery_rate": 9.645909645909645
+  },
+  "pope_mscoco/all": {
+    "n": 3000,
+    "accuracy": 86.43333333333334,
+    "precision": 90.21339220014717,
+    "recall": 81.73333333333333,
+    "f1": 85.76425323539699,
+    "yes_ratio": 45.3,
+    "tp": 1226,
+    "tn": 1367,
+    "fp": 133,
+    "fn": 274,
+    "false_positive_rate": 8.866666666666667,
+    "false_discovery_rate": 9.786607799852833
+  },
+  "pope_mscoco/val": {
+    "n": 600,
+    "accuracy": 86.16666666666667,
+    "precision": 91.57088122605364,
+    "recall": 79.66666666666667,
+    "f1": 85.20499108734403,
+    "yes_ratio": 43.5,
+    "tp": 239,
+    "tn": 278,
+    "fp": 22,
+    "fn": 61,
+    "false_positive_rate": 7.333333333333333,
+    "false_discovery_rate": 8.42911877394636
+  },
+  "pope_mscoco/test": {
+    "n": 600,
+    "accuracy": 85.83333333333333,
+    "precision": 88.5304659498208,
+    "recall": 82.33333333333333,
+    "f1": 85.31951640759931,
+    "yes_ratio": 46.5,
+    "tp": 247,
+    "tn": 268,
+    "fp": 32,
+    "fn": 53,
+    "false_positive_rate": 10.666666666666666,
+    "false_discovery_rate": 11.469534050179211
+  }
+}

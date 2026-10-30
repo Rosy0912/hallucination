@@ -1,0 +1,7 @@
+{
+  "benchmark": "chair",
+  "images": 2,
+  "max_new_tokens": 16,
+  "model": "models/llava-1.5-7b-hf",
+  "training": "fixed package protocol; validation selection only"
+}

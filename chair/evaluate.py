@@ -3,7 +3,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
-sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0,str(Path(__file__).resolve().parent))
 from tools.runtime import write_json
 
 
@@ -24,18 +24,33 @@ def score(evaluator, rows, caption_key):
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('predictions',type=Path)
-    p.add_argument('--annotations',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
+    source=p.add_mutually_exclusive_group(required=True)
+    source.add_argument('--annotations',type=Path)
+    source.add_argument('--ground-truth',type=Path,help='Previously exported official-rule object sets for these exact image IDs')
+    p.add_argument('--output',type=Path,required=True)
     a=p.parse_args()
     rows=[json.loads(x) for x in a.predictions.read_text().splitlines() if x.strip()]
     if not rows or len({r['image_id'] for r in rows})!=len(rows):
         raise ValueError('Empty predictions or duplicate image IDs')
-    known=set()
-    for split in ['val','train']:
-        known.update(r['id'] for r in json.loads((a.annotations/f'captions_{split}2014.json').read_text())['images'])
-    if not {r['image_id'] for r in rows} <= known:
-        raise ValueError('Image IDs missing from COCO annotation inventory')
-    from chair.official_algorithm import CHAIR
-    evaluator=CHAIR([r['image_id'] for r in rows],str(a.annotations));evaluator.get_annotations()
+    try:
+        from .official_algorithm import CHAIR
+    except ImportError:
+        from official_algorithm import CHAIR
+    evaluator=CHAIR([r['image_id'] for r in rows],str(a.annotations or ''))
+    if a.annotations:
+        known=set()
+        for split in ['val','train']:
+            known.update(r['id'] for r in json.loads((a.annotations/f'captions_{split}2014.json').read_text())['images'])
+        if not {r['image_id'] for r in rows} <= known:
+            raise ValueError('Image IDs missing from COCO annotation inventory')
+        evaluator.get_annotations()
+        write_json(a.output.with_name('ground_truth.json'),
+                   {str(k):sorted(v) for k,v in evaluator.imid_to_objects.items()})
+    else:
+        ground_truth=json.loads(a.ground_truth.read_text())
+        if {str(r['image_id']) for r in rows}!=set(ground_truth):
+            raise ValueError('Prediction image IDs differ from exported ground truth')
+        evaluator.imid_to_objects={int(k):set(v) for k,v in ground_truth.items()}
     result={mode:score(evaluator,rows,mode+'_caption') for mode in ['base','aod']}
     write_json(a.output,result)
     print(json.dumps({k:{m:v for m,v in vals.items() if m!='sentences'} for k,vals in result.items()},indent=2))

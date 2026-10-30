@@ -15,7 +15,9 @@ from user_gt_models import GTModel
 ap=argparse.ArgumentParser();ap.add_argument('--source',type=Path,required=True)
 ap.add_argument('--parent',type=Path,required=True);ap.add_argument('--out',type=Path,required=True)
 ap.add_argument('--seed',type=int,default=42)
-ap.add_argument('--train-splits',choices=['train,val','train'],default='train,val');args=ap.parse_args()
+ap.add_argument('--train-splits',choices=['train,val','train'],default='train,val')
+ap.add_argument('--allow-prediction-drift',action='store_true',help='Record numerical/training drift rather than requiring frozen predictions to match.')
+args=ap.parse_args()
 args.out.mkdir(parents=True,exist_ok=True);torch.set_num_threads(4);torch.set_float32_matmul_precision('high')
 choices=json.loads((args.parent/'selection.json').read_text())
 cache=torch.load(args.source/'features.pt',weights_only=False);rows=cache['records']
@@ -73,8 +75,13 @@ for variant,path in models.items():
         checkpoint=str(path),checkpoint_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),train_n=len(train))
     if args.seed==42 and args.train_splits=='train':
         original_predictions=json.loads((args.parent/'test_predictions.json').read_text())[variant]
-        assert {r['id']:r['pred'] for r in original_predictions}=={r['id']:r['pred'] for r in pred},'Same-seed repeat changed predictions'
-        results[variant]['original_seed_predictions_exact_match']=True
+        reference={r['id']:r['pred'] for r in original_predictions}
+        changed=[r['id'] for r in pred if reference[r['id']]!=r['pred']]
+        results[variant]['original_seed_predictions_exact_match']=not changed
+        results[variant]['changed_prediction_ids']=changed
+        if changed and not args.allow_prediction_drift:
+            atomic_json(args.out/'drift_diagnostic.json',results[variant])
+            raise AssertionError('Same-seed repeat changed predictions; diagnostics saved. Use --allow-prediction-drift for a new training experiment.')
     if rows[0]['benchmark']=='hallusionbench':results[variant]['image_required_subset']=metrics([r for r in pred if r['image']])
 atomic_json(args.out/'test_predictions.json',predictions);atomic_json(args.out/'results.json',results)
 print('REFIT TEST',json.dumps({k:v['selected'] for k,v in results.items()}),flush=True)

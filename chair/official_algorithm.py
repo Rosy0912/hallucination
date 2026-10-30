@@ -3,7 +3,10 @@ import sys
 from nltk.stem import *
 import nltk
 import json
-from chair.pattern_singular import singularize
+try:
+    from .pattern_singular import singularize
+except ImportError:
+    from pattern_singular import singularize
 import argparse
 import os
 from pathlib import Path

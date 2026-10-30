@@ -1,0 +1,24 @@
+{"id": 3009, "image": "AMBER_264.jpg", "question": "Does the bird fly in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3010, "image": "AMBER_264.jpg", "question": "Does the bird stand in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3011, "image": "AMBER_264.jpg", "question": "Is the sea calm in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3012, "image": "AMBER_264.jpg", "question": "Is the sea turbulent in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3013, "image": "AMBER_264.jpg", "question": "Is the beach wet in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3014, "image": "AMBER_264.jpg", "question": "Is the beach dry in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 7919, "image": "AMBER_893.jpg", "question": "Is the sky sunny in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7920, "image": "AMBER_893.jpg", "question": "Is the sky gloomy in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7921, "image": "AMBER_893.jpg", "question": "Is the train blue in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 7922, "image": "AMBER_893.jpg", "question": "Is the train white in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7923, "image": "AMBER_893.jpg", "question": "Is the forest dense in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7924, "image": "AMBER_893.jpg", "question": "Is the forest sparse in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9910, "image": "AMBER_264.jpg", "question": "Is there a shell in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9911, "image": "AMBER_264.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9912, "image": "AMBER_264.jpg", "question": "Is there a umbrella in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9913, "image": "AMBER_264.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13004, "image": "AMBER_893.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13005, "image": "AMBER_893.jpg", "question": "Is there a house in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13006, "image": "AMBER_893.jpg", "question": "Is there a sign in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13007, "image": "AMBER_893.jpg", "question": "Is there a bird in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14005, "image": "AMBER_264.jpg", "question": "Is there direct contact between the bird and sea?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14006, "image": "AMBER_264.jpg", "question": "Is there direct contact between the sea and beach?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 15068, "image": "AMBER_893.jpg", "question": "Is there direct contact between the train and ground?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 15069, "image": "AMBER_893.jpg", "question": "Is there direct contact between the train and grass?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}

@@ -1,0 +1,39 @@
+{
+  "base": {
+    "n": 600,
+    "accuracy": 85.83333333333333,
+    "precision": 88.5304659498208,
+    "recall": 82.33333333333333,
+    "f1": 85.31951640759931,
+    "yes_ratio": 46.5,
+    "tp": 247,
+    "tn": 268,
+    "fp": 32,
+    "fn": 53,
+    "false_positive_rate": 10.666666666666666,
+    "false_discovery_rate": 11.469534050179211
+  },
+  "selected": {
+    "n": 600,
+    "accuracy": 92.66666666666667,
+    "precision": 95.39007092198581,
+    "recall": 89.66666666666667,
+    "f1": 92.43986254295532,
+    "yes_ratio": 47.0,
+    "tp": 269,
+    "tn": 287,
+    "fp": 13,
+    "fn": 31,
+    "false_positive_rate": 4.333333333333333,
+    "false_discovery_rate": 4.609929078014185
+  },
+  "accuracy_gain_pp": 6.833333333333343,
+  "f1_gain_pp": 7.120346135356016,
+  "base_predictions_exact": true,
+  "selected_predictions_exact": true,
+  "features_exact": true,
+  "elapsed_seconds": 68.58221101760864,
+  "complete_test": true,
+  "checkpoint_sha256": "061852e57f415f8449c3fb08264ab5b827cf91ec1d0f288e570b67d3110459a6",
+  "criterion_met": true
+}

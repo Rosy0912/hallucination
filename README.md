@@ -1,110 +1,49 @@
-# LLaVA-1.5-7B 幻觉评测：四个可执行 benchmark
+# LLaVA-1.5-7B：四个独立可运行的幻觉 benchmark
 
-本仓库整理用户提供的两份 AOD 代码，并在 Lumia 的 Slurm GPU 上重新执行。
-模型固定为 **LLaVA-1.5-7B**，比较 Base 与 AOD。四个入口分别是
-[`pope/`](pope/)、[`hallusionbench/`](hallusionbench/)、[`amber/`](amber/)、[`chair/`](chair/)。
-本次范围为“先跑通”，**不是四项官方全量榜单复现**。
+每个目录都包含完整代码和依赖。**只下载一个 benchmark，就能准备公开数据、提取特征、训练 AOD、比较 Base/AOD 并重算指标**，不需要作者服务器、父目录源码或已有特征。
 
-## 实验口径
+| Benchmark | 独立源码 | 独立压缩包 |
+|---|---|---|
+| POPE | [pope/](pope/) | [pope.zip](packages/pope.zip) |
+| HallusionBench | [hallusionbench/](hallusionbench/) | [hallusionbench.zip](packages/hallusionbench.zip) |
+| AMBER | [amber/](amber/) | [amber.zip](packages/amber.zip) |
+| CHAIR | [chair/](chair/) | [chair.zip](packages/chair.zip) |
 
-| Benchmark | 本轮范围 | AOD 实现 | 主要指标 |
-|---|---|---|---|
-| POPE | MSCOCO popular，固定 600 题测试集 | 原验收包 L13、GT Yes/No 监督的 projective 分类头 | F1、FPR、Accuracy |
-| HallusionBench | 有图片样本，固定 196 题测试集 | 原验收包 L12、三个种子的 GT 监督分类头集成 | Accuracy、F1、组别指标 |
-| AMBER | seed=42 抽取 200 张图片，160 张训练/40 张测试；仅判别任务 | 当前 AOD-main 的 L24 一致性方向训练及 CD 解码 | 总体及 existence/attribute/relation 分项 F1、Accuracy、FPR |
-| CHAIR | POPE 测试图片中 seed=42 抽取 50 张，每图最多生成 128 token | POPE **训练集**的一致性方向，L24 CD 解码 | CHAIRs、CHAIRi（越低越好） |
+## 运行方式
 
-**两份来源代码使用不同的 AOD 变体。** 前两项是保留原验收协议的分类头实验；
-后两项是隐藏状态方向干预和对比解码。它们不能被描述为完全相同的干预算法。
-特别是旧 POPE checkpoint 不是 CHAIR 的生成方向，CHAIR 会单独训练一个一致性方向。
-原 POPE/HallusionBench 划分曾在历史研究中反复评估，本次是冻结配置复跑，不是独立盲测。
-
-## 环境
-
-Linux、NVIDIA CUDA GPU、Python 3.11。实际验证环境见 `requirements.txt`；GPU 调度信息和
-逐题输出见 [`reports/`](reports/)。模型 revision 为
-`llava-hf/llava-1.5-7b-hf@b234b804b114d9e37bb655e11cbbb5f5e971b7a9`。
+Linux、Python 3.11、已分配的 NVIDIA CUDA GPU（24GB 显存）、约 25GB 磁盘。以 POPE 为例：
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python -m nltk.downloader -d data/nltk_data punkt_tab
-export NLTK_DATA="$PWD/data/nltk_data"
+curl -fL https://raw.githubusercontent.com/Rosy0912/hallucination/main/packages/pope.zip -o pope.zip
+unzip pope.zip
+cd pope
+bash setup.sh
+bash run.sh all
 ```
 
-如果使用已有 AOD 服务器资源：
+把 pope 换成另一个 benchmark 即可。也可以 clone 本仓库，进入相应子目录后执行最后两条命令。数据和底座权重首次自动下载。联网机器可先执行 `bash run.sh prepare`，再将整个目录连同 data/、models/ 搬到计算节点。
 
-```bash
-python tools/attach_resources.py \
-  --source-root /path/to/AOD-repro-20260928 \
-  --python-env /path/to/verified/python-environment
-```
+Hugging Face 网络不可用时，可自行选择可访问的端点，例如 `HF_ENDPOINT=https://hf-mirror.com bash run.sh prepare`；模型固定 revision，HallusionBench 镜像还校验 SHA256 和全部问题/标签。AMBER 图片由官方 Google Drive 发布，受其访问与下载配额限制。
 
-这会连接模型、图片和两个原始特征缓存，不复制大型模型或覆盖已有文件。
-原服务器的已验证环境是 `AOD-repro-20260928/acceptance/releases/AOD-evaluation-20260929/.venv`。
-不要把系统 `python` 与这个环境混用。
+## 协议与范围
 
-## 没有原服务器资源时
+| Benchmark | 划分与方法 |
+|---|---|
+| POPE | COCO popular 3000 题，1800/600/600；L13 GT 监督 projective 分类头，验证集选 epoch/阈值 |
+| HallusionBench | 有图片的 951 题，582/173/196；GT 监督 AOD 分类头，按分组划分，验证集选层与参数 |
+| AMBER | 判别任务；默认 200 图提取池，128 图训练、32 图验证；另取未参与旧实验的 200 图测试 |
+| CHAIR | POPE 1800 题训练一致性方向；16 张 validation 图片选参数；50 张未参与旧实验的 test 图片评测，greedy 128 tokens |
 
-1. 下载上述固定 revision 的模型到 `legacy/models/llava-1.5-7b-hf`。
-   原始提取脚本检查 `verified_manifest.json`；参考 `tools/prepare_model.py`。
-2. 下载 COCO val2014 图片及 HallusionBench 官方图片，运行
-   `python tools/prepare_images.py --coco-val2014 /path/to/val2014 --hallusionbench-images /path/to/hallusion_bench`。
-3. 使用 `pope/run.py extract`、`hallusionbench/run.py extract` 生成新缓存。固定题目与分组在
-   `legacy/resources/*_manifest.json`。新缓存存放到对应 `legacy/results/.../features.pt`。
-4. 原验收程序绑定原缓存 SHA256；重提取后序列化字节可能不同，不能冒充原缓存。
-   请用 `tools/validate_reextraction.py` 检查题目/预测并明确采用新训练流程；原冻结复跑需要原缓存。
-5. AMBER/CHAIR 的数据下载：另装 `pip install gdown`，执行 `bash tools/download_data.sh`。
-   若计算服务器无法访问 Google Drive，可在本机执行后传输 `data/AMBER`。
+前两项继承验收包的 GT 分类头；后两项是 AOD 一致性方向及内部干预/对比解码，**不是完全相同的算法变体**。这里提供透明的训练、选参、评测流程，不称为四项官方全量榜单复现。
 
-## 四个入口
+AMBER 以官方 No-positive F1 为主，同时列准确率及分项。CHAIR 使用原始算法的 Python 3 适配，合并实例标注与参考描述，按提及次数计算 CHAIRi。CHAIR 越低越好，附描述长度和正确物体覆盖率。
 
-所有命令在仓库根目录运行。GPU 命令必须在已分配 GPU 的计算节点执行，输出目录应为新目录。
+修正版结果、逐题输出、划分、选参记录和 Slurm 完成状态保存在 [reports/](reports/)。
 
-```bash
-python pope/run.py evaluate --out runs/pope
-python hallusionbench/run.py evaluate --out runs/hallusionbench
-python amber/run.py --data-root data/AMBER/data --image-root data/AMBER/image \
-  --model legacy/models/llava-1.5-7b-hf --out runs/amber --images 200
-python chair/run.py --pope-features legacy/results/llava_separate/pope_popular/features.pt \
-  --data-root legacy/data --model legacy/models/llava-1.5-7b-hf --out runs/chair --images 50
-python chair/evaluate.py runs/chair/predictions.jsonl \
-  --annotations data/coco/annotations --output runs/chair/metrics.json
-```
+## 重要修正与可复现性
 
-AMBER 的 `--images 0` 使用全部图片，仍按图片划分 80%/20%；不能据此称为官方全量测试。
-CHAIR 的样本池为 POPE held-out COCO 图片，默认 50 张，不是官方固定榜单集合。
+2026-10-30 检查发现旧包装脚本读取了不带词首空格的 Yes/No token（8241/3782），而固定 LLaVA tokenizer 实际生成词首 token（3869/1939）。四个独立包现使用经过现场生成核验的 token，并重新生成训练标签。旧成绩仅保留在 [历史协议记录](reports/legacy_token_scoring/)，不能拿错误的 Base 分数证明涨点。
 
-Lumia 提交示例（`tools/job.sbatch` 会校验实际分配的 GPU）：
+模型固定为 `llava-hf/llava-1.5-7b-hf@b234b804b114d9e37bb655e11cbbb5f5e971b7a9`。验证环境为 Python 3.11、PyTorch 2.10.0+cu128、Transformers 4.57.0。GPU 数值差异会影响训练和验证集选出的配置；脚本保留实际结果，不以历史分数作为通过条件。
 
-```bash
-mkdir -p logs
-export BENCH_ROOT="$PWD"
-export BENCH_PYTHON="$PWD/legacy/.venv/bin/python"
-sbatch --chdir="$PWD" --output="$PWD/logs/amber-%j.log" tools/job.sbatch \
-  amber/run.py --data-root data/AMBER/data --image-root data/AMBER/image \
-  --model legacy/models/llava-1.5-7b-hf --out runs/amber --images 200
-```
-
-`sacct` 的 COMPLETED/0:0、预测数量及最终指标文件需同时验证。提交成功不等于实验完成。
-
-## 重新训练与离线评测
-
-```bash
-python pope/run.py train --out runs/pope-retrain
-python hallusionbench/run.py train --out runs/hallusionbench-retrain
-python pope/evaluate.py reports/pope/predictions.jsonl
-python hallusionbench/evaluate.py reports/hallusionbench/predictions.jsonl
-python amber/evaluate.py reports/amber/predictions.jsonl
-python chair/evaluate.py reports/chair/predictions.jsonl \
-  --annotations data/coco/annotations --output runs/chair-rescored.json
-python -m unittest discover -s tests -v
-```
-
-AMBER 和 CHAIR 的 `run.py` 已包括方向训练。CHAIR 评分使用原始 CHAIR 规则的 Python 3
-适配：实例标注与参考描述取并集、使用原始同义词和 Pattern 单数化、按对象提及次数计数。
-`src/aod/data/chair.py` 保留原提供的简化实现供溯源，**本轮正式评分不使用它**。
-
-模型、图片、特征缓存、凭证不进 Git。小型 AOD 权重、冻结配置、运行证据、逐题预测及重算脚本保留。
-第三方来源与修改见 [`THIRD_PARTY.md`](THIRD_PARTY.md)。
+legacy/ 仅保存历史来源和旧协议。新读者从四个独立目录开始。来源、许可证和改动见 [THIRD_PARTY.md](THIRD_PARTY.md)。

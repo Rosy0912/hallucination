@@ -1,0 +1,72 @@
+[LUMIA Server]Job 144901 lauched on node node2
+[LUMIA Server]Job 144901 lauched on node node2
+{"gpu_binding": "verified", "job_id": "144901", "node": "node2", "uuids": ["GPU-753f0977-0c7c-ab8c-6dc7-7e17bc66f396"], "audit": "/home/jmzhang/Workspace/hallucination-20261030/logs/standalone-gpu-144901.json"}
+RUN /home/jmzhang/Workspace/hallucination-20261030/legacy/.venv/bin/python -u prepare.py --model-dir /home/jmzhang/Workspace/AOD-repro-20260928/models/llava-1.5-7b-hf --coco-root /home/jmzhang/Workspace/AOD-repro-20260928/data/images --annotations-root /home/jmzhang/Workspace/hallucination-20261030/data/coco/annotations
+Prepared 500 images and 3000 fixed questions
+PREPARE COMPLETE
+RUN /home/jmzhang/Workspace/hallucination-20261030/legacy/.venv/bin/python -u experiment/extract_llava.py --benchmark pope_mscoco --manifest assets/manifest.json --layers 24 --out results/default/features
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.38s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:02<00:01,  1.31s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.19s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.23s/it]
+EXTRACT 100 forward 100 reused 0 seconds 18
+EXTRACT 200 forward 200 reused 0 seconds 36
+EXTRACT 300 forward 300 reused 0 seconds 55
+EXTRACT 400 forward 400 reused 0 seconds 73
+EXTRACT 500 forward 500 reused 0 seconds 92
+EXTRACT 600 forward 600 reused 0 seconds 111
+EXTRACT 700 forward 700 reused 0 seconds 130
+EXTRACT 800 forward 800 reused 0 seconds 149
+EXTRACT 900 forward 900 reused 0 seconds 168
+EXTRACT 1000 forward 1000 reused 0 seconds 186
+EXTRACT 1100 forward 1100 reused 0 seconds 205
+EXTRACT 1200 forward 1200 reused 0 seconds 224
+EXTRACT 1300 forward 1300 reused 0 seconds 243
+EXTRACT 1400 forward 1400 reused 0 seconds 262
+EXTRACT 1500 forward 1500 reused 0 seconds 281
+EXTRACT 1600 forward 1600 reused 0 seconds 300
+EXTRACT 1700 forward 1700 reused 0 seconds 319
+EXTRACT 1800 forward 1800 reused 0 seconds 338
+EXTRACT 1900 forward 1900 reused 0 seconds 357
+EXTRACT 2000 forward 2000 reused 0 seconds 376
+EXTRACT 2100 forward 2100 reused 0 seconds 394
+EXTRACT 2200 forward 2200 reused 0 seconds 413
+EXTRACT 2300 forward 2300 reused 0 seconds 432
+EXTRACT 2400 forward 2400 reused 0 seconds 451
+EXTRACT 2500 forward 2500 reused 0 seconds 470
+EXTRACT 2600 forward 2600 reused 0 seconds 488
+EXTRACT 2700 forward 2700 reused 0 seconds 507
+EXTRACT 2800 forward 2800 reused 0 seconds 526
+EXTRACT 2900 forward 2900 reused 0 seconds 545
+EXTRACT 3000 forward 3000 reused 0 seconds 564
+COMPLETE {"pope_mscoco/train": {"n": 1800, "accuracy": 86.72222222222223, "precision": 90.35409035409036, "recall": 82.22222222222223, "f1": 86.09656777196044, "yes_ratio": 45.5, "tp": 740, "tn": 821, "fp": 79, "fn": 160, "false_positive_rate": 8.777777777777779, "false_discovery_rate": 9.645909645909645}, "pope_mscoco/all": {"n": 3000, "accuracy": 86.46666666666667, "precision": 90.22058823529412, "recall": 81.8, "f1": 85.8041958041958, "yes_ratio": 45.333333333333336, "tp": 1227, "tn": 1367, "fp": 133, "fn": 273, "false_positive_rate": 8.866666666666667, "false_discovery_rate": 9.779411764705882}, "pope_mscoco/val": {"n": 600, "accuracy": 86.33333333333333, "precision": 91.6030534351145, "recall": 80.0, "f1": 85.40925266903915, "yes_ratio": 43.666666666666664, "tp": 240, "tn": 278, "fp": 22, "fn": 60, "false_positive_rate": 7.333333333333333, "false_discovery_rate": 8.396946564885496}, "pope_mscoco/test": {"n": 600, "accuracy": 85.83333333333333, "precision": 88.5304659498208, "recall": 82.33333333333333, "f1": 85.31951640759931, "yes_ratio": 46.5, "tp": 247, "tn": 268, "fp": 32, "fn": 53, "false_positive_rate": 10.666666666666666, "false_discovery_rate": 11.469534050179211}}
+RUN /home/jmzhang/Workspace/hallucination-20261030/legacy/.venv/bin/python -u run.py --pope-features results/default/features/features.pt --data-root data --model models/llava-1.5-7b-hf --out results/default/experiment --images 2 --max-new-tokens 16
+TRAIN 1 1.0564306060473123
+TRAIN 2 0.7923797274960412
+TRAIN 3 0.7591463932726118
+TRAIN 4 0.7403370163175795
+TRAIN 5 0.7073090365197924
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.38s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:02<00:01,  1.30s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.18s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.22s/it]
+CAPTION 1 2 8
+CAPTION 2 2 16
+RUN /home/jmzhang/Workspace/hallucination-20261030/legacy/.venv/bin/python -u evaluate.py results/default/experiment/predictions.jsonl --annotations data/coco/annotations --output results/default/experiment/metrics.json
+annotations loaded
+annotations loaded
+{
+  "base": {
+    "n": 2,
+    "CHAIRs": 0.0,
+    "CHAIRi": 0.0,
+    "object_mentions": 4,
+    "hallucinated_mentions": 0,
+    "hallucinated_captions": 0
+  },
+  "aod": {
+    "n": 2,
+    "CHAIRs": 0.0,
+    "CHAIRi": 0.0,
+    "object_mentions": 4,
+    "hallucinated_mentions": 0,
+    "hallucinated_captions": 0
+  }
+}
+DONE. Results: /home/jmzhang/Workspace/hallucination-20261030/standalone-validation/chair/results/default

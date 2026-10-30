@@ -1,0 +1,5 @@
+{
+  "job": 144900,
+  "scope": "10-image smoke validation",
+  "isolation": "Only this benchmark directory copied; reused public model/images and verified Python environment; no precomputed features or AOD weights"
+}

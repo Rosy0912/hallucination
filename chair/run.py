@@ -5,7 +5,7 @@ import random
 import sys
 import time
 from pathlib import Path
-sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0,str(Path(__file__).resolve().parent))
 from tools.runtime import write_json, sha, train_direction, load_llava, inputs_for, provenance
 import torch
 from aod.vlm.intervention import AODDecodeConfig, greedy_generate_ids

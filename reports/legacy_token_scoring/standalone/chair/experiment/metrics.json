@@ -1,0 +1,86 @@
+{
+  "base": {
+    "n": 2,
+    "CHAIRs": 0.0,
+    "CHAIRi": 0.0,
+    "object_mentions": 4,
+    "hallucinated_mentions": 0,
+    "hallucinated_captions": 0,
+    "sentences": [
+      {
+        "image_id": 239130,
+        "caption": "The image features a man riding a bicycle down a street while talking",
+        "generated_objects": [
+          "person",
+          "bicycle"
+        ],
+        "ground_truth": [
+          "bicycle",
+          "car",
+          "cell phone",
+          "person"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 238029,
+        "caption": "The image features a dining table with a delicious pizza placed in the",
+        "generated_objects": [
+          "dining table",
+          "pizza"
+        ],
+        "ground_truth": [
+          "dining table",
+          "fork",
+          "knife",
+          "person",
+          "pizza",
+          "wine glass"
+        ],
+        "hallucinated_objects": []
+      }
+    ]
+  },
+  "aod": {
+    "n": 2,
+    "CHAIRs": 0.0,
+    "CHAIRi": 0.0,
+    "object_mentions": 4,
+    "hallucinated_mentions": 0,
+    "hallucinated_captions": 0,
+    "sentences": [
+      {
+        "image_id": 239130,
+        "caption": "The image features a man riding a bicycle down a street while talking",
+        "generated_objects": [
+          "person",
+          "bicycle"
+        ],
+        "ground_truth": [
+          "bicycle",
+          "car",
+          "cell phone",
+          "person"
+        ],
+        "hallucinated_objects": []
+      },
+      {
+        "image_id": 238029,
+        "caption": "The image features a dining table with a delicious pizza placed in the",
+        "generated_objects": [
+          "dining table",
+          "pizza"
+        ],
+        "ground_truth": [
+          "dining table",
+          "fork",
+          "knife",
+          "person",
+          "pizza",
+          "wine glass"
+        ],
+        "hallucinated_objects": []
+      }
+    ]
+  }
+}

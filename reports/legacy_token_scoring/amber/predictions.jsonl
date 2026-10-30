@@ -1,0 +1,575 @@
+{"id": 1295, "image": "AMBER_34.jpg", "question": "Is there one football in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1296, "image": "AMBER_34.jpg", "question": "Are there two footballs in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1297, "image": "AMBER_34.jpg", "question": "Does the person play soccer in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 1298, "image": "AMBER_34.jpg", "question": "Does the person stand in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1299, "image": "AMBER_34.jpg", "question": "Is there one glass in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1300, "image": "AMBER_34.jpg", "question": "Are there three glasses in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1301, "image": "AMBER_34.jpg", "question": "Is the grass lively in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1302, "image": "AMBER_34.jpg", "question": "Is the grass on the brink in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 0}
+{"id": 1405, "image": "AMBER_48.jpg", "question": "Is there one woman in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 1406, "image": "AMBER_48.jpg", "question": "Are there two women in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1407, "image": "AMBER_48.jpg", "question": "Is the beach flat in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1408, "image": "AMBER_48.jpg", "question": "Is the beach uneven in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1417, "image": "AMBER_50.jpg", "question": "Is the sky sunny in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1418, "image": "AMBER_50.jpg", "question": "Is the sky gloomy in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1419, "image": "AMBER_50.jpg", "question": "Is the fence short in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1420, "image": "AMBER_50.jpg", "question": "Is the fence tall in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 1421, "image": "AMBER_50.jpg", "question": "Is the snow white in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1422, "image": "AMBER_50.jpg", "question": "Is the snow black in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1423, "image": "AMBER_50.jpg", "question": "Is there one car in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1424, "image": "AMBER_50.jpg", "question": "Are there two cars in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1425, "image": "AMBER_50.jpg", "question": "Is the hat black in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 1426, "image": "AMBER_50.jpg", "question": "Is the hat red in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1427, "image": "AMBER_50.jpg", "question": "Is there one glass in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1428, "image": "AMBER_50.jpg", "question": "Are there two glasses in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1673, "image": "AMBER_82.jpg", "question": "Is the sea rolling waves in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 1674, "image": "AMBER_82.jpg", "question": "Is the sea calm waters in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1675, "image": "AMBER_82.jpg", "question": "Is there one surfboard in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1676, "image": "AMBER_82.jpg", "question": "Are there two surfboards in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1677, "image": "AMBER_82.jpg", "question": "Does the man surf in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 1678, "image": "AMBER_82.jpg", "question": "Does the man dance in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1823, "image": "AMBER_99.jpg", "question": "Is the sky sunny in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1824, "image": "AMBER_99.jpg", "question": "Is the sky gloomy in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1825, "image": "AMBER_99.jpg", "question": "Is the cloud white in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1826, "image": "AMBER_99.jpg", "question": "Is the cloud black in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1827, "image": "AMBER_99.jpg", "question": "Is the grass lively in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 1828, "image": "AMBER_99.jpg", "question": "Is the grass withered in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1829, "image": "AMBER_99.jpg", "question": "Is the ground narrow in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1830, "image": "AMBER_99.jpg", "question": "Is the ground wide in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1831, "image": "AMBER_99.jpg", "question": "Is there one bicycle in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 1832, "image": "AMBER_99.jpg", "question": "Are there two bicycles in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1833, "image": "AMBER_99.jpg", "question": "Does the woman ride a bike in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 1834, "image": "AMBER_99.jpg", "question": "Does the woman swim in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1971, "image": "AMBER_118.jpg", "question": "Is the sea rolling waves in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 1972, "image": "AMBER_118.jpg", "question": "Is the sea calm waters in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1973, "image": "AMBER_118.jpg", "question": "Are there two women in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 1974, "image": "AMBER_118.jpg", "question": "Are there three women in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 1975, "image": "AMBER_118.jpg", "question": "Is the beach wet in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 0}
+{"id": 1976, "image": "AMBER_118.jpg", "question": "Is the beach dry in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2367, "image": "AMBER_174.jpg", "question": "Is the beach wet in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 2368, "image": "AMBER_174.jpg", "question": "Is the beach dry in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2369, "image": "AMBER_174.jpg", "question": "Does the person surf in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 2370, "image": "AMBER_174.jpg", "question": "Does the person swim in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2371, "image": "AMBER_174.jpg", "question": "Is the sky gray in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 2372, "image": "AMBER_174.jpg", "question": "Is the sky blue in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2373, "image": "AMBER_174.jpg", "question": "Is the sea turbulent in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 2374, "image": "AMBER_174.jpg", "question": "Is the sea calm in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2389, "image": "AMBER_178.jpg", "question": "Does the cat raise in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2390, "image": "AMBER_178.jpg", "question": "Does the cat lower in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2391, "image": "AMBER_178.jpg", "question": "Is the bath white in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2392, "image": "AMBER_178.jpg", "question": "Is the bath black in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2393, "image": "AMBER_178.jpg", "question": "Is there one bucket in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2394, "image": "AMBER_178.jpg", "question": "Are there three buckets in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2395, "image": "AMBER_178.jpg", "question": "Is the tap closed in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2396, "image": "AMBER_178.jpg", "question": "Is the tap open in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2651, "image": "AMBER_217.jpg", "question": "Does the bear lie prone in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2652, "image": "AMBER_217.jpg", "question": "Does the bear stand in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2653, "image": "AMBER_217.jpg", "question": "Is there one tree in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2654, "image": "AMBER_217.jpg", "question": "Are there three trees in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2793, "image": "AMBER_236.jpg", "question": "Is the phone open in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 0}
+{"id": 2794, "image": "AMBER_236.jpg", "question": "Is the phone closed in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2795, "image": "AMBER_236.jpg", "question": "Are there three monies in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2796, "image": "AMBER_236.jpg", "question": "Are there six monies in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2797, "image": "AMBER_236.jpg", "question": "Is the table tidy in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2798, "image": "AMBER_236.jpg", "question": "Is the table messy in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2935, "image": "AMBER_255.jpg", "question": "Does the dog sit in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2936, "image": "AMBER_255.jpg", "question": "Does the dog lie prone in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2937, "image": "AMBER_255.jpg", "question": "Does the person sit in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 2938, "image": "AMBER_255.jpg", "question": "Does the person stand in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2939, "image": "AMBER_255.jpg", "question": "Is there one chair in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2940, "image": "AMBER_255.jpg", "question": "Are there five chairs in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2941, "image": "AMBER_255.jpg", "question": "Is the wall yellow in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 2942, "image": "AMBER_255.jpg", "question": "Is the wall white in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3287, "image": "AMBER_300.jpg", "question": "Is the sky blue in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3288, "image": "AMBER_300.jpg", "question": "Is the sky pink in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3289, "image": "AMBER_300.jpg", "question": "Is the cloud white in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3290, "image": "AMBER_300.jpg", "question": "Is the cloud green in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3291, "image": "AMBER_300.jpg", "question": "Are there two motorbikes in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3292, "image": "AMBER_300.jpg", "question": "Are there four motorbikes in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3299, "image": "AMBER_302.jpg", "question": "Is the forest lively in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3300, "image": "AMBER_302.jpg", "question": "Is the forest withered in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3301, "image": "AMBER_302.jpg", "question": "Are there two cars in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3302, "image": "AMBER_302.jpg", "question": "Are there three cars in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3303, "image": "AMBER_302.jpg", "question": "Is there one surfboard in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3304, "image": "AMBER_302.jpg", "question": "Are there two surfboards in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3305, "image": "AMBER_302.jpg", "question": "Is the ground dry in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3306, "image": "AMBER_302.jpg", "question": "Is the ground wet in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3307, "image": "AMBER_302.jpg", "question": "Is the sky white in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3308, "image": "AMBER_302.jpg", "question": "Is the sky green in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3309, "image": "AMBER_302.jpg", "question": "Is the grass green in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3310, "image": "AMBER_302.jpg", "question": "Is the grass red in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3415, "image": "AMBER_317.jpg", "question": "Is the bus red in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3416, "image": "AMBER_317.jpg", "question": "Is the bus white in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3417, "image": "AMBER_317.jpg", "question": "Is the tree withered in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3418, "image": "AMBER_317.jpg", "question": "Is the tree lively in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3419, "image": "AMBER_317.jpg", "question": "Is the wall tall in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 0}
+{"id": 3420, "image": "AMBER_317.jpg", "question": "Is the wall short in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3421, "image": "AMBER_317.jpg", "question": "Is the ground clean in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3422, "image": "AMBER_317.jpg", "question": "Is the ground dirty in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3423, "image": "AMBER_317.jpg", "question": "Is the house good-looking in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3424, "image": "AMBER_317.jpg", "question": "Is the house ugly in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3425, "image": "AMBER_317.jpg", "question": "Is there one car in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3426, "image": "AMBER_317.jpg", "question": "Are there two cars in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3427, "image": "AMBER_317.jpg", "question": "Is the sky white in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3428, "image": "AMBER_317.jpg", "question": "Is the sky blue in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3451, "image": "AMBER_320.jpg", "question": "Is the ground dry in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3452, "image": "AMBER_320.jpg", "question": "Is the ground wet in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3453, "image": "AMBER_320.jpg", "question": "Is there one dog in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3454, "image": "AMBER_320.jpg", "question": "Are there two dogs in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3455, "image": "AMBER_320.jpg", "question": "Is the cat lie prone in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3456, "image": "AMBER_320.jpg", "question": "Is the cat stand in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3707, "image": "AMBER_353.jpg", "question": "Is the toilet white in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 0}
+{"id": 3708, "image": "AMBER_353.jpg", "question": "Is the toilet gray in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3709, "image": "AMBER_353.jpg", "question": "Is the bin black in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3710, "image": "AMBER_353.jpg", "question": "Is the bin white in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3711, "image": "AMBER_353.jpg", "question": "Is the towel white in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3712, "image": "AMBER_353.jpg", "question": "Is the towel yellow in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3769, "image": "AMBER_363.jpg", "question": "Is the grass green in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3770, "image": "AMBER_363.jpg", "question": "Is the grass yellow in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3771, "image": "AMBER_363.jpg", "question": "Does the elephant walk in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3772, "image": "AMBER_363.jpg", "question": "Does the elephant run in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3773, "image": "AMBER_363.jpg", "question": "Is the tree green in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3774, "image": "AMBER_363.jpg", "question": "Is the tree yellow in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3775, "image": "AMBER_363.jpg", "question": "Is the mountain tall in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3776, "image": "AMBER_363.jpg", "question": "Is the mountain short in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3833, "image": "AMBER_372.jpg", "question": "Is the forest colorful in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3834, "image": "AMBER_372.jpg", "question": "Is the forest sparse vegetation in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3835, "image": "AMBER_372.jpg", "question": "Is the lake sparkling in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 0}
+{"id": 3836, "image": "AMBER_372.jpg", "question": "Is the lake turbulent and surging in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3837, "image": "AMBER_372.jpg", "question": "Is the paddle wooden in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3838, "image": "AMBER_372.jpg", "question": "Is the paddle plastic in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3839, "image": "AMBER_372.jpg", "question": "Is there one ship in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3840, "image": "AMBER_372.jpg", "question": "Are there three ships in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3841, "image": "AMBER_372.jpg", "question": "Are there four people in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3842, "image": "AMBER_372.jpg", "question": "Are there five people in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3843, "image": "AMBER_372.jpg", "question": "Does the umbrella open in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3844, "image": "AMBER_372.jpg", "question": "Does the umbrella close in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3867, "image": "AMBER_375.jpg", "question": "Is there one toilet in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3868, "image": "AMBER_375.jpg", "question": "Are there three toilets in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3869, "image": "AMBER_375.jpg", "question": "Is the floor tiled in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3870, "image": "AMBER_375.jpg", "question": "Is the floor wooden in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3871, "image": "AMBER_375.jpg", "question": "Is the cabinet natural wood color in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3872, "image": "AMBER_375.jpg", "question": "Is the cabinet black in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3873, "image": "AMBER_375.jpg", "question": "Is the tissue cylindrical in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3874, "image": "AMBER_375.jpg", "question": "Is the tissue square in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3875, "image": "AMBER_375.jpg", "question": "Is there one holder in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3876, "image": "AMBER_375.jpg", "question": "Are there three holders in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 3877, "image": "AMBER_375.jpg", "question": "Is the wall patterned in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 3878, "image": "AMBER_375.jpg", "question": "Is the wall solid color in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4177, "image": "AMBER_413.jpg", "question": "Is there one tape in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4178, "image": "AMBER_413.jpg", "question": "Are there two tapes in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4179, "image": "AMBER_413.jpg", "question": "Are there two computers in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 4180, "image": "AMBER_413.jpg", "question": "Are there three computers in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4181, "image": "AMBER_413.jpg", "question": "Does the table tidy in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 0}
+{"id": 4182, "image": "AMBER_413.jpg", "question": "Does the table messy in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4183, "image": "AMBER_413.jpg", "question": "Is there one keyboard in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4184, "image": "AMBER_413.jpg", "question": "Are there two keyboards in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4185, "image": "AMBER_413.jpg", "question": "Is the mouse white in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4186, "image": "AMBER_413.jpg", "question": "Is the mouse black in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4187, "image": "AMBER_413.jpg", "question": "Is the sound white in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4188, "image": "AMBER_413.jpg", "question": "Is the sound pink in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4189, "image": "AMBER_413.jpg", "question": "Is the chair comfortable in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4190, "image": "AMBER_413.jpg", "question": "Is the chair uncomfortable in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4407, "image": "AMBER_441.jpg", "question": "Are there eight hots in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4408, "image": "AMBER_441.jpg", "question": "Are there nine hots in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4409, "image": "AMBER_441.jpg", "question": "Is there one grill in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4410, "image": "AMBER_441.jpg", "question": "Are there three grills in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4411, "image": "AMBER_441.jpg", "question": "Is the charcoal gray in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4412, "image": "AMBER_441.jpg", "question": "Is the charcoal black in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4413, "image": "AMBER_441.jpg", "question": "Is the grass emerald in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4414, "image": "AMBER_441.jpg", "question": "Is the grass yellowed in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4571, "image": "AMBER_463.jpg", "question": "Is there one bag in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4572, "image": "AMBER_463.jpg", "question": "Are there three bags in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4573, "image": "AMBER_463.jpg", "question": "Is the bag black in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 4574, "image": "AMBER_463.jpg", "question": "Is the bag white in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4575, "image": "AMBER_463.jpg", "question": "Is the ground concrete in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4576, "image": "AMBER_463.jpg", "question": "Is the ground muddy in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4637, "image": "AMBER_472.jpg", "question": "Are there two beds in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4638, "image": "AMBER_472.jpg", "question": "Are there three beds in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4639, "image": "AMBER_472.jpg", "question": "Are there two quilts in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4640, "image": "AMBER_472.jpg", "question": "Are there four quilts in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4641, "image": "AMBER_472.jpg", "question": "Is the wall striped in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4642, "image": "AMBER_472.jpg", "question": "Is the wall solid color in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4643, "image": "AMBER_472.jpg", "question": "Are there two lamps in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4644, "image": "AMBER_472.jpg", "question": "Are there five lamps in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4855, "image": "AMBER_500.jpg", "question": "Are there five birds in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4856, "image": "AMBER_500.jpg", "question": "Are there six birds in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 4857, "image": "AMBER_500.jpg", "question": "Is the grass green in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 4858, "image": "AMBER_500.jpg", "question": "Is the grass yellow in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5407, "image": "AMBER_566.jpg", "question": "Is there one surfboard in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5408, "image": "AMBER_566.jpg", "question": "Are there two surfboards in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5409, "image": "AMBER_566.jpg", "question": "Is the sea sparkling in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5410, "image": "AMBER_566.jpg", "question": "Is the sea calm waters in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5411, "image": "AMBER_566.jpg", "question": "Does the person surf in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 5412, "image": "AMBER_566.jpg", "question": "Does the person swim in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5413, "image": "AMBER_566.jpg", "question": "Is the sky sunny in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5414, "image": "AMBER_566.jpg", "question": "Is the sky gloomy in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5685, "image": "AMBER_597.jpg", "question": "Is the sea sparkling in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5686, "image": "AMBER_597.jpg", "question": "Is the sea calm seas in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5687, "image": "AMBER_597.jpg", "question": "Is there one ship in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 5688, "image": "AMBER_597.jpg", "question": "Are there two ships in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5689, "image": "AMBER_597.jpg", "question": "Does the dog stand in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 5690, "image": "AMBER_597.jpg", "question": "Does the dog sit in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5855, "image": "AMBER_618.jpg", "question": "Is the wall smooth in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5856, "image": "AMBER_618.jpg", "question": "Is the wall rough in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5857, "image": "AMBER_618.jpg", "question": "Is there one cup in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5858, "image": "AMBER_618.jpg", "question": "Are there two cups in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5859, "image": "AMBER_618.jpg", "question": "Are there two toothbrushes in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 5860, "image": "AMBER_618.jpg", "question": "Are there three toothbrushes in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5861, "image": "AMBER_618.jpg", "question": "Is there one toothpaste in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5862, "image": "AMBER_618.jpg", "question": "Are there two toothpastes in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5863, "image": "AMBER_618.jpg", "question": "Is the sink white in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 5864, "image": "AMBER_618.jpg", "question": "Is the sink black in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6153, "image": "AMBER_657.jpg", "question": "Is the sofa comfortable in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 6154, "image": "AMBER_657.jpg", "question": "Is the sofa uncomfortable in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6155, "image": "AMBER_657.jpg", "question": "Does the dog sleep in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6156, "image": "AMBER_657.jpg", "question": "Does the dog run in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6157, "image": "AMBER_657.jpg", "question": "Are there four controllers in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6158, "image": "AMBER_657.jpg", "question": "Are there five controllers in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6371, "image": "AMBER_681.jpg", "question": "Is the ground wet in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 6372, "image": "AMBER_681.jpg", "question": "Is the ground dry in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6373, "image": "AMBER_681.jpg", "question": "Is there one racket in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6374, "image": "AMBER_681.jpg", "question": "Are there two rackets in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6375, "image": "AMBER_681.jpg", "question": "Is there one tennis in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6376, "image": "AMBER_681.jpg", "question": "Are there two tenni in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6377, "image": "AMBER_681.jpg", "question": "Does the dog sit in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 6378, "image": "AMBER_681.jpg", "question": "Does the dog run in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6579, "image": "AMBER_709.jpg", "question": "Is the forest lively in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6580, "image": "AMBER_709.jpg", "question": "Is the forest withered in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6581, "image": "AMBER_709.jpg", "question": "Is the grass green in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 6582, "image": "AMBER_709.jpg", "question": "Is the grass blue in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6583, "image": "AMBER_709.jpg", "question": "Is there one zebra in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 6584, "image": "AMBER_709.jpg", "question": "Are there two zebras in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6993, "image": "AMBER_765.jpg", "question": "Is the grass green in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 6994, "image": "AMBER_765.jpg", "question": "Is the grass blue in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6995, "image": "AMBER_765.jpg", "question": "Does the dog lie prone in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6996, "image": "AMBER_765.jpg", "question": "Does the dog stand in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 6997, "image": "AMBER_765.jpg", "question": "Is the frisbee pink in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 6998, "image": "AMBER_765.jpg", "question": "Is the frisbee yellow in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7335, "image": "AMBER_810.jpg", "question": "Is the sky sunny in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 7336, "image": "AMBER_810.jpg", "question": "Is the sky gloomy in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7337, "image": "AMBER_810.jpg", "question": "Is the cloud white in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7338, "image": "AMBER_810.jpg", "question": "Is the cloud black in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7339, "image": "AMBER_810.jpg", "question": "Is the mountain short in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7340, "image": "AMBER_810.jpg", "question": "Is the mountain tall in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 0}
+{"id": 7341, "image": "AMBER_810.jpg", "question": "Does the man sit in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 7342, "image": "AMBER_810.jpg", "question": "Does the man stand in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7343, "image": "AMBER_810.jpg", "question": "Is there one bench in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 7344, "image": "AMBER_810.jpg", "question": "Are there two benches in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7345, "image": "AMBER_810.jpg", "question": "Is there one bicycle in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 7346, "image": "AMBER_810.jpg", "question": "Are there two bicycles in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7449, "image": "AMBER_824.jpg", "question": "Is the table clean in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7450, "image": "AMBER_824.jpg", "question": "Is the table dirty in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7451, "image": "AMBER_824.jpg", "question": "Is there one cup in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7452, "image": "AMBER_824.jpg", "question": "Are there two cups in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7453, "image": "AMBER_824.jpg", "question": "Is there one banana in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7454, "image": "AMBER_824.jpg", "question": "Are there two bananas in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7467, "image": "AMBER_827.jpg", "question": "Is the carpet clean in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7468, "image": "AMBER_827.jpg", "question": "Is the carpet dirty in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7469, "image": "AMBER_827.jpg", "question": "Is there one tennis in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7470, "image": "AMBER_827.jpg", "question": "Are there two tenni in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7471, "image": "AMBER_827.jpg", "question": "Does the dog lie prone in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7472, "image": "AMBER_827.jpg", "question": "Does the dog stand in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7473, "image": "AMBER_827.jpg", "question": "Is there one bottle in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7474, "image": "AMBER_827.jpg", "question": "Are there two bottles in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7509, "image": "AMBER_833.jpg", "question": "Is the sky sunny in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 7510, "image": "AMBER_833.jpg", "question": "Is the sky gloomy in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7511, "image": "AMBER_833.jpg", "question": "Is the sea rolling waves in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 7512, "image": "AMBER_833.jpg", "question": "Is the sea calm waters in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7513, "image": "AMBER_833.jpg", "question": "Is there one table in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7514, "image": "AMBER_833.jpg", "question": "Are there two tables in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7515, "image": "AMBER_833.jpg", "question": "Are there three chairs in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7516, "image": "AMBER_833.jpg", "question": "Are there four chairs in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7517, "image": "AMBER_833.jpg", "question": "Is the umbrella open in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 7518, "image": "AMBER_833.jpg", "question": "Is the umbrella closed in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7709, "image": "AMBER_862.jpg", "question": "Is the sun round in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7710, "image": "AMBER_862.jpg", "question": "Is the sun square in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7711, "image": "AMBER_862.jpg", "question": "Is the sea wide in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 7712, "image": "AMBER_862.jpg", "question": "Is the sea small in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7871, "image": "AMBER_885.jpg", "question": "Is the sky sunny in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7872, "image": "AMBER_885.jpg", "question": "Is the sky gloomy in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7873, "image": "AMBER_885.jpg", "question": "Is the cloud white in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7874, "image": "AMBER_885.jpg", "question": "Is the cloud black in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7875, "image": "AMBER_885.jpg", "question": "Are there two balloons in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7876, "image": "AMBER_885.jpg", "question": "Are there three balloons in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7979, "image": "AMBER_901.jpg", "question": "Is the table clean in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 7980, "image": "AMBER_901.jpg", "question": "Is the table dirty in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7981, "image": "AMBER_901.jpg", "question": "Is there one phone in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7982, "image": "AMBER_901.jpg", "question": "Are there two phones in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7983, "image": "AMBER_901.jpg", "question": "Is there one pad in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7984, "image": "AMBER_901.jpg", "question": "Are there two pads in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7985, "image": "AMBER_901.jpg", "question": "Is there one cup in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 7986, "image": "AMBER_901.jpg", "question": "Are there two cups in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8445, "image": "AMBER_971.jpg", "question": "Is the tree lively in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 8446, "image": "AMBER_971.jpg", "question": "Is the tree withered in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8447, "image": "AMBER_971.jpg", "question": "Is the tangerine yellow in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 8448, "image": "AMBER_971.jpg", "question": "Is the tangerine white in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8497, "image": "AMBER_982.jpg", "question": "Is the sand uneven in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 8498, "image": "AMBER_982.jpg", "question": "Is the sand flat in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8499, "image": "AMBER_982.jpg", "question": "Is the road narrow in this image?", "gt": 1, "typology": "attribute", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8500, "image": "AMBER_982.jpg", "question": "Is the road wide in this image?", "gt": 0, "typology": "attribute", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 8796, "image": "AMBER_34.jpg", "question": "Is there a sun in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8797, "image": "AMBER_34.jpg", "question": "Is there a cloud in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8798, "image": "AMBER_34.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8799, "image": "AMBER_34.jpg", "question": "Is there a bird in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8800, "image": "AMBER_34.jpg", "question": "Is there a tree in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 8864, "image": "AMBER_48.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8865, "image": "AMBER_48.jpg", "question": "Is there a sun in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8866, "image": "AMBER_48.jpg", "question": "Is there a sea in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8867, "image": "AMBER_48.jpg", "question": "Is there a dog in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8868, "image": "AMBER_48.jpg", "question": "Is there a lounge in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8874, "image": "AMBER_50.jpg", "question": "Is there a cloud in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8875, "image": "AMBER_50.jpg", "question": "Is there a sign in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8876, "image": "AMBER_50.jpg", "question": "Is there a bus in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8877, "image": "AMBER_50.jpg", "question": "Is there a dog in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 8878, "image": "AMBER_50.jpg", "question": "Is there a building in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9029, "image": "AMBER_82.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9030, "image": "AMBER_82.jpg", "question": "Is there a cloud in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9031, "image": "AMBER_82.jpg", "question": "Is there a mountain in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9032, "image": "AMBER_82.jpg", "question": "Is there a ship in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9033, "image": "AMBER_82.jpg", "question": "Is there a beach in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9112, "image": "AMBER_99.jpg", "question": "Is there a sun in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9113, "image": "AMBER_99.jpg", "question": "Is there a bird in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9114, "image": "AMBER_99.jpg", "question": "Is there a sign in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9115, "image": "AMBER_99.jpg", "question": "Is there a dog in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9116, "image": "AMBER_99.jpg", "question": "Is there a tree in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9204, "image": "AMBER_118.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9205, "image": "AMBER_118.jpg", "question": "Is there a cloud in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9206, "image": "AMBER_118.jpg", "question": "Is there a ship in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9207, "image": "AMBER_118.jpg", "question": "Is there a tree in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9208, "image": "AMBER_118.jpg", "question": "Is there a lounge in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9478, "image": "AMBER_174.jpg", "question": "Is there a sun in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9479, "image": "AMBER_174.jpg", "question": "Is there a ship in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9480, "image": "AMBER_174.jpg", "question": "Is there a chair in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9481, "image": "AMBER_174.jpg", "question": "Is there a island in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9496, "image": "AMBER_178.jpg", "question": "Is there a light in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9497, "image": "AMBER_178.jpg", "question": "Is there a toilet in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9498, "image": "AMBER_178.jpg", "question": "Is there a mirror in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9499, "image": "AMBER_178.jpg", "question": "Is there a door in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9500, "image": "AMBER_178.jpg", "question": "Is there a bin in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 9684, "image": "AMBER_217.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9685, "image": "AMBER_217.jpg", "question": "Is there a sun in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9686, "image": "AMBER_217.jpg", "question": "Is there a bird in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9687, "image": "AMBER_217.jpg", "question": "Is there a forest in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9688, "image": "AMBER_217.jpg", "question": "Is there a grass in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9776, "image": "AMBER_236.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9777, "image": "AMBER_236.jpg", "question": "Is there a chair in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9778, "image": "AMBER_236.jpg", "question": "Is there a book in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9779, "image": "AMBER_236.jpg", "question": "Is there a floor in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9780, "image": "AMBER_236.jpg", "question": "Is there a window in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9869, "image": "AMBER_255.jpg", "question": "Is there a door in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 9870, "image": "AMBER_255.jpg", "question": "Is there a ceiling in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9871, "image": "AMBER_255.jpg", "question": "Is there a table in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9872, "image": "AMBER_255.jpg", "question": "Is there a cup in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 9873, "image": "AMBER_255.jpg", "question": "Is there a carpet in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10080, "image": "AMBER_300.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10081, "image": "AMBER_300.jpg", "question": "Is there a dog in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10082, "image": "AMBER_300.jpg", "question": "Is there a bird in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10083, "image": "AMBER_300.jpg", "question": "Is there a sun in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10084, "image": "AMBER_300.jpg", "question": "Is there a car in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10090, "image": "AMBER_302.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10091, "image": "AMBER_302.jpg", "question": "Is there a dog in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10092, "image": "AMBER_302.jpg", "question": "Is there a cloud in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10093, "image": "AMBER_302.jpg", "question": "Is there a house in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10094, "image": "AMBER_302.jpg", "question": "Is there a sun in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10165, "image": "AMBER_317.jpg", "question": "Is there a luggage in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10166, "image": "AMBER_317.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10167, "image": "AMBER_317.jpg", "question": "Is there a cat in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10168, "image": "AMBER_317.jpg", "question": "Is there a dog in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10169, "image": "AMBER_317.jpg", "question": "Is there a bird in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10179, "image": "AMBER_320.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10180, "image": "AMBER_320.jpg", "question": "Is there a cloud in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10181, "image": "AMBER_320.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10182, "image": "AMBER_320.jpg", "question": "Is there a bird in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10183, "image": "AMBER_320.jpg", "question": "Is there a electrombile in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10343, "image": "AMBER_353.jpg", "question": "Is there a mirror in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10344, "image": "AMBER_353.jpg", "question": "Is there a light in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10345, "image": "AMBER_353.jpg", "question": "Is there a cup in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10346, "image": "AMBER_353.jpg", "question": "Is there a toothbrush in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10347, "image": "AMBER_353.jpg", "question": "Is there a dryer in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10393, "image": "AMBER_363.jpg", "question": "Is there a sun in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10394, "image": "AMBER_363.jpg", "question": "Is there a leopard in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10395, "image": "AMBER_363.jpg", "question": "Is there a bird in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10396, "image": "AMBER_363.jpg", "question": "Is there a antelope in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10397, "image": "AMBER_363.jpg", "question": "Is there a river in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10437, "image": "AMBER_372.jpg", "question": "Is there a sun in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10438, "image": "AMBER_372.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10439, "image": "AMBER_372.jpg", "question": "Is there a cloud in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10440, "image": "AMBER_372.jpg", "question": "Is there a flower in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10441, "image": "AMBER_372.jpg", "question": "Is there a grass in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 10452, "image": "AMBER_375.jpg", "question": "Is there a mirror in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10453, "image": "AMBER_375.jpg", "question": "Is there a window in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10454, "image": "AMBER_375.jpg", "question": "Is there a bath in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10455, "image": "AMBER_375.jpg", "question": "Is there a bin in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10456, "image": "AMBER_375.jpg", "question": "Is there a tap in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10641, "image": "AMBER_413.jpg", "question": "Is there a phone in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10642, "image": "AMBER_413.jpg", "question": "Is there a cup in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10643, "image": "AMBER_413.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10644, "image": "AMBER_413.jpg", "question": "Is there a light in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10645, "image": "AMBER_413.jpg", "question": "Is there a book in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10779, "image": "AMBER_441.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10780, "image": "AMBER_441.jpg", "question": "Is there a cushion in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10781, "image": "AMBER_441.jpg", "question": "Is there a drink in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10782, "image": "AMBER_441.jpg", "question": "Is there a apple in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10783, "image": "AMBER_441.jpg", "question": "Is there a carrot in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10886, "image": "AMBER_463.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10887, "image": "AMBER_463.jpg", "question": "Is there a sun in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10888, "image": "AMBER_463.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10889, "image": "AMBER_463.jpg", "question": "Is there a cloud in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10890, "image": "AMBER_463.jpg", "question": "Is there a sign in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10930, "image": "AMBER_472.jpg", "question": "Is there a ceiling in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 10931, "image": "AMBER_472.jpg", "question": "Is there a carpet in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 0}
+{"id": 10932, "image": "AMBER_472.jpg", "question": "Is there a window in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10933, "image": "AMBER_472.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 10934, "image": "AMBER_472.jpg", "question": "Is there a chair in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11069, "image": "AMBER_500.jpg", "question": "Is there a sun in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11070, "image": "AMBER_500.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11071, "image": "AMBER_500.jpg", "question": "Is there a cloud in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11072, "image": "AMBER_500.jpg", "question": "Is there a sheep in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11073, "image": "AMBER_500.jpg", "question": "Is there a cow in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11395, "image": "AMBER_566.jpg", "question": "Is there a ship in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11396, "image": "AMBER_566.jpg", "question": "Is there a mountain in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11397, "image": "AMBER_566.jpg", "question": "Is there a seegull in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11398, "image": "AMBER_566.jpg", "question": "Is there a beach in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11399, "image": "AMBER_566.jpg", "question": "Is there a tree in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11548, "image": "AMBER_597.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11549, "image": "AMBER_597.jpg", "question": "Is there a mountain in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11550, "image": "AMBER_597.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11551, "image": "AMBER_597.jpg", "question": "Is there a beach in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11552, "image": "AMBER_597.jpg", "question": "Is there a tree in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11651, "image": "AMBER_618.jpg", "question": "Is there a tap in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11652, "image": "AMBER_618.jpg", "question": "Is there a sanitizer in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11653, "image": "AMBER_618.jpg", "question": "Is there a bin in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 11654, "image": "AMBER_618.jpg", "question": "Is there a light in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11655, "image": "AMBER_618.jpg", "question": "Is there a door in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11845, "image": "AMBER_657.jpg", "question": "Is there a doghole in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11846, "image": "AMBER_657.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11847, "image": "AMBER_657.jpg", "question": "Is there a floor in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11848, "image": "AMBER_657.jpg", "question": "Is there a wall in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11849, "image": "AMBER_657.jpg", "question": "Is there a light in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11963, "image": "AMBER_681.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11964, "image": "AMBER_681.jpg", "question": "Is there a streetlamp in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11965, "image": "AMBER_681.jpg", "question": "Is there a sign in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 11966, "image": "AMBER_681.jpg", "question": "Is there a bin in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12098, "image": "AMBER_709.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12099, "image": "AMBER_709.jpg", "question": "Is there a cloud in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12100, "image": "AMBER_709.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12101, "image": "AMBER_709.jpg", "question": "Is there a flower in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12102, "image": "AMBER_709.jpg", "question": "Is there a bird in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12375, "image": "AMBER_765.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12376, "image": "AMBER_765.jpg", "question": "Is there a cloud in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12377, "image": "AMBER_765.jpg", "question": "Is there a forest in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12378, "image": "AMBER_765.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12379, "image": "AMBER_765.jpg", "question": "Is there a sign in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12597, "image": "AMBER_810.jpg", "question": "Is there a tree in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12598, "image": "AMBER_810.jpg", "question": "Is there a grass in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12599, "image": "AMBER_810.jpg", "question": "Is there a sign in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12600, "image": "AMBER_810.jpg", "question": "Is there a car in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12601, "image": "AMBER_810.jpg", "question": "Is there a seegull in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12667, "image": "AMBER_824.jpg", "question": "Is there a tissue in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12668, "image": "AMBER_824.jpg", "question": "Is there a chair in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12669, "image": "AMBER_824.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12670, "image": "AMBER_824.jpg", "question": "Is there a television in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12671, "image": "AMBER_824.jpg", "question": "Is there a phone in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12682, "image": "AMBER_827.jpg", "question": "Is there a sofa in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12683, "image": "AMBER_827.jpg", "question": "Is there a television in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12684, "image": "AMBER_827.jpg", "question": "Is there a controller in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12685, "image": "AMBER_827.jpg", "question": "Is there a light in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12686, "image": "AMBER_827.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12711, "image": "AMBER_833.jpg", "question": "Is there a mountain in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12712, "image": "AMBER_833.jpg", "question": "Is there a cloud in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12713, "image": "AMBER_833.jpg", "question": "Is there a tree in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12714, "image": "AMBER_833.jpg", "question": "Is there a dog in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12715, "image": "AMBER_833.jpg", "question": "Is there a toy in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12851, "image": "AMBER_862.jpg", "question": "Is there a ship in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12852, "image": "AMBER_862.jpg", "question": "Is there a mountain in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12853, "image": "AMBER_862.jpg", "question": "Is there a beach in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12854, "image": "AMBER_862.jpg", "question": "Is there a umbrella in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12855, "image": "AMBER_862.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12964, "image": "AMBER_885.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12965, "image": "AMBER_885.jpg", "question": "Is there a sun in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12966, "image": "AMBER_885.jpg", "question": "Is there a grass in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12967, "image": "AMBER_885.jpg", "question": "Is there a forest in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 12968, "image": "AMBER_885.jpg", "question": "Is there a ground in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13042, "image": "AMBER_901.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13043, "image": "AMBER_901.jpg", "question": "Is there a chair in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13044, "image": "AMBER_901.jpg", "question": "Is there a tissue in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13045, "image": "AMBER_901.jpg", "question": "Is there a book in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13046, "image": "AMBER_901.jpg", "question": "Is there a pen in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13388, "image": "AMBER_971.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13389, "image": "AMBER_971.jpg", "question": "Is there a cloud in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13390, "image": "AMBER_971.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13391, "image": "AMBER_971.jpg", "question": "Is there a grass in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 1, "apc_fallback": true, "pred": 1}
+{"id": 13392, "image": "AMBER_971.jpg", "question": "Is there a cat in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13443, "image": "AMBER_982.jpg", "question": "Is there a person in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13444, "image": "AMBER_982.jpg", "question": "Is there a car in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13445, "image": "AMBER_982.jpg", "question": "Is there a sky in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13446, "image": "AMBER_982.jpg", "question": "Is there a cloud in this image?", "gt": 0, "typology": "existence", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13615, "image": "AMBER_34.jpg", "question": "Is there direct contact between the person and grass?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13616, "image": "AMBER_34.jpg", "question": "Is there direct contact between the glass and football?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13641, "image": "AMBER_48.jpg", "question": "Is there direct contact between the woman and beach?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13644, "image": "AMBER_50.jpg", "question": "Is there direct contact between the man and snow?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13645, "image": "AMBER_50.jpg", "question": "Is there direct contact between the man and car?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13701, "image": "AMBER_82.jpg", "question": "Is there direct contact between the man and surfboard?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13732, "image": "AMBER_99.jpg", "question": "Is there direct contact between the woman and bicycle?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13733, "image": "AMBER_99.jpg", "question": "Is there direct contact between the woman and grass?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13764, "image": "AMBER_118.jpg", "question": "Is there direct contact between the woman and sea?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13765, "image": "AMBER_118.jpg", "question": "Is there direct contact between the woman and beach?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13851, "image": "AMBER_174.jpg", "question": "Is there direct contact between the person and surfboard?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13852, "image": "AMBER_174.jpg", "question": "Is there direct contact between the person and beach?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13858, "image": "AMBER_178.jpg", "question": "Is there direct contact between the cat and bath?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13859, "image": "AMBER_178.jpg", "question": "Is there direct contact between the bucket and floor?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13925, "image": "AMBER_217.jpg", "question": "Is there direct contact between the bear and tree?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13957, "image": "AMBER_236.jpg", "question": "Is there direct contact between the phone and money?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13958, "image": "AMBER_236.jpg", "question": "Is there direct contact between the phone and table?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13987, "image": "AMBER_255.jpg", "question": "Is there direct contact between the dog and person?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 13988, "image": "AMBER_255.jpg", "question": "Is there direct contact between the person and wall?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14069, "image": "AMBER_300.jpg", "question": "Is there direct contact between the motorbike and ground?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14072, "image": "AMBER_302.jpg", "question": "Is there direct contact between the car and ground?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14073, "image": "AMBER_302.jpg", "question": "Is there direct contact between the surfboard and grass?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14094, "image": "AMBER_317.jpg", "question": "Is there direct contact between the bus and ground?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14095, "image": "AMBER_317.jpg", "question": "Is there direct contact between the tree and house?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14100, "image": "AMBER_320.jpg", "question": "Is there direct contact between the cat and ground?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14101, "image": "AMBER_320.jpg", "question": "Is there direct contact between the dog and cat?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14159, "image": "AMBER_353.jpg", "question": "Is there direct contact between the ground and toilet?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14160, "image": "AMBER_353.jpg", "question": "Is there direct contact between the ground and wall?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14175, "image": "AMBER_363.jpg", "question": "Is there direct contact between the elephant and mountain?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14176, "image": "AMBER_363.jpg", "question": "Is there direct contact between the grass and tree?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14190, "image": "AMBER_372.jpg", "question": "Is there direct contact between the person and ship?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14191, "image": "AMBER_372.jpg", "question": "Is there direct contact between the person and lake?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14196, "image": "AMBER_375.jpg", "question": "Is there direct contact between the tissue and holder?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14197, "image": "AMBER_375.jpg", "question": "Is there direct contact between the toilet and cabinet?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14263, "image": "AMBER_413.jpg", "question": "Is there direct contact between the keyboard and table?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14264, "image": "AMBER_413.jpg", "question": "Is there direct contact between the mouse and chair?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14318, "image": "AMBER_441.jpg", "question": "Is there direct contact between the hot and grill?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14319, "image": "AMBER_441.jpg", "question": "Is there direct contact between the hot and charcoal?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14357, "image": "AMBER_463.jpg", "question": "Is there direct contact between the bag and bag?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14372, "image": "AMBER_472.jpg", "question": "Is there direct contact between the pillow and quilt?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14373, "image": "AMBER_472.jpg", "question": "Is there direct contact between the pillow and lamp?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14424, "image": "AMBER_500.jpg", "question": "Is there direct contact between the bird and grass?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14534, "image": "AMBER_566.jpg", "question": "Is there direct contact between the person and surfboard?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14584, "image": "AMBER_597.jpg", "question": "Is there direct contact between the dog and ship?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14585, "image": "AMBER_597.jpg", "question": "Is there direct contact between the dog and sea?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14622, "image": "AMBER_618.jpg", "question": "Is there direct contact between the mirror and wall?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14623, "image": "AMBER_618.jpg", "question": "Is there direct contact between the mirror and toothbrush?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14692, "image": "AMBER_657.jpg", "question": "Is there direct contact between the dog and controller?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14693, "image": "AMBER_657.jpg", "question": "Is there direct contact between the controller and blanket?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14736, "image": "AMBER_681.jpg", "question": "Is there direct contact between the dog and ground?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14737, "image": "AMBER_681.jpg", "question": "Is there direct contact between the dog and tennis?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14781, "image": "AMBER_709.jpg", "question": "Is there direct contact between the zebra and grass?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14869, "image": "AMBER_765.jpg", "question": "Is there direct contact between the dog and grass?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14941, "image": "AMBER_810.jpg", "question": "Is there direct contact between the man and bench?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14942, "image": "AMBER_810.jpg", "question": "Is there direct contact between the person and mountain?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14961, "image": "AMBER_824.jpg", "question": "Is there direct contact between the banana and table?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14962, "image": "AMBER_824.jpg", "question": "Is there direct contact between the banana and cup?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14967, "image": "AMBER_827.jpg", "question": "Is there direct contact between the dog and bottle?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14968, "image": "AMBER_827.jpg", "question": "Is there direct contact between the bottle and tennis?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14976, "image": "AMBER_833.jpg", "question": "Is there direct contact between the ship and sea?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 14977, "image": "AMBER_833.jpg", "question": "Is there direct contact between the umbrella and chair?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 15023, "image": "AMBER_862.jpg", "question": "Is there direct contact between the sky and sun?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 15057, "image": "AMBER_885.jpg", "question": "Is there direct contact between the sky and cloud?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 15078, "image": "AMBER_901.jpg", "question": "Is there direct contact between the phone and table?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 15079, "image": "AMBER_901.jpg", "question": "Is there direct contact between the phone and cup?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 15174, "image": "AMBER_971.jpg", "question": "Is there direct contact between the tangerine and tree?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 15175, "image": "AMBER_971.jpg", "question": "Is there direct contact between the tangerine and ground?", "gt": 0, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}
+{"id": 15188, "image": "AMBER_982.jpg", "question": "Is there direct contact between the sand and road?", "gt": 1, "typology": "relation", "split": "test", "base_pred": 0, "apc_fallback": true, "pred": 0}

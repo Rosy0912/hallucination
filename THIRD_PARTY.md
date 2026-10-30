@@ -6,7 +6,9 @@
   `06_源码与运行包/AOD-evaluation-20260929`。继承包内 MIT LICENSE。
 - `src/aod`、`cli`、`scripts` 来自用户提供的 `AOD-main`，继承其 MIT LICENSE。
 - 修正 `src/aod/data/amber.py`：接受官方 list 格式，按 ID 连接，映射官方细分类别，拒绝空集/重复 ID。
+- AMBER 评测按官方 `inference.py` 以 No 为正类；同时保存精确值和官方舍入/epsilon 值，保留 Yes-positive 辅助结果。
 - 新的 benchmark 入口、训练/离线评分包装器、样本划分、检查和文档位于四个 benchmark 目录与 `tools/`。
+- POPE 重训练增加显式 drift 记录和 strict 选项：跨硬件新训练可保存真实成绩，冻结权重复跑仍严格校验。
 - 原提供的简化 CHAIR 评分代码保留供比对，不用于报告中的 CHAIR 指标。
 
 ## Benchmark 数据与评分

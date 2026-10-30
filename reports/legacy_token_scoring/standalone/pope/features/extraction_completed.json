@@ -1,0 +1,10 @@
+{
+  "n": 3000,
+  "forwards_this_run": 3000,
+  "reused_this_run": 0,
+  "seconds": 347.21579933166504,
+  "reference_cache": null,
+  "reference_predictions_and_shared_layers_exact_match": false,
+  "conflicting_annotations_this_run": [],
+  "annotation_policy": "Original GT labels retained per row, including contradictory labels for identical inputs; GT is never used for inference"
+}

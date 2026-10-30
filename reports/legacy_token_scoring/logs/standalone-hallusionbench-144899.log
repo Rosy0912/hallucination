@@ -1,0 +1,53 @@
+[LUMIA Server]Job 144899 lauched on node node2
+[LUMIA Server]Job 144899 lauched on node node2
+{"gpu_binding": "verified", "job_id": "144899", "node": "node2", "uuids": ["GPU-24d2470f-ea86-0a81-2b78-5a59000ac3c3"], "audit": "/home/jmzhang/Workspace/hallucination-20261030/logs/standalone-gpu-144899.json"}
+RUN /home/jmzhang/Workspace/hallucination-20261030/legacy/.venv/bin/python -u prepare.py --model-dir /home/jmzhang/Workspace/AOD-repro-20260928/models/llava-1.5-7b-hf --hb-root /home/jmzhang/Workspace/AOD-repro-20260928/data/images
+Prepared 346 images and 951 fixed questions
+PREPARE COMPLETE
+RUN /home/jmzhang/Workspace/hallucination-20261030/legacy/.venv/bin/python -u experiment/extract_llava.py --benchmark hallusionbench --manifest assets/manifest.json --layers 1,4,8,12,16,20,24,28,31,32 --out results/default/features
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.38s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:02<00:01,  1.29s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.16s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.21s/it]
+EXTRACT 100 forward 100 reused 0 seconds 20
+EXTRACT 200 forward 200 reused 0 seconds 43
+EXTRACT 300 forward 300 reused 0 seconds 63
+EXTRACT 400 forward 400 reused 0 seconds 83
+EXTRACT 500 forward 500 reused 0 seconds 102
+/home/jmzhang/miniconda3/envs/habitbench-e2e/lib/python3.11/site-packages/PIL/Image.py:1047: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+EXTRACT 600 forward 598 reused 2 seconds 121
+EXTRACT 700 forward 698 reused 2 seconds 141
+EXTRACT 800 forward 798 reused 2 seconds 160
+EXTRACT 900 forward 897 reused 3 seconds 185
+COMPLETE {"hallusionbench/val": {"n": 173, "accuracy": 52.02312138728324, "precision": 45.333333333333336, "recall": 44.73684210526316, "f1": 45.033112582781456, "yes_ratio": 43.35260115606936, "tp": 34, "tn": 56, "fp": 41, "fn": 42, "false_positive_rate": 42.2680412371134, "false_discovery_rate": 54.666666666666664, "figure_accuracy": 17.142857142857142, "pair_accuracy": 12.5, "n_figures": 70, "n_pairs": 80}, "hallusionbench/all": {"n": 951, "accuracy": 52.26077812828601, "precision": 43.93592677345538, "recall": 47.880299251870326, "f1": 45.82338902147971, "yes_ratio": 45.95162986330179, "tp": 192, "tn": 305, "fp": 245, "fn": 209, "false_positive_rate": 44.54545454545455, "false_discovery_rate": 56.06407322654462, "figure_accuracy": 18.497109826589597, "pair_accuracy": 17.36263736263736, "n_figures": 346, "n_pairs": 455}, "hallusionbench/train": {"n": 582, "accuracy": 50.687285223367695, "precision": 41.851851851851855, "recall": 46.50205761316872, "f1": 44.05458089668616, "yes_ratio": 46.391752577319586, "tp": 113, "tn": 182, "fp": 157, "fn": 130, "false_positive_rate": 46.31268436578171, "false_discovery_rate": 58.148148148148145, "figure_accuracy": 17.475728155339805, "pair_accuracy": 17.375886524822697, "n_figures": 206, "n_pairs": 282}, "hallusionbench/test": {"n": 196, "accuracy": 57.142857142857146, "precision": 48.91304347826087, "recall": 54.8780487804878, "f1": 51.724137931034484, "yes_ratio": 46.93877551020408, "tp": 45, "tn": 67, "fp": 47, "fn": 37, "false_positive_rate": 41.228070175438596, "false_discovery_rate": 51.08695652173913, "figure_accuracy": 22.857142857142858, "pair_accuracy": 21.50537634408602, "n_figures": 70, "n_pairs": 93}}
+RUN /home/jmzhang/Workspace/hallucination-20261030/legacy/.venv/bin/python -u experiment/hb_aod_gt.py --source results/default/features --out results/default/train --layers 1,4,8,12,16,20,24,28,31,32 --normalization standard --width 64 --balanced --f1-guard
+TRAINED 1 paired seeds [42, 43, 44]
+TRAINED 1 paired_residual seeds [42, 43, 44]
+TRAINED 4 paired seeds [42, 43, 44]
+TRAINED 4 paired_residual seeds [42, 43, 44]
+TRAINED 8 paired seeds [42, 43, 44]
+TRAINED 8 paired_residual seeds [42, 43, 44]
+TRAINED 12 paired seeds [42, 43, 44]
+TRAINED 12 paired_residual seeds [42, 43, 44]
+TRAINED 16 paired seeds [42, 43, 44]
+TRAINED 16 paired_residual seeds [42, 43, 44]
+TRAINED 20 paired seeds [42, 43, 44]
+TRAINED 20 paired_residual seeds [42, 43, 44]
+TRAINED 24 paired seeds [42, 43, 44]
+TRAINED 24 paired_residual seeds [42, 43, 44]
+TRAINED 28 paired seeds [42, 43, 44]
+TRAINED 28 paired_residual seeds [42, 43, 44]
+TRAINED 31 paired seeds [42, 43, 44]
+TRAINED 31 paired_residual seeds [42, 43, 44]
+TRAINED 32 paired seeds [42, 43, 44]
+TRAINED 32 paired_residual seeds [42, 43, 44]
+RESULT {"method": "AOD", "base": {"n": 196, "accuracy": 57.142857142857146, "precision": 48.91304347826087, "recall": 54.8780487804878, "f1": 51.724137931034484, "yes_ratio": 46.93877551020408, "tp": 45, "tn": 67, "fp": 47, "fn": 37, "false_positive_rate": 41.228070175438596, "false_discovery_rate": 51.08695652173913, "figure_accuracy": 22.857142857142858, "pair_accuracy": 21.50537634408602, "n_figures": 70, "n_pairs": 93}, "selected": {"n": 196, "accuracy": 55.61224489795919, "precision": 46.98795180722892, "recall": 47.5609756097561, "f1": 47.27272727272727, "yes_ratio": 42.3469387755102, "tp": 39, "tn": 70, "fp": 44, "fn": 43, "false_positive_rate": 38.59649122807018, "false_discovery_rate": 53.01204819277108, "figure_accuracy": 25.714285714285715, "pair_accuracy": 21.50537634408602, "n_figures": 70, "n_pairs": 93}, "selection": {"layers": [8], "recipe": {"name": "paired_residual", "offset": 1.0, "pair_weight": 0.5, "penalty": 0.01}, "checkpoints": ["results/default/train/L8_paired_residual_s42.pt", "results/default/train/L8_paired_residual_s43.pt", "results/default/train/L8_paired_residual_s44.pt"], "fallback": false, "alpha": -1.0, "blend": 1.0, "threshold": 0.0, "validation": {"n": 173, "accuracy": 58.959537572254334, "f1": 54.77707006369427}, "method": "AOD", "source_sha256": "f0dbe86a7a99c2c0e58cffe5f7f1d9bd420ce5a8c08f57de01d82fc66df933ac", "alpha_grid": [-1.0, -0.5, 0.0, 0.5, 1.0], "f1_guard": true, "rule": "Validation accuracy then F1 with configured F1 guard; checkpoints chosen by validation BCE; Base fallback eligible", "checkpoint_sha256": {"results/default/train/L8_paired_residual_s42.pt": "4e76b2b40c53e4bc2acf930d8166c68fafa63d5c7498d99a16bcaeb50f337d8a", "results/default/train/L8_paired_residual_s43.pt": "d25ead7a9d88966ccc3f84c7f2160b1993e1b303c4be9053b5294ba889163d1a", "results/default/train/L8_paired_residual_s44.pt": "8a0eea323e396f4f881bc5d610205d60ebfb16911c3af91c4333f29c02ce2aa4"}}, "accuracy_gain_pp": -1.5306122448979593, "corrected": 13, "regressed": 16, "criterion_met": false}
+RUN /home/jmzhang/Workspace/hallucination-20261030/legacy/.venv/bin/python -u experiment/verify_hb_aod_gt.py --source results/default/features --experiment results/default/train --model llava --out results/default/evaluation
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:02,  1.37s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:02<00:01,  1.30s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.19s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:03<00:00,  1.22s/it]
+VERIFIED 50 196
+VERIFIED 100 196
+/home/jmzhang/miniconda3/envs/habitbench-e2e/lib/python3.11/site-packages/PIL/Image.py:1047: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+VERIFIED 150 196
+RESULT {"method": "AOD", "model": "llava", "base": {"n": 196, "accuracy": 57.142857142857146, "precision": 48.91304347826087, "recall": 54.8780487804878, "f1": 51.724137931034484, "yes_ratio": 46.93877551020408, "tp": 45, "tn": 67, "fp": 47, "fn": 37, "false_positive_rate": 41.228070175438596, "false_discovery_rate": 51.08695652173913, "figure_accuracy": 22.857142857142858, "pair_accuracy": 21.50537634408602, "n_figures": 70, "n_pairs": 93}, "selected": {"n": 196, "accuracy": 55.61224489795919, "precision": 46.98795180722892, "recall": 47.5609756097561, "f1": 47.27272727272727, "yes_ratio": 42.3469387755102, "tp": 39, "tn": 70, "fp": 44, "fn": 43, "false_positive_rate": 38.59649122807018, "false_discovery_rate": 53.01204819277108, "figure_accuracy": 25.714285714285715, "pair_accuracy": 21.50537634408602, "n_figures": 70, "n_pairs": 93}, "accuracy_gain_pp": -1.5306122448979593, "base_predictions_exact": true, "features_exact": true, "selected_predictions_exact": true, "complete_test": true, "criterion_met": false, "paired_visual_features": false, "selection": {"layers": [8], "recipe": {"name": "paired_residual", "offset": 1.0, "pair_weight": 0.5, "penalty": 0.01}, "checkpoints": ["results/default/train/L8_paired_residual_s42.pt", "results/default/train/L8_paired_residual_s43.pt", "results/default/train/L8_paired_residual_s44.pt"], "fallback": false, "alpha": -1.0, "blend": 1.0, "threshold": 0.0, "validation": {"n": 173, "accuracy": 58.959537572254334, "f1": 54.77707006369427}, "method": "AOD", "source_sha256": "f0dbe86a7a99c2c0e58cffe5f7f1d9bd420ce5a8c08f57de01d82fc66df933ac", "alpha_grid": [-1.0, -0.5, 0.0, 0.5, 1.0], "f1_guard": true, "rule": "Validation accuracy then F1 with configured F1 guard; checkpoints chosen by validation BCE; Base fallback eligible", "checkpoint_sha256": {"results/default/train/L8_paired_residual_s42.pt": "4e76b2b40c53e4bc2acf930d8166c68fafa63d5c7498d99a16bcaeb50f337d8a", "results/default/train/L8_paired_residual_s43.pt": "d25ead7a9d88966ccc3f84c7f2160b1993e1b303c4be9053b5294ba889163d1a", "results/default/train/L8_paired_residual_s44.pt": "8a0eea323e396f4f881bc5d610205d60ebfb16911c3af91c4333f29c02ce2aa4"}}}
+DONE. Results: /home/jmzhang/Workspace/hallucination-20261030/standalone-validation/hallusionbench/results/default
