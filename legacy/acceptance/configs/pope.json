@@ -1,0 +1,16 @@
+{
+  "dataset": "POPE MSCOCO popular",
+  "source": "results/llava_separate/pope_popular",
+  "checkpoint": "results/llava_separate/pope_popular/gt_sweep/pope_mscoco_L13_projective_gt_s42.pt",
+  "checkpoint_sha256": "b390d81e1dc6db76848ef7aa546b88d2d244dec74e3046885ed58c109c02b833",
+  "layer": 13,
+  "alpha": 0.0,
+  "threshold": 0.5,
+  "train_n": 1800,
+  "val_n": 600,
+  "test_n": 600,
+  "epoch": 100,
+  "seed": 42,
+  "label": "GT Yes/No",
+  "method": "AOD"
+}

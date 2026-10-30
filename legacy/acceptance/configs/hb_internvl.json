@@ -1,0 +1,19 @@
+{
+  "dataset": "HallusionBench image-only",
+  "model": "OpenGVLab/InternVL3-8B-hf",
+  "revision": "259a3b64a14623c0ec91a045cb43f7c5af5fa6af",
+  "source": "results/internvl3_8b/hb",
+  "checkpoint": "results/internvl3_8b/hb/aod_optimized/checkpoints/hallusionbench_L22_orthogonal_scaled_balanced_adv0.1_s42.pt",
+  "checkpoint_sha256": "7f492c5b2dfae8028d1d669abf000db0b8d3f0f4938ebb97bbb5dc29c36a32ea",
+  "train_n": 582,
+  "val_n": 173,
+  "test_n": 196,
+  "layer": 22,
+  "seed": 42,
+  "epoch": 35,
+  "adv_weight": 0.1,
+  "alpha": 1.0,
+  "beta": 0.5,
+  "apc_mode": "none",
+  "method": "AOD"
+}
