@@ -1,0 +1,17 @@
+{
+  "job_id": 144934,
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "torch": "2.10.0+cu128",
+  "transformers": "4.57.0",
+  "selected": {
+    "name": "scalar",
+    "alpha": -1.0,
+    "beta": 1.0
+  },
+  "checkpoint_sha256": "cafc1bbab8dbef1dd90f37fd2920aea452e0a5578953fcd0a91c70f4bb9ddff0",
+  "independent_metric_recomputation": true,
+  "same_test_ids_as_pjlab": true,
+  "relationship": "Earlier submitted run recovered after SSH restoration; separate training and validation selection, not a GPU-only controlled comparison; not used to replace or select the published PJLab result"
+}

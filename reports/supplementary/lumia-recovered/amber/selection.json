@@ -1,0 +1,220 @@
+{
+  "selected": {
+    "config": {
+      "name": "scalar",
+      "alpha": -1.0,
+      "beta": 1.0
+    },
+    "metrics": {
+      "base": {
+        "n": 458,
+        "tp": 262,
+        "fp": 55,
+        "tn": 101,
+        "fn": 40,
+        "accuracy": 79.25764192139738,
+        "precision": 82.64984227129338,
+        "recall": 86.75496688741723,
+        "f1": 84.65266558966074,
+        "false_positive_rate": 35.256410256410255,
+        "positive_label": "no",
+        "official_rounded": {
+          "accuracy": 79.3,
+          "precision": 82.6,
+          "recall": 86.8,
+          "f1": 84.6
+        }
+      },
+      "aod": {
+        "n": 458,
+        "tp": 250,
+        "fp": 27,
+        "tn": 129,
+        "fn": 52,
+        "accuracy": 82.75109170305677,
+        "precision": 90.25270758122744,
+        "recall": 82.78145695364239,
+        "f1": 86.35578583765113,
+        "false_positive_rate": 17.307692307692307,
+        "positive_label": "no",
+        "official_rounded": {
+          "accuracy": 82.8,
+          "precision": 90.3,
+          "recall": 82.8,
+          "f1": 86.4
+        }
+      },
+      "by_type": {
+        "attribute": {
+          "base": {
+            "n": 248,
+            "tp": 103,
+            "fp": 36,
+            "tn": 88,
+            "fn": 21,
+            "accuracy": 77.01612903225806,
+            "precision": 74.10071942446044,
+            "recall": 83.06451612903226,
+            "f1": 78.32699619771863,
+            "false_positive_rate": 29.032258064516128,
+            "positive_label": "no",
+            "official_rounded": {
+              "accuracy": 77.0,
+              "precision": 74.1,
+              "recall": 83.1,
+              "f1": 78.3
+            }
+          },
+          "aod": {
+            "n": 248,
+            "tp": 98,
+            "fp": 19,
+            "tn": 105,
+            "fn": 26,
+            "accuracy": 81.85483870967742,
+            "precision": 83.76068376068376,
+            "recall": 79.03225806451613,
+            "f1": 81.32780082987551,
+            "false_positive_rate": 15.32258064516129,
+            "positive_label": "no",
+            "official_rounded": {
+              "accuracy": 81.9,
+              "precision": 83.8,
+              "recall": 79.0,
+              "f1": 81.3
+            }
+          }
+        },
+        "existence": {
+          "base": {
+            "n": 158,
+            "tp": 141,
+            "fp": 0,
+            "tn": 0,
+            "fn": 17,
+            "accuracy": 89.24050632911393,
+            "precision": 100.0,
+            "recall": 89.24050632911393,
+            "f1": 94.31438127090301,
+            "false_positive_rate": 0.0,
+            "positive_label": "no",
+            "official_rounded": {
+              "accuracy": 89.2,
+              "precision": 100.0,
+              "recall": 89.2,
+              "f1": 94.2
+            }
+          },
+          "aod": {
+            "n": 158,
+            "tp": 135,
+            "fp": 0,
+            "tn": 0,
+            "fn": 23,
+            "accuracy": 85.44303797468355,
+            "precision": 100.0,
+            "recall": 85.44303797468355,
+            "f1": 92.15017064846417,
+            "false_positive_rate": 0.0,
+            "positive_label": "no",
+            "official_rounded": {
+              "accuracy": 85.4,
+              "precision": 100.0,
+              "recall": 85.4,
+              "f1": 92.1
+            }
+          }
+        },
+        "relation": {
+          "base": {
+            "n": 52,
+            "tp": 18,
+            "fp": 19,
+            "tn": 13,
+            "fn": 2,
+            "accuracy": 59.61538461538461,
+            "precision": 48.648648648648646,
+            "recall": 90.0,
+            "f1": 63.1578947368421,
+            "false_positive_rate": 59.375,
+            "positive_label": "no",
+            "official_rounded": {
+              "accuracy": 59.6,
+              "precision": 48.6,
+              "recall": 90.0,
+              "f1": 63.1
+            }
+          },
+          "aod": {
+            "n": 52,
+            "tp": 17,
+            "fp": 8,
+            "tn": 24,
+            "fn": 3,
+            "accuracy": 78.84615384615384,
+            "precision": 68.0,
+            "recall": 85.0,
+            "f1": 75.55555555555556,
+            "false_positive_rate": 25.0,
+            "positive_label": "no",
+            "official_rounded": {
+              "accuracy": 78.8,
+              "precision": 68.0,
+              "recall": 85.0,
+              "f1": 75.6
+            }
+          }
+        }
+      },
+      "yes_positive_auxiliary": {
+        "base": {
+          "n": 458,
+          "tp": 101,
+          "fp": 40,
+          "tn": 262,
+          "fn": 55,
+          "accuracy": 79.25764192139738,
+          "precision": 71.63120567375887,
+          "recall": 64.74358974358974,
+          "f1": 68.01346801346801,
+          "false_positive_rate": 13.245033112582782
+        },
+        "aod": {
+          "n": 458,
+          "tp": 129,
+          "fp": 52,
+          "tn": 250,
+          "fn": 27,
+          "accuracy": 82.75109170305677,
+          "precision": 71.2707182320442,
+          "recall": 82.6923076923077,
+          "f1": 76.55786350148368,
+          "false_positive_rate": 17.218543046357617
+        }
+      },
+      "metric_definition": "No-positive confusion matrix and exact F1; official_rounded also reproduces upstream rounding and epsilon."
+    }
+  },
+  "base_validation": {
+    "n": 458,
+    "tp": 262,
+    "fp": 55,
+    "tn": 101,
+    "fn": 40,
+    "accuracy": 79.25764192139738,
+    "precision": 82.64984227129338,
+    "recall": 86.75496688741723,
+    "f1": 84.65266558966074,
+    "false_positive_rate": 35.256410256410255,
+    "positive_label": "no",
+    "official_rounded": {
+      "accuracy": 79.3,
+      "precision": 82.6,
+      "recall": 86.8,
+      "f1": 84.6
+    }
+  },
+  "checkpoint_sha256": "cafc1bbab8dbef1dd90f37fd2920aea452e0a5578953fcd0a91c70f4bb9ddff0",
+  "rule": "validation accuracy; require no-positive F1 >= Base; ties prefer smaller absolute alpha, beta; test labels never used",
+  "test_access": "This selection is frozen before this process constructs or evaluates final test examples. Earlier v3 auto-test output is unused."
+}

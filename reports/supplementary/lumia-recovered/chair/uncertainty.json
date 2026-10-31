@@ -1,0 +1,28 @@
+{
+  "method": "paired percentile bootstrap at image/group level",
+  "seed": 42,
+  "replicates": 2000,
+  "groups": 50,
+  "group_field": "image",
+  "delta_definition": "AOD minus Base; lower is better for CHAIR",
+  "metrics": {
+    "CHAIRs": {
+      "base": 56.0,
+      "aod": 58.0,
+      "delta": 2.0,
+      "ci95": [
+        -4.0,
+        10.0
+      ]
+    },
+    "CHAIRi": {
+      "base": 13.65979381443299,
+      "aod": 14.03061224489796,
+      "delta": 0.3708184304649702,
+      "ci95": [
+        -2.195125883699032,
+        3.043126114089876
+      ]
+    }
+  }
+}

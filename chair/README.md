@@ -61,3 +61,7 @@ Hugging Face 可按网络情况设置 HF_ENDPOINT，例如 `HF_ENDPOINT=https://
 ## 已核验的固定划分结果
 
 单张 A100 80GB 完整运行成功。50 张独立测试图片：CHAIRi **14.3959 → 13.7203**，CHAIRs **56.00 → 56.00（持平）**；正确唯一对象数每图 2.82 → 2.84，平均生成长度保留 98.07%。验证选中 scalar、alpha=1、beta=0.5。CHAIRi 的配对 bootstrap 95% 差值区间包含 0；本次是点估计改善，不是稳定或全面优势的结论。逐句评分、全部候选、冻结配置与执行记录见 [公开运行记录](https://github.com/Rosy0912/hallucination/tree/main/reports/corrected/chair)。
+
+## Lumia 恢复连接后的补充核验
+
+此前提交的 Lumia 最终作业现已取回并独立重算。相同测试样本上，AMBER F1 为 85.4113 → 86.8885；CHAIRs 为 56 → 58，CHAIRi 为 13.6598 → 14.0306，CHAIR 发生退化。Lumia 的 CHAIR 验证选中 original5/alpha=2/beta=0.5，PJLab 选中 scalar/alpha=1/beta=0.5：训练及验证选择均独立进行，不是仅改变 GPU 的受控比较。当前 CHAIR 流程尚未稳定优于 Base。既有 PJLab 记录保持原样，补充失败结果同样公开，见 [Lumia 核验记录](https://github.com/Rosy0912/hallucination/tree/main/reports/supplementary/lumia-recovered)。

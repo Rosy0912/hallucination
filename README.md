@@ -27,6 +27,10 @@ Hugging Face 网络不可用时，可自行选择可访问的端点，例如 `HF
 
 ## 本次实测
 
+**补充核验：Lumia 的 CHAIRs、CHAIRi 均退化，当前 CHAIR 流程未稳定优于 Base；见 [完整补充结果](https://github.com/Rosy0912/hallucination/tree/main/reports/supplementary/lumia-recovered)。**
+
+
+
 | Benchmark / 指标 | Base | AOD 变体 |
 |---|---:|---:|
 | POPE F1 ↑（600 题） | 84.0764 | 92.5990 |
@@ -60,3 +64,7 @@ AMBER 以官方 No-positive F1 为主，同时列准确率及分项。CHAIR 使�
 legacy/ 仅保存历史来源和旧协议。新读者从四个独立目录开始。来源、许可证和改动见 [THIRD_PARTY.md](THIRD_PARTY.md)。
 
 模型大文件连接超时时，可使用经过逐文件哈希核验的公开镜像：`AOD_MODEL_SOURCE=modelscope bash run.sh prepare`。镜像只提供下载通道；所有文件必须匹配本包固定 Hugging Face revision 的 Git/LFS 哈希，内容变化会报错。
+
+## Lumia 恢复连接后的补充核验
+
+此前提交的 Lumia 最终作业现已取回并独立重算。相同测试样本上，AMBER F1 为 85.4113 → 86.8885；CHAIRs 为 56 → 58，CHAIRi 为 13.6598 → 14.0306，CHAIR 发生退化。Lumia 的 CHAIR 验证选中 original5/alpha=2/beta=0.5，PJLab 选中 scalar/alpha=1/beta=0.5：训练及验证选择均独立进行，不是仅改变 GPU 的受控比较。当前 CHAIR 流程尚未稳定优于 Base。既有 PJLab 记录保持原样，补充失败结果同样公开，见 [Lumia 核验记录](https://github.com/Rosy0912/hallucination/tree/main/reports/supplementary/lumia-recovered)。

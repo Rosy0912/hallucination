@@ -1,0 +1,34 @@
+{
+  "selected": {
+    "config": {
+      "name": "original5",
+      "alpha": 2.0,
+      "beta": 0.5
+    },
+    "metrics": {
+      "n": 16,
+      "CHAIRs": 50.0,
+      "CHAIRi": 13.114754098360656,
+      "object_mentions": 122,
+      "hallucinated_mentions": 16,
+      "hallucinated_captions": 8,
+      "mean_tokens": 109.25,
+      "correct_unique_objects_per_image": 3.375,
+      "object_recall": 0.7314484126984127
+    }
+  },
+  "base_validation": {
+    "n": 16,
+    "CHAIRs": 56.25,
+    "CHAIRi": 13.559322033898304,
+    "object_mentions": 118,
+    "hallucinated_mentions": 16,
+    "hallucinated_captions": 9,
+    "mean_tokens": 111.875,
+    "correct_unique_objects_per_image": 3.25,
+    "object_recall": 0.6981150793650792
+  },
+  "checkpoint_sha256": "28a4b0da2164f6d281aa9a28983364f4bbddac63b0b227a1ea21f79bf553dfc2",
+  "rule": "Both CHAIRs and CHAIRi must improve on validation; correct unique objects >=90% Base and mean tokens >=80% Base; rank CHAIRs then CHAIRi; test scored only after freezing",
+  "test_access": "This selection is frozen before this process constructs or evaluates final test examples. Earlier v3 auto-test output is unused."
+}

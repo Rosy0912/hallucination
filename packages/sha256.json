@@ -8,11 +8,11 @@
     "sha256": "101dfde889b03f91f0d2bb781955e9b069429abc61bc188125d91591109708e9"
   },
   "amber": {
-    "bytes": 68714,
-    "sha256": "bc2d243c166395e606b2beb50963c696d1ef96a04a52e5403d2a21c55f9527d3"
+    "bytes": 69023,
+    "sha256": "472b1f80d6ee35e709716af3a8265ba81ba3b3719dcd83c353b1a14058cabc35"
   },
   "chair": {
-    "bytes": 182409,
-    "sha256": "af8f888dfd0a3cf74eab9b608a7c82bd26dc5f9722321cdd12a61d6b269aa742"
+    "bytes": 182704,
+    "sha256": "ffeba17c3e18c61099c36755698e9107da755bb4d4fb9ba809c15006365db695"
   }
 }

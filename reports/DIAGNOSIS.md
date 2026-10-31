@@ -31,3 +31,7 @@ AMBER 在验证集选择准确率提高且官方 No-positive F1 不下降的配�
 四项修正结果均已核验；AMBER、CHAIR 在 PJLab 从独立包重新提取、训练和评测成功。AMBER 总体准确率和 F1 均提高；CHAIRi 点估计改善，CHAIRs 持平，CHAIR 区间仍包含 0。本次训练变体同时改变了归一化、探针和损失权重，不能把全部增益归因于某一个改动。最终成绩以 [运行汇总](README.md) 和 `corrected/` 中的逐题预测及执行记录为准。
 
 模型 revision 固定为 `b234b804b114d9e37bb655e11cbbb5f5e971b7a9`。备用下载通道仅在模型文件逐一匹配该 revision 的 Git/LFS 哈希时接受；不会为了运行通畅更换底座权重。
+
+## Lumia 恢复连接后的补充核验
+
+此前提交的 Lumia 最终作业现已取回并独立重算。相同测试样本上，AMBER F1 为 85.4113 → 86.8885；CHAIRs 为 56 → 58，CHAIRi 为 13.6598 → 14.0306，CHAIR 发生退化。Lumia 的 CHAIR 验证选中 original5/alpha=2/beta=0.5，PJLab 选中 scalar/alpha=1/beta=0.5：训练及验证选择均独立进行，不是仅改变 GPU 的受控比较。当前 CHAIR 流程尚未稳定优于 Base。既有 PJLab 记录保持原样，补充失败结果同样公开，见 [Lumia 核验记录](https://github.com/Rosy0912/hallucination/tree/main/reports/supplementary/lumia-recovered)。
