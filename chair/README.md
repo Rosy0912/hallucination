@@ -1,6 +1,6 @@
 # CHAIR：从公开数据到 AOD 训练与评测
 
-本目录自带源码、依赖及数据准备脚本，不需要父目录、作者服务器、预训练 AOD 权重或已有特征。仓库不附实验成绩；运行后的完整记录保存在本地。
+本目录自带源码、依赖及数据准备脚本，不需要父目录、作者服务器、预训练 AOD 权重或已有特征。本文列出已验证的主要指标摘录；运行后的完整记录保存在本地。
 
 ## 一次运行
 
@@ -85,4 +85,21 @@ bash run.sh all --aod-variant verified --run-dir results/verified --test-images 
 
 推理仅使用图像、生成文本、固定物体词表和已训练判别头，不读取待测图片的标注。评分保持原 CHAIR 规则。每阶段保留原 Base、未加核验的 AOD、使用相同核验上下文的 Base 重写、组合方案四组输出，另存每个物体的判别分数和重写触发记录；共用上下文的 Base 是组件对照，不是独立训练的另一种方法。不会用测试结果重新挑阈值，也不会自动删除未提升的本地记录。
 
-所有生成均为 greedy、最多 128 tokens。输出位于所选 run-dir 的 `caption-training/`、`verifier-features/`、`verifier-training/`、`development/`、`confirmation/`、`test/` 及冻结配置 JSON；公开仓库不附实验分数。
+所有生成均为 greedy、最多 128 tokens。输出位于所选 run-dir 的 `caption-training/`、`verifier-features/`、`verifier-training/`、`development/`、`confirmation/`、`test/` 及冻结配置 JSON；本节后附主要指标摘录，完整记录由脚本保存在本地。
+
+## 已验证的主要指标：物体核验组合（2026-10-31）
+
+本节为已验证的主要指标摘录，不是完整指标表，也不表示所有指标或子项均提升。模型为 LLaVA-1.5-7B；参数由验证集选择后冻结，以下为固定测试划分上的实测结果，不是官方全量榜单。完整评测记录由运行脚本保存在本地。
+
+本表对应 `--aod-variant verified` 的 400 张冻结测试图：排除原 POPE 的全部 500 张图、此前描述流程预留的 200 张图和本轮 80 张确认图。下列未加核验 AOD 为同一批 400 张图上的组件对照；默认 `caption` 入口使用另一套测试划分，不应直接混用数值。
+
+| 指标（越低越好） | Base | 未加核验 AOD | AOD＋物体核验＋重写 | 组合相对 Base（百分点） |
+|---|---:|---:|---:|---:|
+| CHAIRs ↓ | 52.00 | 41.50 | **36.75** | -15.25 |
+| CHAIRi ↓ | 15.32 | 11.69 | **10.49** | -4.83 |
+
+组合方法包含额外的 POPE 监督物体判别头及提示词重写，不应将全部收益归为纯 AOD。400 张图按图像配对 bootstrap（2000 次，seed=42）：相对 Base 和未加核验 AOD，两项差值的 95% 区间均低于 0；这是单次冻结运行的区间，不是跨训练种子的保证。该运行通过了预先设定的内容保留门槛。
+
+```bash
+bash run.sh all --aod-variant verified --run-dir results/verified --test-images 400
+```
