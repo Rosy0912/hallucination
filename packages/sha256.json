@@ -1,18 +1,18 @@
 {
   "pope": {
-    "bytes": 166640,
-    "sha256": "3626f187dc6095d615846eb7a643d8c09d008c52a8fb58c922833e83f96f75c8"
+    "bytes": 166472,
+    "sha256": "3e220eed9ff8b0748fb415b63665b0923c5307611febfe92a34715d2843fb64c"
   },
   "hallusionbench": {
-    "bytes": 130375,
-    "sha256": "101dfde889b03f91f0d2bb781955e9b069429abc61bc188125d91591109708e9"
+    "bytes": 130208,
+    "sha256": "691cb41a0718205cde398277691b17440dfc9f4769903d8aea26fa7e53640344"
   },
   "amber": {
-    "bytes": 69023,
-    "sha256": "472b1f80d6ee35e709716af3a8265ba81ba3b3719dcd83c353b1a14058cabc35"
+    "bytes": 68406,
+    "sha256": "cc598f0d9d61756409618942e6b243ed8c6230159acf398683ef74896a6bb21f"
   },
   "chair": {
-    "bytes": 182704,
-    "sha256": "ffeba17c3e18c61099c36755698e9107da755bb4d4fb9ba809c15006365db695"
+    "bytes": 182096,
+    "sha256": "4811b4d2bf0718a1eddcbf53d29ed169864ca2dfdd64591808bd72ef40dc4169"
   }
 }

@@ -1,7 +1,0 @@
-{
-  "benchmark": "hallusionbench",
-  "images": null,
-  "max_new_tokens": 128,
-  "model": "models/llava-1.5-7b-hf",
-  "training": "fixed package protocol; validation selection only"
-}

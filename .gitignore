@@ -14,3 +14,7 @@ __pycache__/
 features.pt
 *.tmp
 .DS_Store
+
+# Experiment outputs stay local.
+/reports/
+/legacy/results/

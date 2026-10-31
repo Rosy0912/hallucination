@@ -50,14 +50,6 @@ Hugging Face 可按网络情况设置 HF_ENDPOINT，例如 `HF_ENDPOINT=https://
 
 已有验证环境可运行：`PYTHON=/path/to/python bash run.sh all`。setup.sh 使用 [PyTorch 官方 CUDA 12.8 源](https://pytorch.org/get-started/previous-versions/#v2100)安装 2.10.0，然后安装锁定依赖；实际计算环境为 PyTorch 2.10.0+cu128、Transformers 4.57.0。模型 revision：b234b804b114d9e37bb655e11cbbb5f5e971b7a9。
 
-本包是透明、可执行的子集实验，不是官方全量榜单复现。跨 GPU 的数值和验证选择可能不同，指标以实际输出为准。根仓库 reports/ 保留运行证据，但本目录运行不依赖 reports/。
+本包是透明、可执行的子集实验，不是官方全量榜单复现。跨 GPU 的数值和验证选择可能不同，指标以实际输出为准。本包不附预先计算的实验成绩，运行后在本地保存预测、指标及完整选参记录。
 
 模型大文件连接超时时，可使用经过逐文件哈希核验的公开镜像：`AOD_MODEL_SOURCE=modelscope bash run.sh prepare`。镜像只提供下载通道；所有文件必须匹配本包固定 Hugging Face revision 的 Git/LFS 哈希，内容变化会报错。
-
-## 已核验的固定划分结果
-
-单张 A100 80GB、Python 3.10.20、固定依赖环境中，从本包完整入口重新提取、训练、选参并评测成功。200 张独立测试图片、2,836 题：准确率 80.1834 → 83.9915，官方 No-positive F1 85.4705 → 87.2829。验证选中 scalar、alpha=-2、beta=0.5。总体提高，但 Existence 子项 F1 95.4715 → 94.4026，有所下降。所有候选、逐题输出、独立重算与图片分组 bootstrap 见 [公开运行记录](https://github.com/Rosy0912/hallucination/tree/main/reports/corrected/amber)。这是本次确认结果，不要求跨硬件逐位相同。
-
-## Lumia 恢复连接后的补充核验
-
-此前提交的 Lumia 最终作业现已取回并独立重算。相同测试样本上，AMBER F1 为 85.4113 → 86.8885；CHAIRs 为 56 → 58，CHAIRi 为 13.6598 → 14.0306，CHAIR 发生退化。Lumia 的 CHAIR 验证选中 original5/alpha=2/beta=0.5，PJLab 选中 scalar/alpha=1/beta=0.5：训练及验证选择均独立进行，不是仅改变 GPU 的受控比较。当前 CHAIR 流程尚未稳定优于 Base。既有 PJLab 记录保持原样，补充失败结果同样公开，见 [Lumia 核验记录](https://github.com/Rosy0912/hallucination/tree/main/reports/supplementary/lumia-recovered)。

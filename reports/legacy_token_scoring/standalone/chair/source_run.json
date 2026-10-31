@@ -1,5 +1,0 @@
-{
-  "job": 144901,
-  "scope": "3000 fresh POPE features and new training;2 captions at16tokens smoke only",
-  "isolation": "Only this benchmark directory copied; reused public model/images and verified Python environment; no precomputed features or AOD weights"
-}

@@ -1,5 +1,0 @@
-{
-  "job": 144898,
-  "scope": "3000 fresh features, 1800 train,600 validation,600 test",
-  "isolation": "Only this benchmark directory copied; reused public model/images and verified Python environment; no precomputed features or AOD weights"
-}

@@ -2,7 +2,7 @@
 
 ## 用户提供的 AOD 代码
 
-- `legacy/experiment`、`legacy/upstream`、`legacy/acceptance` 与两个 LLaVA 结果目录来自
+- `legacy/experiment`、`legacy/upstream`、`legacy/acceptance`来自
   `06_源码与运行包/AOD-evaluation-20260929`。继承包内 MIT LICENSE。
 - `src/aod`、`cli`、`scripts` 来自用户提供的 `AOD-main`，继承其 MIT LICENSE。
 - 修正 `src/aod/data/amber.py`：接受官方 list 格式，按 ID 连接，映射官方细分类别，拒绝空集/重复 ID。
@@ -25,8 +25,8 @@
 - [POPE](https://github.com/RUCAIBox/POPE)、[HallusionBench](https://github.com/tianyi-lab/HallusionBench)、
   [COCO](https://cocodataset.org/)：使用用户提供的固定数据快照/分组及官方 COCO 2014 标注。
 
-`legacy` 的历史配置/预测用于复跑一致性校验；`reports` 中标为 2026-10-30 的结果来自本次新作业。
-参数选择明确使用验证集门槛；不按测试成绩筛选、删改输出。历史错误 token 评分保存在 reports/legacy_token_scoring，不作为修正版成绩。
+`legacy` 保留历史来源代码。发布内容不包含历史实验成绩；运行产生的完整输出保存在使用者本地。
+参数选择使用验证集，最终测试不参与参数排名。
 
 ## 本次诊断与训练改版
 

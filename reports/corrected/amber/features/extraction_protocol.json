@@ -1,9 +1,0 @@
-{
-  "answer_ids": [
-    3869,
-    1939
-  ],
-  "scorer": "word-start Yes/No; token-fix-v3",
-  "images": 200,
-  "layer": 24
-}

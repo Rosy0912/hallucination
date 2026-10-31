@@ -50,10 +50,6 @@ Hugging Face 可按网络情况设置 HF_ENDPOINT，例如 `HF_ENDPOINT=https://
 
 已有验证环境可运行：`PYTHON=/path/to/python bash run.sh all`。setup.sh 使用 [PyTorch 官方 CUDA 12.8 源](https://pytorch.org/get-started/previous-versions/#v2100)安装 2.10.0，然后安装锁定依赖；实际计算环境为 PyTorch 2.10.0+cu128、Transformers 4.57.0。模型 revision：b234b804b114d9e37bb655e11cbbb5f5e971b7a9。
 
-本包是透明、可执行的子集实验，不是官方全量榜单复现。跨 GPU 的数值和验证选择可能不同，指标以实际输出为准。根仓库 reports/ 保留运行证据，但本目录运行不依赖 reports/。
+本包是透明、可执行的子集实验，不是官方全量榜单复现。跨 GPU 的数值和验证选择可能不同，指标以实际输出为准。本包不附预先计算的实验成绩，运行后在本地保存预测、指标及完整选参记录。
 
 模型大文件连接超时时，可使用经过逐文件哈希核验的公开镜像：`AOD_MODEL_SOURCE=modelscope bash run.sh prepare`。镜像只提供下载通道；所有文件必须匹配本包固定 Hugging Face revision 的 Git/LFS 哈希，内容变化会报错。
-
-## 已核验的固定划分结果
-
-600 题独立测试：Base F1 84.0764，GT projective 头变体 F1 92.5990；准确率 83.3333 → 92.8333。此变体以 GT 监督分类头训练，并非与 AMBER/CHAIR 相同的解码算法。逐题预测与划分见 [公开运行记录](https://github.com/Rosy0912/hallucination/tree/main/reports/corrected/pope)。

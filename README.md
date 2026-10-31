@@ -25,21 +25,6 @@ bash run.sh all
 
 Hugging Face 网络不可用时，可自行选择可访问的端点，例如 `HF_ENDPOINT=https://hf-mirror.com bash run.sh prepare`；模型固定 revision，HallusionBench 镜像还校验 SHA256 和全部问题/标签。AMBER 图片由官方 Google Drive 发布，受其访问与下载配额限制。
 
-## 本次实测
-
-**补充核验：Lumia 的 CHAIRs、CHAIRi 均退化，当前 CHAIR 流程未稳定优于 Base；见 [完整补充结果](https://github.com/Rosy0912/hallucination/tree/main/reports/supplementary/lumia-recovered)。**
-
-
-
-| Benchmark / 指标 | Base | AOD 变体 |
-|---|---:|---:|
-| POPE F1 ↑（600 题） | 84.0764 | 92.5990 |
-| HallusionBench Accuracy ↑（196 题） | 44.3878 | 58.1633 |
-| AMBER No-positive F1 ↑（200 图 / 2,836 题） | 85.4705 | 87.2829 |
-| CHAIRi ↓（50 图） | 14.3959 | 13.7203 |
-
-CHAIRs 为 56.00 → 56.00，且 CHAIR 小样本置信区间包含 0；HallusionBench F1 与 AMBER Existence 子项下降。指标定义、全部分项、区间和运行证据见 [reports/](reports/)，原因分析见 [修正记录](reports/DIAGNOSIS.md)。这是固定划分的实测结果，不是四项所有指标均提升的结论。
-
 ## 协议与范围
 
 | Benchmark | 划分与方法 |
@@ -53,18 +38,14 @@ CHAIRs 为 56.00 → 56.00，且 CHAIR 小样本置信区间包含 0；Hallusion
 
 AMBER 以官方 No-positive F1 为主，同时列准确率及分项。CHAIR 使用原始算法的 Python 3 适配，合并实例标注与参考描述，按提及次数计算 CHAIRi。CHAIR 越低越好，附描述长度和正确物体覆盖率。
 
-修正版结果、逐题输出、划分、选参记录和 任务完成状态保存在 [reports/](reports/)。
+本仓库发布可执行代码、数据准备方式及评测协议，不包含预先计算的实验成绩。运行后在本地 results/ 中生成预测、指标及选参记录。
 
 ## 重要修正与可复现性
 
-2026-10-30 检查发现旧包装脚本读取了不带词首空格的 Yes/No token（8241/3782），而固定 LLaVA tokenizer 实际生成词首 token（3869/1939）。四个独立包现使用经过现场生成核验的 token，并重新生成训练标签。旧成绩仅保留在 [历史协议记录](reports/legacy_token_scoring/)，不能拿错误的 Base 分数证明涨点。
+2026-10-30 检查发现旧包装脚本读取了不带词首空格的 Yes/No token（8241/3782），而固定 LLaVA tokenizer 实际生成词首 token（3869/1939）。四个独立包现使用经过现场生成核验的 token，并重新生成训练标签。运行新代码时需重新提取特征，不能复用旧 token 协议的缓存。
 
 模型固定为 `llava-hf/llava-1.5-7b-hf@b234b804b114d9e37bb655e11cbbb5f5e971b7a9`。验证环境为 Python 3.11、PyTorch 2.10.0+cu128、Transformers 4.57.0。GPU 数值差异会影响训练和验证集选出的配置；脚本保留实际结果，不以历史分数作为通过条件。
 
 legacy/ 仅保存历史来源和旧协议。新读者从四个独立目录开始。来源、许可证和改动见 [THIRD_PARTY.md](THIRD_PARTY.md)。
 
 模型大文件连接超时时，可使用经过逐文件哈希核验的公开镜像：`AOD_MODEL_SOURCE=modelscope bash run.sh prepare`。镜像只提供下载通道；所有文件必须匹配本包固定 Hugging Face revision 的 Git/LFS 哈希，内容变化会报错。
-
-## Lumia 恢复连接后的补充核验
-
-此前提交的 Lumia 最终作业现已取回并独立重算。相同测试样本上，AMBER F1 为 85.4113 → 86.8885；CHAIRs 为 56 → 58，CHAIRi 为 13.6598 → 14.0306，CHAIR 发生退化。Lumia 的 CHAIR 验证选中 original5/alpha=2/beta=0.5，PJLab 选中 scalar/alpha=1/beta=0.5：训练及验证选择均独立进行，不是仅改变 GPU 的受控比较。当前 CHAIR 流程尚未稳定优于 Base。既有 PJLab 记录保持原样，补充失败结果同样公开，见 [Lumia 核验记录](https://github.com/Rosy0912/hallucination/tree/main/reports/supplementary/lumia-recovered)。
