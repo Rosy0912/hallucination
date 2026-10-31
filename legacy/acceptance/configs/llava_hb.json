@@ -17,11 +17,6 @@
   "alpha": 1.0,
   "blend": 1.0,
   "threshold": 0.0,
-  "validation": {
-    "n": 173,
-    "accuracy": 57.80346820809248,
-    "f1": 54.088050314465406
-  },
   "method": "AOD",
   "source_sha256": "66533704e6917d8147dbf525f8bb6ad2df0229609011a472a78b088802cc387d",
   "alpha_grid": [
