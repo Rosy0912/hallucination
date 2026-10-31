@@ -13,13 +13,13 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('stage',choices=['all','prepare','extract','train','validate','evaluate'],nargs='?',default='all')
     p.add_argument('--run-dir',default='results/default')
-    p.add_argument('--aod-variant',choices=['caption','question'],default='caption',help='Caption-domain AOD or the earlier question-domain direction')
+    p.add_argument('--aod-variant',choices=['caption','verified','question'],default='caption',help='Caption-domain AOD, optional object-verified composite, or question-domain direction')
     p.add_argument('--model-dir',type=Path)
     p.add_argument('--coco-root',type=Path);p.add_argument('--hb-root',type=Path)
     p.add_argument('--amber-root',type=Path);p.add_argument('--annotations-root',type=Path)
     p.add_argument('--images',type=int,help='Final CHAIR images: caption default 200, question default 50')
     p.add_argument('--max-new-tokens',type=int,default=128)
-    p.add_argument('--test-images',type=int,default=200,help='Caption variant final image count (1..200); --images takes precedence')
+    p.add_argument('--test-images',type=int,default=200,help='Final image count: caption 1..200, verified 1..400; --images takes precedence')
     a=p.parse_args();os.chdir(ROOT)
     run=Path(a.run_dir)
     if run.is_absolute():raise ValueError('--run-dir must be relative to this package for portability')
@@ -34,6 +34,11 @@ def main():
             if value:args.extend(['--'+name.replace('_','-'),value.resolve()])
         execute('prepare.py',*args)
     if a.stage in ['all','prepare']:prepare()
+    if a.aod_variant=='verified':
+        execute('verify_caption_pipeline.py',a.stage,'--run-dir',run,
+                '--test-images',a.test_images if a.images is None else a.images,
+                '--max-new-tokens',a.max_new_tokens)
+        return
     if a.aod_variant=='caption':
         execute('caption_pipeline.py',a.stage,'--run-dir',run,
                 '--test-images',a.test_images if a.images is None else a.images,

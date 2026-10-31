@@ -69,3 +69,20 @@ bash run.sh all --aod-variant question --run-dir results/question-direction
 ```
 
 该流程在 16 张验证图选参、50 张固定测试图评测，`--images` 范围为 1..50。它与默认描述领域流程的训练目标和划分不同，应分别保存输出。二分类提取使用固定 tokenizer 的词首 Yes/No token 3869/1939，不应复用旧 token 协议的缓存。
+
+
+## 可选：AOD 加物体核验与重写
+
+这一组合变体先生成 AOD 描述，再用图像条件下的 POPE 物体判别头检查描述提到的物体。仅当同时存在判定支持和不支持的物体时，使用支持的物体列表重新生成。它包含额外监督和提示词步骤，应与纯 AOD 分开报告。
+
+```bash
+bash run.sh all --aod-variant verified --run-dir results/verified --test-images 400
+```
+
+分步运行时，对 `prepare`、`train`、`validate`、`evaluate` 都保留同一组 `--aod-variant verified --run-dir results/verified --test-images 400` 参数。首次从公开 POPE 数据提取 L13 特征并训练 projective GT 判别头，α=0；同时训练描述领域的一致性方向，不下载作者训练好的权重。默认描述方向入口保持不变。
+
+该变体固定 AOD 解码 α=2、β=0.5、APC=0.1，在原验证集的 16 张图上比较物体判别 logit 阈值 −1、0、0.5。选定后使用 80 张新图确认；仅通过确认才运行最多 400 张冻结测试图。新图排除完整 POPE 图片池及默认描述流程预留的 200 张图；种子和逐图清单均保存在本地 plan.json。开发集和确认集都要求同时优于 Base 与未加核验的 AOD，且至少保留 Base 的 90% 描述长度、正确物体数和物体覆盖率。
+
+推理仅使用图像、生成文本、固定物体词表和已训练判别头，不读取待测图片的标注。评分保持原 CHAIR 规则。每阶段保留原 Base、未加核验的 AOD、使用相同核验上下文的 Base 重写、组合方案四组输出，另存每个物体的判别分数和重写触发记录；共用上下文的 Base 是组件对照，不是独立训练的另一种方法。不会用测试结果重新挑阈值，也不会自动删除未提升的本地记录。
+
+所有生成均为 greedy、最多 128 tokens。输出位于所选 run-dir 的 `caption-training/`、`verifier-features/`、`verifier-training/`、`development/`、`confirmation/`、`test/` 及冻结配置 JSON；公开仓库不附实验分数。
