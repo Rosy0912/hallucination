@@ -11,14 +11,15 @@ BENCH=json.loads((ROOT/'benchmark.json').read_text())['benchmark']
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('stage',choices=['all','prepare','extract','train','evaluate'],nargs='?',default='all')
+    p.add_argument('stage',choices=['all','prepare','extract','train','validate','evaluate'],nargs='?',default='all')
     p.add_argument('--run-dir',default='results/default')
+    p.add_argument('--aod-variant',choices=['caption','question'],default='caption',help='Caption-domain AOD or the earlier question-domain direction')
     p.add_argument('--model-dir',type=Path)
     p.add_argument('--coco-root',type=Path);p.add_argument('--hb-root',type=Path)
     p.add_argument('--amber-root',type=Path);p.add_argument('--annotations-root',type=Path)
-    p.add_argument('--images',type=int,help='AMBER default 200; CHAIR default 50')
+    p.add_argument('--images',type=int,help='Final CHAIR images: caption default 200, question default 50')
     p.add_argument('--max-new-tokens',type=int,default=128)
-    p.add_argument('--test-images',type=int,default=200,help='AMBER final holdout image limit; 0 means all remaining images')
+    p.add_argument('--test-images',type=int,default=200,help='Caption variant final image count (1..200); --images takes precedence')
     a=p.parse_args();os.chdir(ROOT)
     run=Path(a.run_dir)
     if run.is_absolute():raise ValueError('--run-dir must be relative to this package for portability')
@@ -33,6 +34,12 @@ def main():
             if value:args.extend(['--'+name.replace('_','-'),value.resolve()])
         execute('prepare.py',*args)
     if a.stage in ['all','prepare']:prepare()
+    if a.aod_variant=='caption':
+        execute('caption_pipeline.py',a.stage,'--run-dir',run,
+                '--test-images',a.test_images if a.images is None else a.images,
+                '--max-new-tokens',a.max_new_tokens)
+        return
+    if a.stage=='validate':raise ValueError('Separate validate is available for --aod-variant caption')
     if a.stage=='prepare':return
     settings=dict(protocol_version=json.loads((ROOT/'benchmark.json').read_text())['protocol_version'],benchmark=BENCH,images=a.images,max_new_tokens=a.max_new_tokens,
                   test_images=a.test_images,answer_token_protocol='word-start-v3',model=model,training='fixed package protocol; validation selection only')

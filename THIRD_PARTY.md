@@ -34,3 +34,4 @@
 - tools/scalar_direction.py 实现一个明确的 AOD 训练变体：单一方向与 GRL 残差对抗保持不变，投影分支改为标量 MLP；训练集均值/全局 RMS 标准化、类别平衡损失、GRL 权重 0.1，验证 AUROC 选 epoch。其后仍用验证集实际推理选干预参数。
 - HallusionBench 公共镜像固定 revision cd417161857aefb23d878d42cf1bb53aa9dd646f，并校验字节 SHA256 和全部问题/标签。
 - AMBER 标注固定官方仓库 commit 534babf6bbfcce2e735c26289dedfb21cef3c939，并校验两个 JSON 文件的 SHA256。
+- CHAIR 默认增加描述领域 AOD：由训练图片的 Base 描述采集物体首个子词之前的 L24 状态，以训练图标注监督一致性；16 张验证图选参后，用另外 84 张验证图确认，再进行冻结测试。投影对比解码和训练标准差定标的加法干预作为固定候选，均保留内容覆盖门槛。此前问答领域训练入口通过 `--aod-variant question` 保留。
